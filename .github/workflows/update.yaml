@@ -1,0 +1,53 @@
+name: 更新每日论文workFlow
+
+on:
+  schedule:
+    - cron: '0 16 * * *'  # UTC 16:00 (+8即为北京时间 00:00)
+  workflow_dispatch:    # 允许手动触发
+  push:                # 在推送时触发
+    branches:
+      - main        # 只在推送到 main 分支时触发
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update_daily_papers:
+    runs-on: windows-latest
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v3
+
+    - name: 设置 Rust 环境
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        profile: minimal
+        override: true
+
+    - name: 安装 Just 工具
+      run: |
+        cargo install --debug just
+        echo "C:\Users\runneradmin\.cargo\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+
+    - name: 运行每日更新
+      run: just
+
+    # - name: 配置 Git
+    #   run: |
+    #     git config --global user.name 'github-actions[bot]'
+    #     git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: 提交更改
+      run: |
+        git add README.md .github/ISSUE_TEMPLATE.md
+        git commit -m "✏️ 自动更新论文" || echo "No changes to commit"
+        git push
+
+    - name: 创建 Issue 通知
+      uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        update_existing: true
