@@ -17,10 +17,10 @@ pub fn get_daily_date() -> String {
         .to_string()
 }
 
-pub fn get_current_date() -> String {
+pub fn get_current_date_time() -> String {
     Utc::now()
         .with_timezone(&Shanghai)
-        .format("%Y-%m-%d")
+        .format("%Y-%m-%d %H:%M")
         .to_string()
 }
 

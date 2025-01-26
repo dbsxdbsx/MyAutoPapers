@@ -9,7 +9,7 @@ use std::fs::File;
 use std::io::Write;
 use types::Config;
 use utils::{
-    backup_files, ensure_github_dir, generate_table, get_current_date, get_daily_date,
+    backup_files, ensure_github_dir, generate_table, get_current_date_time, get_daily_date,
     remove_backups,
 };
 
@@ -49,7 +49,7 @@ fn format_this_time_update_config_output(config: &Config) -> String {
             .collect::<Vec<_>>()
             .join(", "),
         retry_times = config.retry_times_for_each_keyword,
-        date = get_current_date()
+        date = get_current_date_time()
     )
 }
 
