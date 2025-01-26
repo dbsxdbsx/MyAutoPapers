@@ -148,7 +148,7 @@ async fn main() -> Result<()> {
     // 先写入 issue 模板的头部信息
     writeln!(
         issue_template,
-        "---\ntitle: 最新论文{papers_num}篇 - {date}\nlabels: documentation\n---\n\
+        "---\ntitle: 最新新论文{papers_num}篇 - {date}\nlabels: documentation\n---\n\
         {params}\n\n\
         ## 论文汇总（{papers_num}篇）\n\n\
         **更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyDailyPaper)。**\n\n",
@@ -237,8 +237,8 @@ async fn main() -> Result<()> {
     let issue_content = std::fs::read_to_string(".github/ISSUE_TEMPLATE.md")?;
     let updated_issue_content = issue_content
         .replace(
-            "最新论文0篇",
-            &format!("最新论文{final_recorded_papers_num}篇"),
+            "最新新论文0篇",
+            &format!("最新新论文{final_recorded_papers_num}篇"),
         )
         .replace(
             "论文汇总（0篇）",
