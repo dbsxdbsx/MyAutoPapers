@@ -1,8 +1,8 @@
 ---
-title: 最新论文 - 2025年01月26日
+title: 最新论文 - 2025年01月27日
 labels: documentation
 ---
-## 最后更新：2025-01-26 14:36
+## 最后更新：2025-01-27 00:05
 **本次更新执行命令**
 ```
 D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
