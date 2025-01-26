@@ -12,7 +12,14 @@ default:
 per_keyword := "50"
 keywords := "
              efficient RL,video super resolution,
-            
+             2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
+             combinatorial game theory/xiangqi/chinese chess,
+             code llm,
+             speech recognition,
+             zero shot tracking/few shot tracking/pose tracking/pose estimation,
+             text to 3d/image to 3d/text to texture,
+             casual inference,
+             automated theorem proving/interactive theorem proving/formal verification
              "
 exclude := "multi-agent"
 target_fields := "cs,stat"
