@@ -1,12 +1,8 @@
 ---
-<<<<<<< HEAD
 title: 最新论文168篇 - 2025年01月26日
-=======
-title: 最新论文20篇 - 2025年01月26日
->>>>>>> aef0e410eebc5f12746b7574909e457c623ebd0c
 labels: documentation
 ---
-## 最后更新：2025-01-26 10:55
+## 最后更新：2025-01-26 11:02
 **本次更新执行命令**
 ```
 target\debug\my_paper.exe --keywords=
