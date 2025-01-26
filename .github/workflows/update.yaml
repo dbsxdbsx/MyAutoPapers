@@ -12,6 +12,9 @@ permissions:
   contents: write
   issues: write
 
+env:
+  BIN_PATH: target/release/my_auto_papers.exe
+
 jobs:
   update_daily_papers:
     runs-on: windows-latest
@@ -59,14 +62,18 @@ jobs:
 
     - name: 检查缓存的可执行文件
       id: check-bin
-      run: ./.github/scripts/check-bin.sh
+      shell: bash
+      run: |
+        if [ ! -f "${{ env.BIN_PATH }}" ]; then
+          echo "exists_bin=false" >> $GITHUB_OUTPUT
+        fi
 
     - name: 若无缓存，则构建Release版本
       if: steps.check-bin.outputs.exists_bin != 'true'
       run: cargo build --release
 
     - name: 运行每日更新
-      run: just run "${{ steps.check-bin.outputs.bin_path }}"
+      run: just run "${{ env.BIN_PATH }}"
 
     - name: 提交更改
       uses: stefanzweifel/git-auto-commit-action@v5

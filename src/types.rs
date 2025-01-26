@@ -1,5 +1,4 @@
 use serde::{Deserialize, Serialize};
-use std::collections::HashMap;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Paper {
@@ -12,43 +11,6 @@ pub struct Paper {
 }
 
 impl Paper {
-    pub fn to_display_map(&self, columns: &[String]) -> HashMap<String, String> {
-        let mut map = HashMap::new();
-        // Always include Link even if not in columns
-        map.insert("Link".to_string(), self.link.clone());
-
-        for column in columns {
-            match column.as_str() {
-                "Title" => map.insert(column.clone(), self.title.clone()),
-                "Authors" => map.insert(
-                    column.clone(),
-                    if !self.authors.is_empty() {
-                        format!("{} 等", self.authors[0])
-                    } else {
-                        String::new()
-                    },
-                ),
-                "Abstract" => map.insert(column.clone(), self.abstract_text.clone()),
-                "Date" => {
-                    let date = self.date.split('T').next().unwrap_or("").to_string();
-                    map.insert(column.clone(), date)
-                }
-                _ => None,
-            };
-        }
-        map
-    }
-
-    pub fn get_chinese_column_name(name: &str) -> &str {
-        match name {
-            "Title" => "标题",
-            "Authors" => "作者",
-            "Abstract" => "摘要",
-            "Date" => "日期",
-            _ => name,
-        }
-    }
-
     // 新增方法：生成 README 表格行
     pub fn to_readme_markdown(&self, index: usize) -> String {
         let title_link = format!("**[{}]({})**", self.title, self.link);
