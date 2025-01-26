@@ -1,14 +1,17 @@
 # 自动论文推送
 本项目自动从 arXiv 获取最新的论文，基于关键词进行筛选。
 
-点击 'Watch' 按钮可以接收自动推送
-的邮件通知。
+点击 'Watch' 按钮可以接收自动推送的邮件通知。
 
+<<<<<<< HEAD
 
 ## 最后更新：2025-01-26 12:08
+=======
+## 最后更新：2025-01-26 12:24
+>>>>>>> 08c684086bc90889f52ae49934f5c2d1d318dc09
 **本次更新执行命令**
 ```
-target\debug\my_paper.exe --keywords=
+target\release\my_paper.exe --keywords=
              efficient RL,video super resolution,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
              combinatorial game theory/xiangqi/chinese chess,

@@ -2,10 +2,10 @@
 title: 最新论文168篇 - 2025年01月26日
 labels: documentation
 ---
-## 最后更新：2025-01-26 12:08
+## 最后更新：2025-01-26 12:24
 **本次更新执行命令**
 ```
-target\debug\my_paper.exe --keywords=
+target\release\my_paper.exe --keywords=
              efficient RL,video super resolution,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
              combinatorial game theory/xiangqi/chinese chess,
