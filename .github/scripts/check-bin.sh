@@ -6,4 +6,5 @@ if [ -f "$BIN_PATH" ]; then
   echo "bin_path=$BIN_PATH" >> $GITHUB_OUTPUT
 else
   echo "exists_bin=false" >> $GITHUB_OUTPUT
+  echo "bin_path=$BIN_PATH" >> $GITHUB_OUTPUT
 fi

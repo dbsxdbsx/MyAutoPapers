@@ -16,7 +16,6 @@ run bin_path:
         --per-keyword-max-result={{per_keyword}}
 
 # 设置默认参数值
-per_keyword := "50"
 keywords := "
              efficient RL,video super resolution,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
@@ -29,4 +28,5 @@ keywords := "
              automated theorem proving/interactive theorem proving/formal verification
              "
 exclude := "multi-agent"
+per_keyword := "50"
 target_fields := "cs,stat"
