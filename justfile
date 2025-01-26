@@ -15,6 +15,13 @@ run:
         --exclude-keywords="{{exclude}}" \
         --per-keyword-max-result={{per_keyword}}
 
+# 新增直接运行二进制文件的任务
+run-bin bin_path:
+    {{bin_path}} \
+        --keywords="{{keywords}}" \
+        --exclude-keywords="{{exclude}}" \
+        --per-keyword-max-result={{per_keyword}}
+
 # 设置默认参数值
 per_keyword := "50"
 keywords := "

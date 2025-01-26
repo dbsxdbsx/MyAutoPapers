@@ -57,8 +57,21 @@ jobs:
         cargo install just
         echo "C:\Users\runneradmin\.cargo\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
 
+    - name: 检查缓存的可执行文件
+      id: check-bin
+      run: ./.github/scripts/check-bin.sh
+
+    - name: 构建Release版本
+      if: steps.check-bin.outputs.exists_bin != 'true'
+      run: cargo build --release
+
     - name: 运行每日更新
-      run: just run
+      run: |
+        if [ "${{ steps.check-bin.outputs.exists_bin }}" = "true" ]; then
+          just run-bin "${{ steps.check-bin.outputs.bin_path }}"
+        else
+          just run
+        fi
 
     - name: 提交更改
       uses: stefanzweifel/git-auto-commit-action@v5
