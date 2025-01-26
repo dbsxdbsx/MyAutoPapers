@@ -8,16 +8,9 @@ default:
         --exclude-keywords="{{exclude}}" \
         --per-keyword-max-result={{per_keyword}}
 
-# 使用 release 构建运行
-run:
-    cargo run --release -- \
-        --keywords="{{keywords}}" \
-        --exclude-keywords="{{exclude}}" \
-        --per-keyword-max-result={{per_keyword}}
-
 # 新增直接运行二进制文件的任务
 run-bin bin_path:
-    {{bin_path}} \
+    "{{bin_path}}" \
         --keywords="{{keywords}}" \
         --exclude-keywords="{{exclude}}" \
         --per-keyword-max-result={{per_keyword}}

@@ -61,7 +61,7 @@ jobs:
       id: check-bin
       run: ./.github/scripts/check-bin.sh
 
-    - name: 构建Release版本
+    - name: 若无缓存，则构建Release版本
       if: steps.check-bin.outputs.exists_bin != 'true'
       run: cargo build --release
 

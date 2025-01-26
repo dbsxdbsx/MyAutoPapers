@@ -6,7 +6,7 @@
 ## 最后更新：2025-01-26 13:27
 **本次更新执行命令**
 ```
-target\release\my_paper.exe --keywords=
+target\release\my_auto_papers.exe --keywords=
              efficient RL,video super resolution,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
              combinatorial game theory/xiangqi/chinese chess,
