@@ -3,7 +3,7 @@ name: 缓存维护
 on:
   schedule:
     - cron: '0 12 * * 1'  # 每周一 UTC 12 点（北京时间 20 点）
-  workflow_dispatch:       # 允许手动触发
+  # workflow_dispatch:       # 允许手动触发
 
 jobs:
   refresh-cache:
