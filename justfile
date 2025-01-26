@@ -8,6 +8,13 @@ default:
         --exclude-keywords="{{exclude}}" \
         --per-keyword-max-result={{per_keyword}}
 
+# 使用 release 构建运行
+run:
+    cargo run --release -- \
+        --keywords="{{keywords}}" \
+        --exclude-keywords="{{exclude}}" \
+        --per-keyword-max-result={{per_keyword}}
+
 # 设置默认参数值
 per_keyword := "50"
 keywords := "
