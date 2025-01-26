@@ -33,6 +33,7 @@ jobs:
 
     - name: 缓存 Cargo 依赖
       uses: actions/cache@v3
+      id: cargo-cache
       with:
         path: |
           ~/.cargo/bin/
@@ -62,14 +63,14 @@ jobs:
 
     - name: 检查缓存的可执行文件
       id: check-bin
-      shell: bash
+      shell: pwsh
       run: |
-        if [ ! -f "${{ env.BIN_PATH }}" ]; then
-          echo "exists_bin=false" >> $GITHUB_OUTPUT
-        fi
+        $exists = Test-Path -Path "${{ env.BIN_PATH }}"
+        Write-Output "exists_bin=$exists" >> $env:GITHUB_OUTPUT
+        Write-Host "Executable exists: $exists"
 
     - name: 若无缓存，则构建Release版本
-      if: steps.check-bin.outputs.exists_bin != 'true'
+      if: steps.cargo-cache.outputs.cache-hit != 'true' || steps.check-bin.outputs.exists_bin != 'true'
       run: cargo build --release
 
     - name: 运行每日更新

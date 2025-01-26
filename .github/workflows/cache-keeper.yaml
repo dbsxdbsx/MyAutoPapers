@@ -3,7 +3,7 @@ name: 缓存维护
 on:
   schedule:
     - cron: '0 12 * * 1'  # 每周一 UTC 12 点（北京时间 20 点）
-  # workflow_dispatch:       # 允许手动触发
+  workflow_dispatch:       # 允许手动触发（取消注释即可启用）
 
 jobs:
   refresh-cache:
@@ -12,13 +12,17 @@ jobs:
     - name: 检出代码
       uses: actions/checkout@v4
 
-    - name: 恢复 Rust 缓存
+    - name: 恢复复合缓存
       uses: actions/cache@v3
-      id: rust-cache
+      id: cargo-cache
       with:
         path: |
-          ~/.cargo
+          ~/.cargo/bin/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/cache/
+          ~/.cargo/git/db/
           target/
+          target/release/
         key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
         restore-keys: |
           ${{ runner.os }}-cargo-
@@ -31,11 +35,10 @@ jobs:
           C:\Users\runneradmin\.cargo\bin\just.exe
           C:\Users\runneradmin\.cargo\.package-cache
         key: ${{ runner.os }}-just-${{ hashFiles('**/Cargo.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-just-
 
-    - name: 模拟构建（保持缓存活跃）
-      if: steps.rust-cache.outputs.cache-hit == 'true' || steps.just-cache.outputs.cache-hit == 'true'
+    - name: 保持缓存活跃
+      if: steps.cargo-cache.outputs.cache-hit == 'true' || steps.just-cache.outputs.cache-hit == 'true'
       run: |
-        cargo check --quiet
-        echo "Cache refreshed at $(date)" >> cache.log
+        cargo build --release --quiet
+        just --version
+        echo "Cache refreshed at $(Get-Date)" >> cache.log
