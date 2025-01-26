@@ -35,15 +35,13 @@ jobs:
       run: just
 
     - name: 提交更改
-      uses: github-actions-x/commit@v2.9
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'main'
-        commit-message: '✏️ 自动更新论文'
-        force-add: 'true'
-        files: README.md .github/ISSUE_TEMPLATE.md
-        name: dbsxdbsx
-        email: dbsx0214@qq.com
+        commit_message: '✏️ 自动更新论文'
+        file_pattern: 'README.md .github/ISSUE_TEMPLATE.md'
+        commit_user_name: dbsxdbsx
+        commit_user_email: dbsx0214@qq.com
+        push_options: '--force'
 
     - name: 创建 Issue 通知
       uses: JasonEtco/create-an-issue@v2
