@@ -9,7 +9,7 @@ default:
         --per-keyword-max-result={{per_keyword}}
 
 # 新增直接运行二进制文件的任务
-run-bin bin_path:
+run bin_path:
     "{{bin_path}}" \
         --keywords="{{keywords}}" \
         --exclude-keywords="{{exclude}}" \

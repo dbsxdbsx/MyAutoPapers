@@ -66,7 +66,7 @@ jobs:
       run: cargo build --release
 
     - name: 运行每日更新
-      run: just run-bin "${{ steps.check-bin.outputs.bin_path }}"
+      run: just run "${{ steps.check-bin.outputs.bin_path }}"
 
     - name: 提交更改
       uses: stefanzweifel/git-auto-commit-action@v5
