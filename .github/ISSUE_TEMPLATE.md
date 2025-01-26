@@ -2,10 +2,10 @@
 title: 最新论文 - 2025年01月26日
 labels: documentation
 ---
-## 最后更新：2025-01-26 13:56
+## 最后更新：2025-01-26 14:20
 **本次更新执行命令**
 ```
-target\debug\my_auto_papers.exe --keywords=
+D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
              efficient RL,video super resolution,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
              combinatorial game theory/xiangqi/chinese chess,
@@ -26,7 +26,7 @@ target\debug\my_auto_papers.exe --keywords=
 - 每关键词重试次数：`3`
 
 
-## 论文汇总（161篇）
+## 论文汇总（168篇）
 
 **更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyDailyPaper)。**
 
@@ -149,9 +149,11 @@ target\debug\my_auto_papers.exe --keywords=
 | **20** | **[Application-driven Validation of Posteriors in Inverse Problems](http://arxiv.org/abs/2309.09764v2)** | 2023-09-18 |
 | **21** | **[Robust Lifelong Indoor LiDAR Localization using the Area Graph](http://dx.doi.org/10.1109/LRA.2023.3334158)** | 2023-08-10 |
 | **22** | **[Multi-Scale Memory Comparison for Zero-/Few-Shot Anomaly Detection](http://arxiv.org/abs/2308.04789v2)** | 2023-08-09 |
-| **23** | **[APRIL-GAN: A Zero-/Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challenge Tracks 1&2: 1st Place on Zero-shot AD and 4th Place on Few-shot AD](http://arxiv.org/abs/2305.17382v3)** | 2023-05-27 |
-| **24** | **[Exploring the Effectiveness of Self-supervised Learning and Classifier Chains in Emotion Recognition of Nonverbal Vocalizations](http://arxiv.org/abs/2206.10695v1)** | 2022-06-21 |
-| **25** | **[The Multi-speaker Multi-style Voice Cloning Challenge 2021](http://arxiv.org/abs/2104.01818v1)** | 2021-04-05 |
+| **23** | **[Zero-Shot Anomaly Detection with Pre-trained Segmentation Models](http://arxiv.org/abs/2306.09269v1)** | 2023-06-15 |
+| **24** | **[APRIL-GAN: A Zero-/Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challenge Tracks 1&2: 1st Place on Zero-shot AD and 4th Place on Few-shot AD](http://arxiv.org/abs/2305.17382v3)** | 2023-05-27 |
+| **25** | **[Unifying Tracking and Image-Video Object Detection](http://arxiv.org/abs/2211.11077v2)** | 2022-11-20 |
+| **26** | **[Exploring the Effectiveness of Self-supervised Learning and Classifier Chains in Emotion Recognition of Nonverbal Vocalizations](http://arxiv.org/abs/2206.10695v1)** | 2022-06-21 |
+| **27** | **[The Multi-speaker Multi-style Voice Cloning Challenge 2021](http://arxiv.org/abs/2104.01818v1)** | 2021-04-05 |
 ### 8. text to 3d/image to 3d/text to texture
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
@@ -171,12 +173,17 @@ target\debug\my_auto_papers.exe --keywords=
 | **14** | **[3D-Adapter: Geometry-Consistent Multi-View Diffusion for High-Quality 3D Generation](http://arxiv.org/abs/2410.18974v1)** | 2024-10-24 |
 | **15** | **[Jointly Generating Multi-view Consistent PBR Textures using Collaborative Control](http://arxiv.org/abs/2410.06985v1)** | 2024-10-09 |
 | **16** | **[RoCoTex: A Robust Method for Consistent Texture Synthesis with Diffusion Models](http://arxiv.org/abs/2409.19989v1)** | 2024-09-30 |
-| **17** | **[Deep Geometric Moments Promote Shape Consistency in Text-to-3D Generation](http://arxiv.org/abs/2408.05938v2)** | 2024-08-12 |
-| **18** | **[DreamLCM: Towards High-Quality Text-to-3D Generation via Latent Consistency Model](http://arxiv.org/abs/2408.02993v4)** | 2024-08-06 |
-| **19** | **[MeshLRM: Large Reconstruction Model for High-Quality Meshes](http://arxiv.org/abs/2404.12385v2)** | 2024-04-18 |
-| **20** | **[Hyper-3DG: Text-to-3D Gaussian Generation via Hypergraph](http://arxiv.org/abs/2403.09236v2)** | 2024-03-14 |
-| **21** | **[FlashTex: Fast Relightable Mesh Texturing with LightControlNet](http://arxiv.org/abs/2402.13251v3)** | 2024-02-20 |
-| **22** | **[From 2D Images to 3D Model:Weakly Supervised Multi-View Face Reconstruction with Deep Fusion](http://arxiv.org/abs/2204.03842v5)** | 2022-04-08 |
+| **17** | **[GenesisTex2: Stable, Consistent and High-Quality Text-to-Texture Generation](http://arxiv.org/abs/2409.18401v1)** | 2024-09-27 |
+| **18** | **[Deep Geometric Moments Promote Shape Consistency in Text-to-3D Generation](http://arxiv.org/abs/2408.05938v2)** | 2024-08-12 |
+| **19** | **[DreamLCM: Towards High-Quality Text-to-3D Generation via Latent Consistency Model](http://arxiv.org/abs/2408.02993v4)** | 2024-08-06 |
+| **20** | **[Meta 3D Gen](http://arxiv.org/abs/2407.02599v1)** | 2024-07-02 |
+| **21** | **[ReflectanceFusion: Diffusion-based text to SVBRDF Generation](http://arxiv.org/abs/2406.14565v1)** | 2024-04-25 |
+| **22** | **[MeshLRM: Large Reconstruction Model for High-Quality Meshes](http://arxiv.org/abs/2404.12385v2)** | 2024-04-18 |
+| **23** | **[InTeX: Interactive Text-to-texture Synthesis via Unified Depth-aware Inpainting](http://arxiv.org/abs/2403.11878v1)** | 2024-03-18 |
+| **24** | **[Hyper-3DG: Text-to-3D Gaussian Generation via Hypergraph](http://arxiv.org/abs/2403.09236v2)** | 2024-03-14 |
+| **25** | **[FlashTex: Fast Relightable Mesh Texturing with LightControlNet](http://arxiv.org/abs/2402.13251v3)** | 2024-02-20 |
+| **26** | **[Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering](http://arxiv.org/abs/2312.11360v2)** | 2023-12-18 |
+| **27** | **[From 2D Images to 3D Model:Weakly Supervised Multi-View Face Reconstruction with Deep Fusion](http://arxiv.org/abs/2204.03842v5)** | 2022-04-08 |
 ### 9. casual inference
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
