@@ -1,0 +1,41 @@
+name: 缓存维护
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'  # 每周一 UTC 12 点（北京时间 20 点）
+  workflow_dispatch:       # 允许手动触发
+
+jobs:
+  refresh-cache:
+    runs-on: windows-latest
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 恢复 Rust 缓存
+      uses: actions/cache@v3
+      id: rust-cache
+      with:
+        path: |
+          ~/.cargo
+          target/
+        key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-cargo-
+
+    - name: 恢复 Just 缓存
+      uses: actions/cache@v3
+      id: just-cache
+      with:
+        path: |
+          C:\Users\runneradmin\.cargo\bin\just.exe
+          C:\Users\runneradmin\.cargo\.package-cache
+        key: ${{ runner.os }}-just-${{ hashFiles('**/Cargo.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-just-
+
+    - name: 模拟构建（保持缓存活跃）
+      if: steps.rust-cache.outputs.cache-hit == 'true' || steps.just-cache.outputs.cache-hit == 'true'
+      run: |
+        cargo check --quiet
+        echo "Cache refreshed at $(date)" >> cache.log
