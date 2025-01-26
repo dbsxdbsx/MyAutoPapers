@@ -58,8 +58,6 @@ jobs:
       with:
         commit_message: '✏️ 自动更新论文'
         file_pattern: 'README.md .github/ISSUE_TEMPLATE.md'
-        commit_user_name: ${{ github.actor }}
-        commit_user_email: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
         push_options: '--force'
 
     - name: 创建 Issue 通知
