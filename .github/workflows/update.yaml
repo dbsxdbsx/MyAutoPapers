@@ -28,7 +28,22 @@ jobs:
         profile: minimal
         override: true
 
+    - name: Rust Cache
+      uses: Swatinem/rust-cache@v2
+      with:
+        # 可选：指定缓存键的前缀
+        prefix-key: "v0-rust"
+
+    - name: Cache Just
+      id: cache-just
+      uses: actions/cache@v3
+      with:
+        path: |
+          C:\Users\runneradmin\.cargo\bin\just.exe
+        key: ${{ runner.os }}-just-${{ hashFiles('**/Cargo.lock') }}
+
     - name: 安装 Just 工具
+      if: steps.cache-just.outputs.cache-hit != 'true'
       run: |
         cargo install --debug just
         echo "C:\Users\runneradmin\.cargo\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
