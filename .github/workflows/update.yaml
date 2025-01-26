@@ -66,12 +66,7 @@ jobs:
       run: cargo build --release
 
     - name: 运行每日更新
-      run: |
-        if [ "${{ steps.check-bin.outputs.exists_bin }}" = "true" ]; then
-          just run-bin "${{ steps.check-bin.outputs.bin_path }}"
-        else
-          just run
-        fi
+      run: just run-bin "${{ steps.check-bin.outputs.bin_path }}"
 
     - name: 提交更改
       uses: stefanzweifel/git-auto-commit-action@v5
