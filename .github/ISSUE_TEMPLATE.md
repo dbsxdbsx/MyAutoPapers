@@ -1,8 +1,8 @@
 ---
-title: 最新论文 - 2025年01月27日
+title: 最新论文 - 2025年01月28日
 labels: documentation
 ---
-## 最后更新：2025-01-27 09:18
+## 最后更新：2025-01-28 00:06
 **本次更新执行命令**
 ```
 D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
@@ -140,39 +140,39 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ### 8. speech recognition
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Predicting Compact Phrasal Rewrites with Large Language Models for ASR Post Editing](http://arxiv.org/abs/2501.13831v1)** | 2025-01-23 |
-| **2** | **[Learning-based A Posteriori Speech Presence Probability Estimation and Applications](http://arxiv.org/abs/2501.13642v1)** | 2025-01-23 |
-| **3** | **[DQ-Data2vec: Decoupling Quantization for Multilingual Speech Recognition](http://arxiv.org/abs/2501.13497v1)** | 2025-01-23 |
-| **4** | **[OSUM: Advancing Open Speech Understanding Models with Limited Resources in Academia](http://arxiv.org/abs/2501.13306v1)** | 2025-01-23 |
-| **5** | **[Let SSMs be ConvNets: State-space Modeling with Optimal Tensor Contractions](http://arxiv.org/abs/2501.13230v1)** | 2025-01-22 |
-| **6** | **[FlanEC: Exploring Flan-T5 for Post-ASR Error Correction](http://dx.doi.org/10.1109/SLT61566.2024.10832257)** | 2025-01-22 |
-| **7** | **[A Domain Adaptation Framework for Speech Recognition Systems with Only Synthetic data](http://arxiv.org/abs/2501.12501v1)** | 2025-01-21 |
-| **8** | **[DOTA-ME-CS: Daily Oriented Text Audio-Mandarin English-Code Switching Dataset](http://arxiv.org/abs/2501.12122v1)** | 2025-01-21 |
-| **9** | **[PIER: A Novel Metric for Evaluating What Matters in Code-Switching](http://arxiv.org/abs/2501.09512v2)** | 2025-01-16 |
-| **10** | **[Interactive Cycle Model: The Linkage Combination among Automatic Speech Recognition, Large Language Models and Smart Glasses](http://arxiv.org/abs/2411.10362v3)** | 2024-11-15 |
+| **1** | **[FireRedASR: Open-Source Industrial-Grade Mandarin Speech Recognition Models from Encoder-Decoder to LLM Integration](http://arxiv.org/abs/2501.14350v1)** | 2025-01-24 |
+| **2** | **[LoCoML: A Framework for Real-World ML Inference Pipelines](http://arxiv.org/abs/2501.14165v1)** | 2025-01-24 |
+| **3** | **[Predicting Compact Phrasal Rewrites with Large Language Models for ASR Post Editing](http://arxiv.org/abs/2501.13831v1)** | 2025-01-23 |
+| **4** | **[Learning-based A Posteriori Speech Presence Probability Estimation and Applications](http://arxiv.org/abs/2501.13642v1)** | 2025-01-23 |
+| **5** | **[Integrating Persian Lip Reading in Surena-V Humanoid Robot for Human-Robot Interaction](http://arxiv.org/abs/2501.13996v1)** | 2025-01-23 |
+| **6** | **[DQ-Data2vec: Decoupling Quantization for Multilingual Speech Recognition](http://arxiv.org/abs/2501.13497v1)** | 2025-01-23 |
+| **7** | **[OSUM: Advancing Open Speech Understanding Models with Limited Resources in Academia](http://arxiv.org/abs/2501.13306v1)** | 2025-01-23 |
+| **8** | **[Let SSMs be ConvNets: State-space Modeling with Optimal Tensor Contractions](http://arxiv.org/abs/2501.13230v1)** | 2025-01-22 |
+| **9** | **[Interactive Cycle Model: The Linkage Combination among Automatic Speech Recognition, Large Language Models and Smart Glasses](http://arxiv.org/abs/2411.10362v3)** | 2024-11-15 |
+| **10** | **[Recording for Eyes, Not Echoing to Ears: Contextualized Spoken-to-Written Conversion of ASR Transcripts](http://arxiv.org/abs/2408.09688v4)** | 2024-08-19 |
 ### 9. zero shot tracking/few shot tracking/pose tracking/pose estimation
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Fast3R: Towards 3D Reconstruction of 1000+ Images in One Forward Pass](http://arxiv.org/abs/2501.13928v1)** | 2025-01-23 |
-| **2** | **[EgoHand: Ego-centric Hand Pose Estimation and Gesture Recognition with Head-mounted Millimeter-wave Radar and IMUs](http://arxiv.org/abs/2501.13805v1)** | 2025-01-23 |
-| **3** | **[VIGS SLAM: IMU-based Large-Scale 3D Gaussian Splatting SLAM](http://arxiv.org/abs/2501.13402v1)** | 2025-01-23 |
-| **4** | **[Deep Learning-Based Image Recovery and Pose Estimation for Resident Space Objects](http://arxiv.org/abs/2501.13009v1)** | 2025-01-22 |
-| **5** | **[BlanketGen2-Fit3D: Synthetic Blanket Augmentation Towards Improving Real-World In-Bed Blanket Occluded Human Pose Estimation](http://arxiv.org/abs/2501.12318v1)** | 2025-01-21 |
-| **6** | **[Refinement Module based on Parse Graph of Feature Map for Human Pose Estimation](http://arxiv.org/abs/2501.11069v1)** | 2025-01-19 |
-| **7** | **[Towards Robust and Realistic Human Pose Estimation via WiFi Signals](http://arxiv.org/abs/2501.09411v2)** | 2025-01-16 |
-| **8** | **[OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints](http://arxiv.org/abs/2501.03841v1)** | 2025-01-07 |
-| **9** | **[WorldPose: A World Cup Dataset for Global 3D Human Pose Estimation](http://arxiv.org/abs/2501.02771v2)** | 2025-01-06 |
-| **10** | **[NormalFlow: Fast, Robust, and Accurate Contact-based Object 6DoF Pose Tracking with Vision-based Tactile Sensors](http://dx.doi.org/10.1109/LRA.2024.3505815)** | 2024-12-12 |
-| **11** | **[Learning Whole-Body Loco-Manipulation for Omni-Directional Task Space Pose Tracking with a Wheeled-Quadrupedal-Manipulator](http://arxiv.org/abs/2412.03012v1)** | 2024-12-04 |
-| **12** | **[GSGTrack: Gaussian Splatting-Guided Object Pose Tracking from RGB Videos](http://arxiv.org/abs/2412.02267v1)** | 2024-12-03 |
-| **13** | **[6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting](http://arxiv.org/abs/2412.01543v1)** | 2024-12-02 |
-| **14** | **[G3Flow: Generative 3D Semantic Flow for Pose-aware and Generalizable Object Manipulation](http://arxiv.org/abs/2411.18369v1)** | 2024-11-27 |
-| **15** | **[Graph Optimality-Aware Stochastic LiDAR Bundle Adjustment with Progressive Spatial Smoothing](http://arxiv.org/abs/2410.14565v2)** | 2024-10-18 |
-| **16** | **[ESVO2: Direct Visual-Inertial Odometry with Stereo Event Cameras](http://arxiv.org/abs/2410.09374v2)** | 2024-10-12 |
-| **17** | **[A Certifiable Algorithm for Simultaneous Shape Estimation and Object Tracking](http://dx.doi.org/10.1109/LRA.2024.3501684)** | 2024-06-24 |
-| **18** | **[HO-Cap: A Capture System and Dataset for 3D Reconstruction and Pose Tracking of Hand-Object Interaction](http://arxiv.org/abs/2406.06843v3)** | 2024-06-10 |
-| **19** | **[Matching Anything by Segmenting Anything](http://arxiv.org/abs/2406.04221v1)** | 2024-06-06 |
-| **20** | **[Application-driven Validation of Posteriors in Inverse Problems](http://arxiv.org/abs/2309.09764v2)** | 2023-09-18 |
+| **1** | **[Optimizing Grasping Precision for Industrial Pick-and-Place Tasks Through a Novel Visual Servoing Approach](http://arxiv.org/abs/2501.14557v1)** | 2025-01-24 |
+| **2** | **[LiDAR-Based Vehicle Detection and Tracking for Autonomous Racing](http://arxiv.org/abs/2501.14502v1)** | 2025-01-24 |
+| **3** | **[Optimizing Human Pose Estimation Through Focused Human and Joint Regions](http://arxiv.org/abs/2501.14439v1)** | 2025-01-24 |
+| **4** | **[Causal-Inspired Multitask Learning for Video-Based Human Pose Estimation](http://arxiv.org/abs/2501.14356v1)** | 2025-01-24 |
+| **5** | **[HAMMER: Heterogeneous, Multi-Robot Semantic Gaussian Splatting](http://arxiv.org/abs/2501.14147v1)** | 2025-01-24 |
+| **6** | **[Fast3R: Towards 3D Reconstruction of 1000+ Images in One Forward Pass](http://arxiv.org/abs/2501.13928v1)** | 2025-01-23 |
+| **7** | **[EgoHand: Ego-centric Hand Pose Estimation and Gesture Recognition with Head-mounted Millimeter-wave Radar and IMUs](http://arxiv.org/abs/2501.13805v1)** | 2025-01-23 |
+| **8** | **[VIGS SLAM: IMU-based Large-Scale 3D Gaussian Splatting SLAM](http://arxiv.org/abs/2501.13402v1)** | 2025-01-23 |
+| **9** | **[Deep Learning-Based Image Recovery and Pose Estimation for Resident Space Objects](http://arxiv.org/abs/2501.13009v1)** | 2025-01-22 |
+| **10** | **[OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints](http://arxiv.org/abs/2501.03841v1)** | 2025-01-07 |
+| **11** | **[NormalFlow: Fast, Robust, and Accurate Contact-based Object 6DoF Pose Tracking with Vision-based Tactile Sensors](http://dx.doi.org/10.1109/LRA.2024.3505815)** | 2024-12-12 |
+| **12** | **[Learning Whole-Body Loco-Manipulation for Omni-Directional Task Space Pose Tracking with a Wheeled-Quadrupedal-Manipulator](http://arxiv.org/abs/2412.03012v1)** | 2024-12-04 |
+| **13** | **[GSGTrack: Gaussian Splatting-Guided Object Pose Tracking from RGB Videos](http://arxiv.org/abs/2412.02267v1)** | 2024-12-03 |
+| **14** | **[6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting](http://arxiv.org/abs/2412.01543v1)** | 2024-12-02 |
+| **15** | **[G3Flow: Generative 3D Semantic Flow for Pose-aware and Generalizable Object Manipulation](http://arxiv.org/abs/2411.18369v1)** | 2024-11-27 |
+| **16** | **[Graph Optimality-Aware Stochastic LiDAR Bundle Adjustment with Progressive Spatial Smoothing](http://arxiv.org/abs/2410.14565v2)** | 2024-10-18 |
+| **17** | **[ESVO2: Direct Visual-Inertial Odometry with Stereo Event Cameras](http://arxiv.org/abs/2410.09374v2)** | 2024-10-12 |
+| **18** | **[A Certifiable Algorithm for Simultaneous Shape Estimation and Object Tracking](http://dx.doi.org/10.1109/LRA.2024.3501684)** | 2024-06-24 |
+| **19** | **[HO-Cap: A Capture System and Dataset for 3D Reconstruction and Pose Tracking of Hand-Object Interaction](http://arxiv.org/abs/2406.06843v3)** | 2024-06-10 |
+| **20** | **[Matching Anything by Segmenting Anything](http://arxiv.org/abs/2406.04221v1)** | 2024-06-06 |
 | **21** | **[Robust Lifelong Indoor LiDAR Localization using the Area Graph](http://dx.doi.org/10.1109/LRA.2023.3334158)** | 2023-08-10 |
 | **22** | **[Multi-Scale Memory Comparison for Zero-/Few-Shot Anomaly Detection](http://arxiv.org/abs/2308.04789v2)** | 2023-08-09 |
 | **23** | **[Zero-Shot Anomaly Detection with Pre-trained Segmentation Models](http://arxiv.org/abs/2306.09269v1)** | 2023-06-15 |
@@ -226,24 +226,24 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ### 12. automated theorem proving/interactive theorem proving/formal verification
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Temporal Logic Guided Safe Navigation for Autonomous Vehicles](http://arxiv.org/abs/2501.13817v1)** | 2025-01-23 |
-| **2** | **[Fixed Point Certificates for Reachability and Expected Rewards in MDPs](http://arxiv.org/abs/2501.11467v1)** | 2025-01-20 |
-| **3** | **[Addressing Network Packet-based Cheats in Multiplayer Games: A Secret Sharing Approach](http://arxiv.org/abs/2501.10881v1)** | 2025-01-18 |
-| **4** | **[Augmenting Smart Contract Decompiler Output through Fine-grained Dependency Analysis and LLM-facilitated Semantic Recovery](http://arxiv.org/abs/2501.08670v1)** | 2025-01-15 |
-| **5** | **[Quantifying the Importance of Data Alignment in Downstream Model Performance](http://arxiv.org/abs/2501.08496v2)** | 2025-01-14 |
-| **6** | **[Technical Report: Exploring Automatic Model-Checking of the Ethereum specification](http://arxiv.org/abs/2501.07958v2)** | 2025-01-14 |
-| **7** | **[HUNYUANPROVER: A Scalable Data Synthesis Framework and Guided Tree Search for Automated Theorem Proving](http://arxiv.org/abs/2412.20735v2)** | 2024-12-30 |
-| **8** | **[WithdrarXiv: A Large-Scale Dataset for Retraction Study](http://arxiv.org/abs/2412.03775v1)** | 2024-12-04 |
-| **9** | **[Extracting Linear Relations from Gröbner Bases for Formal Verification of And-Inverter Graphs](http://arxiv.org/abs/2411.16348v2)** | 2024-11-25 |
-| **10** | **[Learning Rules Explaining Interactive Theorem Proving Tactic Prediction](http://arxiv.org/abs/2411.01188v1)** | 2024-11-02 |
-| **11** | **[InternLM2.5-StepProver: Advancing Automated Theorem Proving via Expert Iteration on Large-Scale LEAN Problems](http://arxiv.org/abs/2410.15700v1)** | 2024-10-21 |
-| **12** | **[Tableaux for Automated Reasoning in Dependently-Typed Higher-Order Logic (Extended Version)](http://dx.doi.org/10.1007/978-3-031-63498-7_6)** | 2024-10-18 |
-| **13** | **[Towards Formal Verification of Federated Learning Orchestration Protocols on Satellites](http://dx.doi.org/10.1109/TELFOR63250.2024.10819039)** | 2024-10-17 |
-| **14** | **[Revealed Invariant Preference](http://arxiv.org/abs/2408.04573v1)** | 2024-08-08 |
-| **15** | **[Artifical intelligence and inherent mathematical difficulty](http://arxiv.org/abs/2408.03345v1)** | 2024-08-01 |
-| **16** | **[Towards Automated Functional Equation Proving: A Benchmark Dataset and A Domain-Specific In-Context Agent](http://arxiv.org/abs/2407.14521v1)** | 2024-07-05 |
-| **17** | **[miniCodeProps: a Minimal Benchmark for Proving Code Properties](http://arxiv.org/abs/2406.11915v2)** | 2024-06-16 |
-| **18** | **[Learn from Failure: Fine-Tuning LLMs with Trial-and-Error Data for Intuitionistic Propositional Logic Proving](http://arxiv.org/abs/2404.07382v3)** | 2024-04-10 |
+| **1** | **[Scalable and Explainable Verification of Image-based Neural Network Controllers for Autonomous Vehicles](http://arxiv.org/abs/2501.14009v1)** | 2025-01-23 |
+| **2** | **[Temporal Logic Guided Safe Navigation for Autonomous Vehicles](http://arxiv.org/abs/2501.13817v1)** | 2025-01-23 |
+| **3** | **[Fixed Point Certificates for Reachability and Expected Rewards in MDPs](http://arxiv.org/abs/2501.11467v1)** | 2025-01-20 |
+| **4** | **[Quantifying the Importance of Data Alignment in Downstream Model Performance](http://arxiv.org/abs/2501.08496v2)** | 2025-01-14 |
+| **5** | **[HUNYUANPROVER: A Scalable Data Synthesis Framework and Guided Tree Search for Automated Theorem Proving](http://arxiv.org/abs/2412.20735v2)** | 2024-12-30 |
+| **6** | **[Rango: Adaptive Retrieval-Augmented Proving for Automated Software Verification](http://arxiv.org/abs/2412.14063v2)** | 2024-12-18 |
+| **7** | **[WithdrarXiv: A Large-Scale Dataset for Retraction Study](http://arxiv.org/abs/2412.03775v1)** | 2024-12-04 |
+| **8** | **[Extracting Linear Relations from Gröbner Bases for Formal Verification of And-Inverter Graphs](http://arxiv.org/abs/2411.16348v2)** | 2024-11-25 |
+| **9** | **[Learning Rules Explaining Interactive Theorem Proving Tactic Prediction](http://arxiv.org/abs/2411.01188v1)** | 2024-11-02 |
+| **10** | **[InternLM2.5-StepProver: Advancing Automated Theorem Proving via Expert Iteration on Large-Scale LEAN Problems](http://arxiv.org/abs/2410.15700v1)** | 2024-10-21 |
+| **11** | **[Tableaux for Automated Reasoning in Dependently-Typed Higher-Order Logic (Extended Version)](http://dx.doi.org/10.1007/978-3-031-63498-7_6)** | 2024-10-18 |
+| **12** | **[Towards Formal Verification of Federated Learning Orchestration Protocols on Satellites](http://dx.doi.org/10.1109/TELFOR63250.2024.10819039)** | 2024-10-17 |
+| **13** | **[Revealed Invariant Preference](http://arxiv.org/abs/2408.04573v1)** | 2024-08-08 |
+| **14** | **[Artifical intelligence and inherent mathematical difficulty](http://arxiv.org/abs/2408.03345v1)** | 2024-08-01 |
+| **15** | **[Towards Automated Functional Equation Proving: A Benchmark Dataset and A Domain-Specific In-Context Agent](http://arxiv.org/abs/2407.14521v1)** | 2024-07-05 |
+| **16** | **[miniCodeProps: a Minimal Benchmark for Proving Code Properties](http://arxiv.org/abs/2406.11915v2)** | 2024-06-16 |
+| **17** | **[Learn from Failure: Fine-Tuning LLMs with Trial-and-Error Data for Intuitionistic Propositional Logic Proving](http://arxiv.org/abs/2404.07382v3)** | 2024-04-10 |
+| **18** | **[NLP Verification: Towards a General Methodology for Certifying Robustness](http://arxiv.org/abs/2403.10144v3)** | 2024-03-15 |
 | **19** | **[BAIT: Benchmarking (Embedding) Architectures for Interactive Theorem-Proving](http://arxiv.org/abs/2403.03401v1)** | 2024-03-06 |
 | **20** | **[Trocq: Proof Transfer for Free, With or Without Univalence](http://arxiv.org/abs/2310.14022v2)** | 2023-10-21 |
 | **21** | **[Lyra: Orchestrating Dual Correction in Automated Theorem Proving](http://arxiv.org/abs/2309.15806v4)** | 2023-09-27 |
