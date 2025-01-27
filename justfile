@@ -18,6 +18,7 @@ run bin_path:
 # 设置默认参数值
 keywords := "
              efficient RL,video super resolution,
+             partial observable markov decision process/pomdp,sparse reward reinforcement learning,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
              combinatorial game theory/xiangqi/chinese chess,
              code llm,

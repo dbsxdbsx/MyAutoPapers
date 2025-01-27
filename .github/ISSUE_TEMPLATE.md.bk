@@ -1,0 +1,51 @@
+---
+title: 最新论文 - 2025年01月27日
+labels: documentation
+---
+## 最后更新：2025-01-27 09:15
+**本次更新执行命令**
+```
+target\debug\my_auto_papers.exe --keywords=
+real-time strategy game ai,
+ partial observable markov decision process/pomdp,sparse reward reinforcement learning
+              --exclude-keywords=multi-agent --per-keyword-max-result=50
+```
+
+**参数详解**
+- 关键词：`real-time strategy game ai`, `partial observable markov decision process/pomdp`, `sparse reward reinforcement learning`
+- 排除关键词：`multi-agent`
+- 每关键词最大结果：`50`
+- 目标领域：`cs`, `stat`
+- 每关键词重试次数：`3`
+
+
+## 论文汇总（19篇）
+
+**更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyDailyPaper)。**
+
+
+### 2. partial observable markov decision process/pomdp
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Online Hybrid-Belief POMDP with Coupled Semantic-Geometric Models and Semantic Safety Awareness](http://arxiv.org/abs/2501.11202v1)** | 2025-01-20 |
+| **2** | **[Microservice Deployment in Space Computing Power Networks via Robust Reinforcement Learning](http://arxiv.org/abs/2501.06244v1)** | 2025-01-08 |
+| **3** | **[A New Interpretation of the Certainty-Equivalence Approach for PAC Reinforcement Learning with a Generative Model](http://arxiv.org/abs/2501.02652v1)** | 2025-01-05 |
+| **4** | **[Partially Observed Optimal Stochastic Control: Regularity, Optimality, Approximations, and Learning](http://arxiv.org/abs/2412.06735v2)** | 2024-12-09 |
+| **5** | **[Hierarchical Object-Oriented POMDP Planning for Object Rearrangement](http://arxiv.org/abs/2412.01348v2)** | 2024-12-02 |
+| **6** | **[Near Optimal Approximations and Finite Memory Policies for POMPDs with Continuous Spaces](http://arxiv.org/abs/2410.02895v2)** | 2024-10-03 |
+| **7** | **[Reward Machines for Deep RL in Noisy and Uncertain Environments](http://arxiv.org/abs/2406.00120v4)** | 2024-05-31 |
+| **8** | **[AutoMix: Automatically Mixing Language Models](http://arxiv.org/abs/2310.12963v5)** | 2023-10-19 |
+| **9** | **[Experimental Study on The Effect of Multi-step Deep Reinforcement Learning in POMDPs](http://arxiv.org/abs/2209.04999v2)** | 2022-09-12 |
+### 3. sparse reward reinforcement learning
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Dense Dynamics-Aware Reward Synthesis: Integrating Prior Experience with Demonstrations](http://arxiv.org/abs/2412.01114v1)** | 2024-12-02 |
+| **2** | **[Subwords as Skills: Tokenization for Sparse-Reward Reinforcement Learning](http://arxiv.org/abs/2309.04459v2)** | 2023-09-08 |
+| **3** | **[Language Reward Modulation for Pretraining Reinforcement Learning](http://arxiv.org/abs/2308.12270v1)** | 2023-08-23 |
+| **4** | **[Exploiting Transformer in Sparse Reward Reinforcement Learning for Interpretable Temporal Logic Motion Planning](http://dx.doi.org/10.1109/LRA.2023.3290511)** | 2022-09-27 |
+| **5** | **[A Cooperation Graph Approach for Multiagent Sparse Reward Reinforcement Learning](http://arxiv.org/abs/2208.03002v1)** | 2022-08-05 |
+| **6** | **[Abstract Demonstrations and Adaptive Exploration for Efficient and Stable Multi-step Sparse Reward Reinforcement Learning](http://dx.doi.org/10.1109/ICAC55051.2022.9911100)** | 2022-07-19 |
+| **7** | **[Potential-based Reward Shaping in Sokoban](http://arxiv.org/abs/2109.05022v1)** | 2021-09-10 |
+| **8** | **[Touch-based Curiosity for Sparse-Reward Tasks](http://arxiv.org/abs/2104.00442v2)** | 2021-04-01 |
+| **9** | **[Ask Your Humans: Using Human Instructions to Improve Generalization in Reinforcement Learning](http://arxiv.org/abs/2011.00517v3)** | 2020-11-01 |
+| **10** | **[Long-Term Visitation Value for Deep Exploration in Sparse Reward Reinforcement Learning](http://dx.doi.org/10.3390/a15030081)** | 2020-01-01 |
