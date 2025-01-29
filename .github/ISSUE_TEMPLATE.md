@@ -2,11 +2,13 @@
 title: 最新论文 - 2025年01月29日
 labels: documentation
 ---
-## 最后更新：2025-01-29 00:06
+## 最后更新：2025-01-29 08:47
 **本次更新执行命令**
 ```
 D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
-             efficient RL,video super resolution,
+             efficient RL,
+             casual RL/casual reinforcement learning,
+             video super resolution,
              partial observable markov decision process/pomdp,sparse reward reinforcement learning,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
              combinatorial game theory/xiangqi/chinese chess,
@@ -20,7 +22,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ```
 
 **参数详解**
-- 关键词：`efficient RL`, `video super resolution`, `partial observable markov decision process/pomdp`, `sparse reward reinforcement learning`, `2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning`, `combinatorial game theory/xiangqi/chinese chess`, `code llm`, `speech recognition`, `zero shot tracking/few shot tracking/pose tracking/pose estimation`, `text to 3d/image to 3d/text to texture`, `casual inference`, `automated theorem proving/interactive theorem proving/formal verification`
+- 关键词：`efficient RL`, `casual RL/casual reinforcement learning`, `video super resolution`, `partial observable markov decision process/pomdp`, `sparse reward reinforcement learning`, `2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning`, `combinatorial game theory/xiangqi/chinese chess`, `code llm`, `speech recognition`, `zero shot tracking/few shot tracking/pose tracking/pose estimation`, `text to 3d/image to 3d/text to texture`, `casual inference`, `automated theorem proving/interactive theorem proving/formal verification`
 - 排除关键词：`multi-agent`
 - 每关键词最大结果：`50`
 - 目标领域：`cs`, `stat`
@@ -45,7 +47,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **8** | **[Brain-Like Replay Naturally Emerges in Reinforcement Learning Agents](http://arxiv.org/abs/2402.01467v2)** | 2024-02-02 |
 | **9** | **[RL$^3$: Boosting Meta Reinforcement Learning via RL inside RL$^2$](http://arxiv.org/abs/2306.15909v5)** | 2023-06-28 |
 | **10** | **[Model-Based Reinforcement Learning with Multinomial Logistic Function Approximation](http://arxiv.org/abs/2212.13540v2)** | 2022-12-27 |
-### 2. video super resolution
+### 3. video super resolution
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[BF-STVSR: B-Splines and Fourier-Best Friends for High Fidelity Spatial-Temporal Video Super-Resolution](http://arxiv.org/abs/2501.11043v1)** | 2025-01-19 |
@@ -58,7 +60,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **8** | **[360-Degree Video Super Resolution and Quality Enhancement Challenge: Methods and Results](http://arxiv.org/abs/2411.06738v1)** | 2024-11-11 |
 | **9** | **[SeeClear: Semantic Distillation Enhances Pixel Condensation for Video Super-Resolution](http://arxiv.org/abs/2410.05799v4)** | 2024-10-08 |
 | **10** | **[Enhancing Space-time Video Super-resolution via Spatial-temporal Feature Interaction](http://arxiv.org/abs/2207.08960v4)** | 2022-07-18 |
-### 3. partial observable markov decision process/pomdp
+### 4. partial observable markov decision process/pomdp
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Online Hybrid-Belief POMDP with Coupled Semantic-Geometric Models and Semantic Safety Awareness](http://arxiv.org/abs/2501.11202v1)** | 2025-01-20 |
@@ -70,7 +72,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **7** | **[Reward Machines for Deep RL in Noisy and Uncertain Environments](http://arxiv.org/abs/2406.00120v4)** | 2024-05-31 |
 | **8** | **[AutoMix: Automatically Mixing Language Models](http://arxiv.org/abs/2310.12963v5)** | 2023-10-19 |
 | **9** | **[Experimental Study on The Effect of Multi-step Deep Reinforcement Learning in POMDPs](http://arxiv.org/abs/2209.04999v2)** | 2022-09-12 |
-### 4. sparse reward reinforcement learning
+### 5. sparse reward reinforcement learning
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Dense Dynamics-Aware Reward Synthesis: Integrating Prior Experience with Demonstrations](http://arxiv.org/abs/2412.01114v1)** | 2024-12-02 |
@@ -83,7 +85,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **8** | **[Touch-based Curiosity for Sparse-Reward Tasks](http://arxiv.org/abs/2104.00442v2)** | 2021-04-01 |
 | **9** | **[Ask Your Humans: Using Human Instructions to Improve Generalization in Reinforcement Learning](http://arxiv.org/abs/2011.00517v3)** | 2020-11-01 |
 | **10** | **[Long-Term Visitation Value for Deep Exploration in Sparse Reward Reinforcement Learning](http://dx.doi.org/10.3390/a15030081)** | 2020-01-01 |
-### 5. 2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning
+### 6. 2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[RL-LLM-DT: An Automatic Decision Tree Generation Method Based on RL Evaluation and LLM Enhancement](http://arxiv.org/abs/2412.11417v2)** | 2024-12-16 |
@@ -101,7 +103,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **13** | **[Introduction to Behavior Algorithms for Fighting Games](http://dx.doi.org/10.1109/CHILECON47746.2019.8988008)** | 2020-07-06 |
 | **14** | **[Enhanced Rolling Horizon Evolution Algorithm with Opponent Model Learning: Results for the Fighting Game AI Competition](http://arxiv.org/abs/2003.13949v1)** | 2020-03-31 |
 | **15** | **[Deep Reinforcement Learning for Playing 2.5D Fighting Games](http://arxiv.org/abs/1805.02070v1)** | 2018-05-05 |
-### 6. combinatorial game theory/xiangqi/chinese chess
+### 7. combinatorial game theory/xiangqi/chinese chess
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Temperatures of Robin Hood](http://arxiv.org/abs/2501.07239v1)** | 2025-01-13 |
@@ -124,7 +126,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **18** | **[A Note on Hardness Frameworks and Computational Complexity of Xiangqi and Janggi](http://arxiv.org/abs/1904.00200v1)** | 2019-03-30 |
 | **19** | **[Comparison Training for Computer Chinese Chess](http://arxiv.org/abs/1801.07411v1)** | 2018-01-23 |
 | **20** | **[Space-state complexity of Korean chess and Chinese chess](http://arxiv.org/abs/1507.06401v1)** | 2015-07-23 |
-### 7. code llm
+### 8. code llm
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Test Wars: A Comparative Study of SBST, Symbolic Execution, and LLM-Based Approaches to Unit Test Generation](http://arxiv.org/abs/2501.10200v1)** | 2025-01-17 |
@@ -137,7 +139,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **8** | **[mHumanEval -- A Multilingual Benchmark to Evaluate Large Language Models for Code Generation](http://arxiv.org/abs/2410.15037v2)** | 2024-10-19 |
 | **9** | **[TPIA: Towards Target-specific Prompt Injection Attack against Code-oriented Large Language Models](http://arxiv.org/abs/2407.09164v4)** | 2024-07-12 |
 | **10** | **[DIRAS: Efficient LLM Annotation of Document Relevance in Retrieval Augmented Generation](http://arxiv.org/abs/2406.14162v4)** | 2024-06-20 |
-### 8. speech recognition
+### 9. speech recognition
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Optimized Self-supervised Training with BEST-RQ for Speech Recognition](http://arxiv.org/abs/2501.16131v1)** | 2025-01-27 |
@@ -150,7 +152,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **8** | **[LoCoML: A Framework for Real-World ML Inference Pipelines](http://arxiv.org/abs/2501.14165v1)** | 2025-01-24 |
 | **9** | **[Predicting Compact Phrasal Rewrites with Large Language Models for ASR Post Editing](http://arxiv.org/abs/2501.13831v1)** | 2025-01-23 |
 | **10** | **[Recording for Eyes, Not Echoing to Ears: Contextualized Spoken-to-Written Conversion of ASR Transcripts](http://arxiv.org/abs/2408.09688v4)** | 2024-08-19 |
-### 9. zero shot tracking/few shot tracking/pose tracking/pose estimation
+### 10. zero shot tracking/few shot tracking/pose tracking/pose estimation
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Toward Efficient Generalization in 3D Human Pose Estimation via a Canonical Domain Approach](http://arxiv.org/abs/2501.16146v1)** | 2025-01-27 |
@@ -179,7 +181,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **24** | **[Unifying Tracking and Image-Video Object Detection](http://arxiv.org/abs/2211.11077v2)** | 2022-11-20 |
 | **25** | **[Exploring the Effectiveness of Self-supervised Learning and Classifier Chains in Emotion Recognition of Nonverbal Vocalizations](http://arxiv.org/abs/2206.10695v1)** | 2022-06-21 |
 | **26** | **[The Multi-speaker Multi-style Voice Cloning Challenge 2021](http://arxiv.org/abs/2104.01818v1)** | 2021-04-05 |
-### 10. text to 3d/image to 3d/text to texture
+### 11. text to 3d/image to 3d/text to texture
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Make-A-Character 2: Animatable 3D Character Generation From a Single Image](http://arxiv.org/abs/2501.07870v2)** | 2025-01-14 |
@@ -209,7 +211,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **25** | **[FlashTex: Fast Relightable Mesh Texturing with LightControlNet](http://arxiv.org/abs/2402.13251v3)** | 2024-02-20 |
 | **26** | **[Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering](http://arxiv.org/abs/2312.11360v2)** | 2023-12-18 |
 | **27** | **[From 2D Images to 3D Model:Weakly Supervised Multi-View Face Reconstruction with Deep Fusion](http://arxiv.org/abs/2204.03842v5)** | 2022-04-08 |
-### 11. casual inference
+### 12. casual inference
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Representation learning with CGAN for casual inference](http://dx.doi.org/10.54254/2755-2721/6/20230436)** | 2024-07-03 |
@@ -222,7 +224,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **8** | **[Domain-Class Correlation Decomposition for Generalizable Person Re-Identification](http://arxiv.org/abs/2106.15206v1)** | 2021-06-29 |
 | **9** | **[EIC (Expert Information Criterion) not AIC: the cautious biologist's guide to model selection](http://arxiv.org/abs/2010.07506v1)** | 2020-10-15 |
 | **10** | **[Adjusting for Confounders with Text: Challenges and an Empirical Evaluation Framework for Causal Inference](http://arxiv.org/abs/2009.09961v4)** | 2020-09-21 |
-### 12. automated theorem proving/interactive theorem proving/formal verification
+### 13. automated theorem proving/interactive theorem proving/formal verification
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[What is Formal Verification without Specifications? A Survey on mining LTL Specifications](http://arxiv.org/abs/2501.16274v1)** | 2025-01-27 |
