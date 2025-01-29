@@ -225,7 +225,7 @@ async fn main() -> Result<()> {
         }
 
         if i < keywords_len - 1 {
-            let time_to_sleep = 2;
+            let time_to_sleep = 1;
             println!(
                 "等待 {time_to_sleep} 秒以避免 API 限制...\n----------------------------------"
             );

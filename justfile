@@ -18,18 +18,18 @@ run bin_path:
 # 设置默认参数值
 keywords := "
              efficient RL,
-             casual RL/casual reinforcement learning,
-             video super resolution,
              partial observable markov decision process/pomdp,sparse reward reinforcement learning,
+             casual RL/counterfactual RL/casual reinforcement learning,
+             causal inference/causal discovery/counterfactual reasoning,
+             video super resolution,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
              combinatorial game theory/xiangqi/chinese chess,
              code llm,
              speech recognition,
              zero shot tracking/few shot tracking/pose tracking/pose estimation,
              text to 3d/image to 3d/text to texture,
-             casual inference,
              automated theorem proving/interactive theorem proving/formal verification
              "
-exclude := "multi-agent"
-per_keyword := "50"
+exclude := "multi-agent,multiagent"
+per_keyword := "15"
 target_fields := "cs,stat"
