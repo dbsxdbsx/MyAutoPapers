@@ -2,7 +2,7 @@ name: 更新每日论文workFlow
 
 on:
   schedule:
-    - cron: '0 16 * * *'  # UTC 16:00 (+8即为北京时间 00:00)
+    - cron: '0 16 * * 0'  # 每周日 UTC 16:00 (+8即为北京时间 00:00)
   workflow_dispatch:    # 允许手动触发
   push:                # 在推送时触发
     branches:

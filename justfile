@@ -31,5 +31,5 @@ keywords := "
              automated theorem proving/interactive theorem proving/formal verification
              "
 exclude := "multi-agent,multiagent"
-per_keyword := "15"
+per_keyword := "8"
 target_fields := "cs,stat"
