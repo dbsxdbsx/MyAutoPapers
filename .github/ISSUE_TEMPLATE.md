@@ -1,15 +1,11 @@
 ---
-title: 最新论文 - 2025年01月27日
+title: 最新论文 - 2025年01月29日
 labels: documentation
 ---
-<<<<<<< HEAD
-## 最后更新：2025-01-27 09:16
-=======
-## 最后更新：2025-01-27 00:05
->>>>>>> 38f20309dcf68c683ada4c9e68b8843a07fe6f30
+## 最后更新：2025-01-29 00:06
 **本次更新执行命令**
 ```
-target\debug\my_auto_papers.exe --keywords=
+D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
              efficient RL,video super resolution,
              partial observable markov decision process/pomdp,sparse reward reinforcement learning,
              2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
@@ -31,7 +27,7 @@ target\debug\my_auto_papers.exe --keywords=
 - 每关键词重试次数：`3`
 
 
-## 论文汇总（0篇）
+## 论文汇总（187篇）
 
 **更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyDailyPaper)。**
 
@@ -40,7 +36,7 @@ target\debug\my_auto_papers.exe --keywords=
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
 | **1** | **[Adaptive Data Exploitation in Deep Reinforcement Learning](http://arxiv.org/abs/2501.12620v1)** | 2025-01-22 |
-| **2** | **[SLIM: Sim-to-Real Legged Instructive Manipulation via Long-Horizon Visuomotor Learning](http://arxiv.org/abs/2501.09905v2)** | 2025-01-17 |
+| **2** | **[SLIM: Sim-to-Real Legged Instructive Manipulation via Long-Horizon Visuomotor Learning](http://arxiv.org/abs/2501.09905v3)** | 2025-01-17 |
 | **3** | **[Overcoming the Curse of Dimensionality in Reinforcement Learning Through Approximate Factorization](http://arxiv.org/abs/2411.07591v1)** | 2024-11-12 |
 | **4** | **[Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](http://arxiv.org/abs/2410.21845v2)** | 2024-10-29 |
 | **5** | **[On-Robot Reinforcement Learning with Goal-Contrastive Rewards](http://arxiv.org/abs/2410.19989v1)** | 2024-10-25 |
@@ -105,3 +101,157 @@ target\debug\my_auto_papers.exe --keywords=
 | **13** | **[Introduction to Behavior Algorithms for Fighting Games](http://dx.doi.org/10.1109/CHILECON47746.2019.8988008)** | 2020-07-06 |
 | **14** | **[Enhanced Rolling Horizon Evolution Algorithm with Opponent Model Learning: Results for the Fighting Game AI Competition](http://arxiv.org/abs/2003.13949v1)** | 2020-03-31 |
 | **15** | **[Deep Reinforcement Learning for Playing 2.5D Fighting Games](http://arxiv.org/abs/1805.02070v1)** | 2018-05-05 |
+### 6. combinatorial game theory/xiangqi/chinese chess
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Temperatures of Robin Hood](http://arxiv.org/abs/2501.07239v1)** | 2025-01-13 |
+| **2** | **[On Conway's Numbers and Games, the Von Neumann Universe, and Pure Set Theory](http://arxiv.org/abs/2501.04412v1)** | 2025-01-08 |
+| **3** | **[Complete Implementation of WXF Chinese Chess Rules](http://arxiv.org/abs/2412.17334v1)** | 2024-12-23 |
+| **4** | **[Maker-Breaker on Galton-Watson trees](http://arxiv.org/abs/2412.08334v2)** | 2024-12-11 |
+| **5** | **[Relationship between misère NIM and two-player GOISHI HIROI](http://arxiv.org/abs/2412.03996v1)** | 2024-12-05 |
+| **6** | **[The Game Value of Sequential Compounds of Integers and Stars](http://arxiv.org/abs/2411.08611v1)** | 2024-11-13 |
+| **7** | **[A New 0(klog n) Algorithm for Josephus Problem](http://arxiv.org/abs/2411.16696v1)** | 2024-11-10 |
+| **8** | **[Mastering Chinese Chess AI (Xiangqi) Without Search](http://arxiv.org/abs/2410.04865v1)** | 2024-10-07 |
+| **9** | **[An Efficient Multi-Robot Arm Coordination Strategy for Pick-and-Place Tasks using Reinforcement Learning](http://arxiv.org/abs/2409.13511v1)** | 2024-09-20 |
+| **10** | **[XQSV: A Structurally Variable Network to Imitate Human Play in Xiangqi](http://arxiv.org/abs/2407.04678v1)** | 2024-07-05 |
+| **11** | **[Degrees are Useless in SNORT When Measuring Temperature](http://arxiv.org/abs/2406.02107v1)** | 2024-06-04 |
+| **12** | **[A Tractability Gap Beyond Nim-Sums: It's Hard to Tell Whether a Bunch of Superstars Are Losers](http://arxiv.org/abs/2403.04955v1)** | 2024-03-07 |
+| **13** | **[Shogi and Frieze group](http://arxiv.org/abs/2401.08591v2)** | 2023-11-15 |
+| **14** | **[JiangJun: Mastering Xiangqi by Tackling Non-Transitivity in Two-Player Zero-Sum Games](http://arxiv.org/abs/2308.04719v1)** | 2023-08-09 |
+| **15** | **[Niel's Chess -- Rules for Xiangqi](http://arxiv.org/abs/2311.12181v2)** | 2023-06-27 |
+| **16** | **[Improving upper and lower bounds of the number of games born by day 4](http://arxiv.org/abs/2208.13403v2)** | 2022-08-29 |
+| **17** | **[On the complexity of Dark Chinese Chess](http://arxiv.org/abs/2112.02989v1)** | 2021-12-06 |
+| **18** | **[A Note on Hardness Frameworks and Computational Complexity of Xiangqi and Janggi](http://arxiv.org/abs/1904.00200v1)** | 2019-03-30 |
+| **19** | **[Comparison Training for Computer Chinese Chess](http://arxiv.org/abs/1801.07411v1)** | 2018-01-23 |
+| **20** | **[Space-state complexity of Korean chess and Chinese chess](http://arxiv.org/abs/1507.06401v1)** | 2015-07-23 |
+### 7. code llm
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Test Wars: A Comparative Study of SBST, Symbolic Execution, and LLM-Based Approaches to Unit Test Generation](http://arxiv.org/abs/2501.10200v1)** | 2025-01-17 |
+| **2** | **[ChartCoder: Advancing Multimodal Large Language Model for Chart-to-Code Generation](http://arxiv.org/abs/2501.06598v1)** | 2025-01-11 |
+| **3** | **[Do Code LLMs Understand Design Patterns?](http://arxiv.org/abs/2501.04835v1)** | 2025-01-08 |
+| **4** | **[EpiCoder: Encompassing Diversity and Complexity in Code Generation](http://arxiv.org/abs/2501.04694v1)** | 2025-01-08 |
+| **5** | **[CGP-Tuning: Structure-Aware Soft Prompt Tuning for Code Vulnerability Detection](http://arxiv.org/abs/2501.04510v1)** | 2025-01-08 |
+| **6** | **[Enhancing Code LLMs with Reinforcement Learning in Code Generation: A Survey](http://arxiv.org/abs/2412.20367v2)** | 2024-12-29 |
+| **7** | **[How Well Do LLMs Generate Code for Different Application Domains? Benchmark and Evaluation](http://arxiv.org/abs/2412.18573v1)** | 2024-12-24 |
+| **8** | **[mHumanEval -- A Multilingual Benchmark to Evaluate Large Language Models for Code Generation](http://arxiv.org/abs/2410.15037v2)** | 2024-10-19 |
+| **9** | **[TPIA: Towards Target-specific Prompt Injection Attack against Code-oriented Large Language Models](http://arxiv.org/abs/2407.09164v4)** | 2024-07-12 |
+| **10** | **[DIRAS: Efficient LLM Annotation of Document Relevance in Retrieval Augmented Generation](http://arxiv.org/abs/2406.14162v4)** | 2024-06-20 |
+### 8. speech recognition
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Optimized Self-supervised Training with BEST-RQ for Speech Recognition](http://arxiv.org/abs/2501.16131v1)** | 2025-01-27 |
+| **2** | **[Classification Error Bound for Low Bayes Error Conditions in Machine Learning](http://arxiv.org/abs/2501.15977v1)** | 2025-01-27 |
+| **3** | **[End-to-End Target Speaker Speech Recognition Using Context-Aware Attention Mechanisms for Challenging Enrollment Scenario](http://arxiv.org/abs/2501.15466v1)** | 2025-01-26 |
+| **4** | **[The Multicultural Medical Assistant: Can LLMs Improve Medical ASR Errors Across Borders?](http://arxiv.org/abs/2501.15310v1)** | 2025-01-25 |
+| **5** | **[Speech Translation Refinement using Large Language Models](http://arxiv.org/abs/2501.15090v1)** | 2025-01-25 |
+| **6** | **[Robust Cross-Etiology and Speaker-Independent Dysarthric Speech Recognition](http://arxiv.org/abs/2501.14994v1)** | 2025-01-25 |
+| **7** | **[FireRedASR: Open-Source Industrial-Grade Mandarin Speech Recognition Models from Encoder-Decoder to LLM Integration](http://arxiv.org/abs/2501.14350v1)** | 2025-01-24 |
+| **8** | **[LoCoML: A Framework for Real-World ML Inference Pipelines](http://arxiv.org/abs/2501.14165v1)** | 2025-01-24 |
+| **9** | **[Predicting Compact Phrasal Rewrites with Large Language Models for ASR Post Editing](http://arxiv.org/abs/2501.13831v1)** | 2025-01-23 |
+| **10** | **[Recording for Eyes, Not Echoing to Ears: Contextualized Spoken-to-Written Conversion of ASR Transcripts](http://arxiv.org/abs/2408.09688v4)** | 2024-08-19 |
+### 9. zero shot tracking/few shot tracking/pose tracking/pose estimation
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Toward Efficient Generalization in 3D Human Pose Estimation via a Canonical Domain Approach](http://arxiv.org/abs/2501.16146v1)** | 2025-01-27 |
+| **2** | **[NanoHTNet: Nano Human Topology Network for Efficient 3D Human Pose Estimation](http://arxiv.org/abs/2501.15763v1)** | 2025-01-27 |
+| **3** | **[Towards Better Robustness: Progressively Joint Pose-3DGS Learning for Arbitrarily Long Videos](http://arxiv.org/abs/2501.15096v1)** | 2025-01-25 |
+| **4** | **[SpatioTemporal Learning for Human Pose Estimation in Sparsely-Labeled Videos](http://arxiv.org/abs/2501.15073v1)** | 2025-01-25 |
+| **5** | **[3D/2D Registration of Angiograms using Silhouette-based Differentiable Rendering](http://arxiv.org/abs/2501.14918v1)** | 2025-01-24 |
+| **6** | **[Light3R-SfM: Towards Feed-forward Structure-from-Motion](http://arxiv.org/abs/2501.14914v1)** | 2025-01-24 |
+| **7** | **[Glissando-Net: Deep sinGLe vIew category level poSe eStimation ANd 3D recOnstruction](http://dx.doi.org/10.1109/TPAMI.2024.3519674)** | 2025-01-24 |
+| **8** | **[Optimizing Grasping Precision for Industrial Pick-and-Place Tasks Through a Novel Visual Servoing Approach](http://arxiv.org/abs/2501.14557v1)** | 2025-01-24 |
+| **9** | **[LiDAR-Based Vehicle Detection and Tracking for Autonomous Racing](http://arxiv.org/abs/2501.14502v1)** | 2025-01-24 |
+| **10** | **[Optimizing Human Pose Estimation Through Focused Human and Joint Regions](http://arxiv.org/abs/2501.14439v1)** | 2025-01-24 |
+| **11** | **[OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints](http://arxiv.org/abs/2501.03841v1)** | 2025-01-07 |
+| **12** | **[NormalFlow: Fast, Robust, and Accurate Contact-based Object 6DoF Pose Tracking with Vision-based Tactile Sensors](http://dx.doi.org/10.1109/LRA.2024.3505815)** | 2024-12-12 |
+| **13** | **[Learning Whole-Body Loco-Manipulation for Omni-Directional Task Space Pose Tracking with a Wheeled-Quadrupedal-Manipulator](http://arxiv.org/abs/2412.03012v1)** | 2024-12-04 |
+| **14** | **[GSGTrack: Gaussian Splatting-Guided Object Pose Tracking from RGB Videos](http://arxiv.org/abs/2412.02267v1)** | 2024-12-03 |
+| **15** | **[6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting](http://arxiv.org/abs/2412.01543v1)** | 2024-12-02 |
+| **16** | **[ESVO2: Direct Visual-Inertial Odometry with Stereo Event Cameras](http://arxiv.org/abs/2410.09374v2)** | 2024-10-12 |
+| **17** | **[A Certifiable Algorithm for Simultaneous Shape Estimation and Object Tracking](http://dx.doi.org/10.1109/LRA.2024.3501684)** | 2024-06-24 |
+| **18** | **[HO-Cap: A Capture System and Dataset for 3D Reconstruction and Pose Tracking of Hand-Object Interaction](http://arxiv.org/abs/2406.06843v3)** | 2024-06-10 |
+| **19** | **[Matching Anything by Segmenting Anything](http://arxiv.org/abs/2406.04221v1)** | 2024-06-06 |
+| **20** | **[Robust Lifelong Indoor LiDAR Localization using the Area Graph](http://dx.doi.org/10.1109/LRA.2023.3334158)** | 2023-08-10 |
+| **21** | **[Multi-Scale Memory Comparison for Zero-/Few-Shot Anomaly Detection](http://arxiv.org/abs/2308.04789v2)** | 2023-08-09 |
+| **22** | **[Zero-Shot Anomaly Detection with Pre-trained Segmentation Models](http://arxiv.org/abs/2306.09269v1)** | 2023-06-15 |
+| **23** | **[APRIL-GAN: A Zero-/Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challenge Tracks 1&2: 1st Place on Zero-shot AD and 4th Place on Few-shot AD](http://arxiv.org/abs/2305.17382v3)** | 2023-05-27 |
+| **24** | **[Unifying Tracking and Image-Video Object Detection](http://arxiv.org/abs/2211.11077v2)** | 2022-11-20 |
+| **25** | **[Exploring the Effectiveness of Self-supervised Learning and Classifier Chains in Emotion Recognition of Nonverbal Vocalizations](http://arxiv.org/abs/2206.10695v1)** | 2022-06-21 |
+| **26** | **[The Multi-speaker Multi-style Voice Cloning Challenge 2021](http://arxiv.org/abs/2104.01818v1)** | 2021-04-05 |
+### 10. text to 3d/image to 3d/text to texture
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Make-A-Character 2: Animatable 3D Character Generation From a Single Image](http://arxiv.org/abs/2501.07870v2)** | 2025-01-14 |
+| **2** | **[Consistent Flow Distillation for Text-to-3D Generation](http://arxiv.org/abs/2501.05445v1)** | 2025-01-09 |
+| **3** | **[Zero-1-to-G: Taming Pretrained 2D Diffusion Model for Direct 3D Generation](http://arxiv.org/abs/2501.05427v1)** | 2025-01-09 |
+| **4** | **[Layout2Scene: 3D Semantic Layout Guided Scene Generation via Geometry and Appearance Diffusion Priors](http://arxiv.org/abs/2501.02519v1)** | 2025-01-05 |
+| **5** | **[Taming Feed-forward Reconstruction Models as Latent Encoders for 3D Generative Models](http://arxiv.org/abs/2501.00651v2)** | 2024-12-31 |
+| **6** | **[Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation](http://arxiv.org/abs/2412.21117v2)** | 2024-12-30 |
+| **7** | **[Toward Scene Graph and Layout Guided Complex 3D Scene Generation](http://arxiv.org/abs/2412.20473v1)** | 2024-12-29 |
+| **8** | **[PartGen: Part-level 3D Generation and Reconstruction with Multi-View Diffusion Models](http://arxiv.org/abs/2412.18608v2)** | 2024-12-24 |
+| **9** | **[FaceLift: Single Image to 3D Head with View Generation and GS-LRM](http://arxiv.org/abs/2412.17812v1)** | 2024-12-23 |
+| **10** | **[TAR3D: Creating High-Quality 3D Assets via Next-Part Prediction](http://arxiv.org/abs/2412.16919v1)** | 2024-12-22 |
+| **11** | **[3D Shape Tokenization](http://arxiv.org/abs/2412.15618v2)** | 2024-12-20 |
+| **12** | **[MVPaint: Synchronized Multi-View Diffusion for Painting Anything 3D](http://arxiv.org/abs/2411.02336v1)** | 2024-11-04 |
+| **13** | **[Hunyuan3D 1.0: A Unified Framework for Text-to-3D and Image-to-3D Generation](http://arxiv.org/abs/2411.02293v5)** | 2024-11-04 |
+| **14** | **[3D-Adapter: Geometry-Consistent Multi-View Diffusion for High-Quality 3D Generation](http://arxiv.org/abs/2410.18974v1)** | 2024-10-24 |
+| **15** | **[Jointly Generating Multi-view Consistent PBR Textures using Collaborative Control](http://arxiv.org/abs/2410.06985v1)** | 2024-10-09 |
+| **16** | **[RoCoTex: A Robust Method for Consistent Texture Synthesis with Diffusion Models](http://arxiv.org/abs/2409.19989v1)** | 2024-09-30 |
+| **17** | **[GenesisTex2: Stable, Consistent and High-Quality Text-to-Texture Generation](http://arxiv.org/abs/2409.18401v1)** | 2024-09-27 |
+| **18** | **[Deep Geometric Moments Promote Shape Consistency in Text-to-3D Generation](http://arxiv.org/abs/2408.05938v2)** | 2024-08-12 |
+| **19** | **[DreamLCM: Towards High-Quality Text-to-3D Generation via Latent Consistency Model](http://arxiv.org/abs/2408.02993v4)** | 2024-08-06 |
+| **20** | **[Meta 3D Gen](http://arxiv.org/abs/2407.02599v1)** | 2024-07-02 |
+| **21** | **[ReflectanceFusion: Diffusion-based text to SVBRDF Generation](http://arxiv.org/abs/2406.14565v1)** | 2024-04-25 |
+| **22** | **[MeshLRM: Large Reconstruction Model for High-Quality Meshes](http://arxiv.org/abs/2404.12385v2)** | 2024-04-18 |
+| **23** | **[InTeX: Interactive Text-to-texture Synthesis via Unified Depth-aware Inpainting](http://arxiv.org/abs/2403.11878v1)** | 2024-03-18 |
+| **24** | **[Hyper-3DG: Text-to-3D Gaussian Generation via Hypergraph](http://arxiv.org/abs/2403.09236v2)** | 2024-03-14 |
+| **25** | **[FlashTex: Fast Relightable Mesh Texturing with LightControlNet](http://arxiv.org/abs/2402.13251v3)** | 2024-02-20 |
+| **26** | **[Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering](http://arxiv.org/abs/2312.11360v2)** | 2023-12-18 |
+| **27** | **[From 2D Images to 3D Model:Weakly Supervised Multi-View Face Reconstruction with Deep Fusion](http://arxiv.org/abs/2204.03842v5)** | 2022-04-08 |
+### 11. casual inference
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[Representation learning with CGAN for casual inference](http://dx.doi.org/10.54254/2755-2721/6/20230436)** | 2024-07-03 |
+| **2** | **[SPA: Towards A Computational Friendly Cloud-Base and On-Devices Collaboration Seq2seq Personalized Generation with Casual Inference](http://arxiv.org/abs/2403.07088v6)** | 2024-03-11 |
+| **3** | **[Sensitivity Analysis of Inverse Probability Weighting Estimators of Causal Effects in Observational Studies with Multivalued Treatments](http://arxiv.org/abs/2308.15986v4)** | 2023-08-30 |
+| **4** | **[Quantile regression outcome-adaptive lasso: variable selection for causal quantile treatment effect estimation](http://arxiv.org/abs/2308.05517v2)** | 2023-08-10 |
+| **5** | **[Generative Causal Inference](http://arxiv.org/abs/2306.16096v2)** | 2023-06-28 |
+| **6** | **[Worst-risk minimization in generalized structural equation models](http://arxiv.org/abs/2306.03588v6)** | 2023-06-06 |
+| **7** | **[Multivariate Bayesian dynamic modeling for causal prediction](http://arxiv.org/abs/2302.03200v2)** | 2023-02-07 |
+| **8** | **[Domain-Class Correlation Decomposition for Generalizable Person Re-Identification](http://arxiv.org/abs/2106.15206v1)** | 2021-06-29 |
+| **9** | **[EIC (Expert Information Criterion) not AIC: the cautious biologist's guide to model selection](http://arxiv.org/abs/2010.07506v1)** | 2020-10-15 |
+| **10** | **[Adjusting for Confounders with Text: Challenges and an Empirical Evaluation Framework for Causal Inference](http://arxiv.org/abs/2009.09961v4)** | 2020-09-21 |
+### 12. automated theorem proving/interactive theorem proving/formal verification
+| **序号** | **标题** | **日期** |
+| --- | --- | --- |
+| **1** | **[What is Formal Verification without Specifications? A Survey on mining LTL Specifications](http://arxiv.org/abs/2501.16274v1)** | 2025-01-27 |
+| **2** | **[From Informal to Formal -- Incorporating and Evaluating LLMs on Natural Language Requirements to Verifiable Formal Proofs](http://arxiv.org/abs/2501.16207v1)** | 2025-01-27 |
+| **3** | **[LemmaHead: RAG Assisted Proof Generation Using Large Language Models](http://arxiv.org/abs/2501.15797v1)** | 2025-01-27 |
+| **4** | **[Formal Verification of Markov Processes with Learned Parameters](http://arxiv.org/abs/2501.15767v1)** | 2025-01-27 |
+| **5** | **[Skolemization In Intermediate Logics](http://arxiv.org/abs/2501.15507v1)** | 2025-01-26 |
+| **6** | **[Scalable and Explainable Verification of Image-based Neural Network Controllers for Autonomous Vehicles](http://arxiv.org/abs/2501.14009v1)** | 2025-01-23 |
+| **7** | **[Temporal Logic Guided Safe Navigation for Autonomous Vehicles](http://arxiv.org/abs/2501.13817v1)** | 2025-01-23 |
+| **8** | **[Quantifying the Importance of Data Alignment in Downstream Model Performance](http://arxiv.org/abs/2501.08496v2)** | 2025-01-14 |
+| **9** | **[HUNYUANPROVER: A Scalable Data Synthesis Framework and Guided Tree Search for Automated Theorem Proving](http://arxiv.org/abs/2412.20735v2)** | 2024-12-30 |
+| **10** | **[Rango: Adaptive Retrieval-Augmented Proving for Automated Software Verification](http://arxiv.org/abs/2412.14063v2)** | 2024-12-18 |
+| **11** | **[WithdrarXiv: A Large-Scale Dataset for Retraction Study](http://arxiv.org/abs/2412.03775v1)** | 2024-12-04 |
+| **12** | **[Learning Rules Explaining Interactive Theorem Proving Tactic Prediction](http://arxiv.org/abs/2411.01188v1)** | 2024-11-02 |
+| **13** | **[InternLM2.5-StepProver: Advancing Automated Theorem Proving via Expert Iteration on Large-Scale LEAN Problems](http://arxiv.org/abs/2410.15700v1)** | 2024-10-21 |
+| **14** | **[Tableaux for Automated Reasoning in Dependently-Typed Higher-Order Logic (Extended Version)](http://dx.doi.org/10.1007/978-3-031-63498-7_6)** | 2024-10-18 |
+| **15** | **[Towards Formal Verification of Federated Learning Orchestration Protocols on Satellites](http://dx.doi.org/10.1109/TELFOR63250.2024.10819039)** | 2024-10-17 |
+| **16** | **[Revealed Invariant Preference](http://arxiv.org/abs/2408.04573v1)** | 2024-08-08 |
+| **17** | **[Artifical intelligence and inherent mathematical difficulty](http://arxiv.org/abs/2408.03345v1)** | 2024-08-01 |
+| **18** | **[miniCodeProps: a Minimal Benchmark for Proving Code Properties](http://arxiv.org/abs/2406.11915v2)** | 2024-06-16 |
+| **19** | **[NLP Verification: Towards a General Methodology for Certifying Robustness](http://arxiv.org/abs/2403.10144v3)** | 2024-03-15 |
+| **20** | **[BAIT: Benchmarking (Embedding) Architectures for Interactive Theorem-Proving](http://arxiv.org/abs/2403.03401v1)** | 2024-03-06 |
+| **21** | **[Trocq: Proof Transfer for Free, With or Without Univalence](http://arxiv.org/abs/2310.14022v2)** | 2023-10-21 |
+| **22** | **[Lyra: Orchestrating Dual Correction in Automated Theorem Proving](http://arxiv.org/abs/2309.15806v4)** | 2023-09-27 |
+| **23** | **[Translating SUMO-K to Higher-Order Set Theory](http://arxiv.org/abs/2305.07903v1)** | 2023-05-13 |
+| **24** | **[Verifying Quantum Phase Estimation (QPE) using Prove-It](http://dx.doi.org/10.1103/PhysRevA.108.052609)** | 2023-04-05 |
+| **25** | **[Magnushammer: A Transformer-Based Approach to Premise Selection](http://arxiv.org/abs/2303.04488v3)** | 2023-03-08 |
+| **26** | **[Towards Mechanised Proofs in Double-Pushout Graph Transformation](http://dx.doi.org/10.4204/EPTCS.374.6)** | 2022-12-22 |
+| **27** | **[A Linter for Isabelle: Implementation and Evaluation](http://arxiv.org/abs/2207.10424v1)** | 2022-07-21 |
+| **28** | **[From Width-Based Model Checking to Width-Based Automated Theorem Proving](http://arxiv.org/abs/2205.10995v3)** | 2022-05-23 |
+| **29** | **[The Supervisionary proof-checking kernel (or: a work-in-progress towards proof generating code)](http://arxiv.org/abs/2205.03332v1)** | 2022-05-06 |
+| **30** | **[A beginner guide to Iris, Coq and separation logic](http://arxiv.org/abs/2105.12077v2)** | 2021-05-25 |
