@@ -22,7 +22,7 @@ keywords := "
              casual RL/counterfactual RL/casual reinforcement learning,
              causal inference/causal discovery/counterfactual reasoning,
              video super resolution,
-             2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
+             knowledge graph/knowledge distillation/knowledge representation/knowledge transfer/knowledge embedding,
              combinatorial game theory/xiangqi/chinese chess,
              code llm,
              speech recognition,
