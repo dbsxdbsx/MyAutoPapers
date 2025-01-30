@@ -1,8 +1,8 @@
 ---
-title: 最新论文 - 2025年01月29日
+title: 最新论文 - 2025年01月30日
 labels: documentation
 ---
-## 最后更新：2025-01-29 09:35
+## 最后更新：2025-01-30 22:27
 **本次更新执行命令**
 ```
 D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
@@ -11,7 +11,7 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
              casual RL/counterfactual RL/casual reinforcement learning,
              causal inference/causal discovery/counterfactual reasoning,
              video super resolution,
-             2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning,
+             knowledge graph/knowledge distillation/knowledge representation/knowledge transfer/knowledge embedding,
              combinatorial game theory/xiangqi/chinese chess,
              code llm,
              speech recognition,
@@ -22,14 +22,14 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ```
 
 **参数详解**
-- 关键词：`efficient RL`, `partial observable markov decision process/pomdp`, `sparse reward reinforcement learning`, `casual RL/counterfactual RL/casual reinforcement learning`, `causal inference/causal discovery/counterfactual reasoning`, `video super resolution`, `2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning`, `combinatorial game theory/xiangqi/chinese chess`, `code llm`, `speech recognition`, `zero shot tracking/few shot tracking/pose tracking/pose estimation`, `text to 3d/image to 3d/text to texture`, `automated theorem proving/interactive theorem proving/formal verification`
+- 关键词：`efficient RL`, `partial observable markov decision process/pomdp`, `sparse reward reinforcement learning`, `casual RL/counterfactual RL/casual reinforcement learning`, `causal inference/causal discovery/counterfactual reasoning`, `video super resolution`, `knowledge graph/knowledge distillation/knowledge representation/knowledge transfer/knowledge embedding`, `combinatorial game theory/xiangqi/chinese chess`, `code llm`, `speech recognition`, `zero shot tracking/few shot tracking/pose tracking/pose estimation`, `text to 3d/image to 3d/text to texture`, `automated theorem proving/interactive theorem proving/formal verification`
 - 排除关键词：`multi-agent`, `multiagent`
 - 每关键词最大结果：`8`
 - 目标领域：`cs`, `stat`
 - 每关键词重试次数：`3`
 
 
-## 论文汇总（196篇）
+## 论文汇总（233篇）
 
 **更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyDailyPaper)。**
 
@@ -39,12 +39,19 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | --- | --- | --- |
 | **1** | **[Adaptive Data Exploitation in Deep Reinforcement Learning](http://arxiv.org/abs/2501.12620v1)** | 2025-01-22 |
 | **2** | **[SLIM: Sim-to-Real Legged Instructive Manipulation via Long-Horizon Visuomotor Learning](http://arxiv.org/abs/2501.09905v3)** | 2025-01-17 |
-| **3** | **[RL$^3$: Boosting Meta Reinforcement Learning via RL inside RL$^2$](http://arxiv.org/abs/2306.15909v5)** | 2023-06-28 |
+| **3** | **[Overcoming the Curse of Dimensionality in Reinforcement Learning Through Approximate Factorization](http://arxiv.org/abs/2411.07591v1)** | 2024-11-12 |
+| **4** | **[Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](http://arxiv.org/abs/2410.21845v2)** | 2024-10-29 |
+| **5** | **[On-Robot Reinforcement Learning with Goal-Contrastive Rewards](http://arxiv.org/abs/2410.19989v1)** | 2024-10-25 |
+| **6** | **[Uncovering RL Integration in SSL Loss: Objective-Specific Implications for Data-Efficient RL](http://arxiv.org/abs/2410.17428v1)** | 2024-10-22 |
+| **7** | **[EfficientZero V2: Mastering Discrete and Continuous Control with Limited Data](http://arxiv.org/abs/2403.00564v2)** | 2024-03-01 |
+| **8** | **[Brain-Like Replay Naturally Emerges in Reinforcement Learning Agents](http://arxiv.org/abs/2402.01467v2)** | 2024-02-02 |
+| **9** | **[RL$^3$: Boosting Meta Reinforcement Learning via RL inside RL$^2$](http://arxiv.org/abs/2306.15909v5)** | 2023-06-28 |
+| **10** | **[Model-Based Reinforcement Learning with Multinomial Logistic Function Approximation](http://arxiv.org/abs/2212.13540v2)** | 2022-12-27 |
 ### 2. partial observable markov decision process/pomdp
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Online Hybrid-Belief POMDP with Coupled Semantic-Geometric Models and Semantic Safety Awareness](http://arxiv.org/abs/2501.11202v1)** | 2025-01-20 |
-| **2** | **[Microservice Deployment in Space Computing Power Networks via Robust Reinforcement Learning](http://arxiv.org/abs/2501.06244v1)** | 2025-01-08 |
+| **1** | **[Quantum advantage in decentralized control of POMDPs: A control-theoretic view of the Mermin-Peres square](http://arxiv.org/abs/2501.16690v1)** | 2025-01-28 |
+| **2** | **[Online Hybrid-Belief POMDP with Coupled Semantic-Geometric Models and Semantic Safety Awareness](http://arxiv.org/abs/2501.11202v1)** | 2025-01-20 |
 | **3** | **[A New Interpretation of the Certainty-Equivalence Approach for PAC Reinforcement Learning with a Generative Model](http://arxiv.org/abs/2501.02652v1)** | 2025-01-05 |
 | **4** | **[Partially Observed Optimal Stochastic Control: Regularity, Optimality, Approximations, and Learning](http://arxiv.org/abs/2412.06735v2)** | 2024-12-09 |
 | **5** | **[Hierarchical Object-Oriented POMDP Planning for Object Rearrangement](http://arxiv.org/abs/2412.01348v2)** | 2024-12-02 |
@@ -71,32 +78,34 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ### 5. causal inference/causal discovery/counterfactual reasoning
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[CausalSR: Structural Causal Model-Driven Super-Resolution with Counterfactual Inference](http://arxiv.org/abs/2501.15852v1)** | 2025-01-27 |
-| **2** | **[Causal Discovery via Bayesian Optimization](http://arxiv.org/abs/2501.14997v1)** | 2025-01-25 |
-| **3** | **[Minimax Optimal Design with Spillover and Carryover Effects](http://arxiv.org/abs/2501.14602v1)** | 2025-01-24 |
-| **4** | **[Causal pathway from AMOC to Southern Amazon rainforest indicates stabilising interaction between two climate tipping elements](http://arxiv.org/abs/2501.14374v1)** | 2025-01-24 |
-| **5** | **[Asymmetrical Latent Representation for Individual Treatment Effect Modeling](http://arxiv.org/abs/2501.14006v1)** | 2025-01-23 |
-| **6** | **[Differentiable Causal Discovery of Linear Non-Gaussian Acyclic Models Under Unmeasured Confounding](http://arxiv.org/abs/2501.12854v1)** | 2025-01-22 |
-| **7** | **[REX: Causal Discovery based on Machine Learning and Explainability techniques](http://arxiv.org/abs/2501.12706v1)** | 2025-01-22 |
-| **8** | **[Identification of Nonparametric Dynamic Causal Structure and Latent Process in Climate System](http://arxiv.org/abs/2501.12500v1)** | 2025-01-21 |
-| **9** | **[Fully quantum inflation: quantum marginal problem constraints in the service of causal inference](http://arxiv.org/abs/2501.12320v1)** | 2025-01-21 |
-| **10** | **[Automatic Debiased Machine Learning for Smooth Functionals of Nonparametric M-Estimands](http://arxiv.org/abs/2501.11868v1)** | 2025-01-21 |
-| **11** | **[RADICE: Causal Graph Based Root Cause Analysis for System Performance Diagnostic](http://arxiv.org/abs/2501.11545v1)** | 2025-01-20 |
-| **12** | **[Leveraging counterfactual concepts for debugging and improving CNN model performance](http://arxiv.org/abs/2501.11087v1)** | 2025-01-19 |
-| **13** | **[Linear scaling causal discovery from high-dimensional time series by dynamical community detection](http://arxiv.org/abs/2501.10886v1)** | 2025-01-18 |
-| **14** | **[Cheap Subsampling bootstrap confidence intervals for fast and robust inference](http://arxiv.org/abs/2501.10289v2)** | 2025-01-17 |
-| **15** | **[SpaceTime: Causal Discovery from Non-Stationary Time Series](http://arxiv.org/abs/2501.10235v1)** | 2025-01-17 |
-| **16** | **[MECD+: Unlocking Event-Level Causal Graph Discovery for Video Reasoning](http://arxiv.org/abs/2501.07227v3)** | 2025-01-13 |
+| **1** | **[STGCN-LSTM for Olympic Medal Prediction: Dynamic Power Modeling and Causal Policy Optimization](http://arxiv.org/abs/2501.17711v1)** | 2025-01-29 |
+| **2** | **[Geodesic Difference-in-Differences](http://arxiv.org/abs/2501.17436v1)** | 2025-01-29 |
+| **3** | **[Fundamental Computational Limits in Pursuing Invariant Causal Prediction and Invariance-Guided Regularization](http://arxiv.org/abs/2501.17354v1)** | 2025-01-29 |
+| **4** | **[Reconciling Predictive Multiplicity in Practice](http://arxiv.org/abs/2501.16549v1)** | 2025-01-27 |
+| **5** | **[CausalSR: Structural Causal Model-Driven Super-Resolution with Counterfactual Inference](http://arxiv.org/abs/2501.15852v1)** | 2025-01-27 |
+| **6** | **[Causal Discovery via Bayesian Optimization](http://arxiv.org/abs/2501.14997v1)** | 2025-01-25 |
+| **7** | **[Causal pathway from AMOC to Southern Amazon rainforest indicates stabilising interaction between two climate tipping elements](http://arxiv.org/abs/2501.14374v1)** | 2025-01-24 |
+| **8** | **[Asymmetrical Latent Representation for Individual Treatment Effect Modeling](http://arxiv.org/abs/2501.14006v1)** | 2025-01-23 |
+| **9** | **[Differentiable Causal Discovery of Linear Non-Gaussian Acyclic Models Under Unmeasured Confounding](http://arxiv.org/abs/2501.12854v1)** | 2025-01-22 |
+| **10** | **[REX: Causal Discovery based on Machine Learning and Explainability techniques](http://arxiv.org/abs/2501.12706v1)** | 2025-01-22 |
+| **11** | **[Identification of Nonparametric Dynamic Causal Structure and Latent Process in Climate System](http://arxiv.org/abs/2501.12500v1)** | 2025-01-21 |
+| **12** | **[Fully quantum inflation: quantum marginal problem constraints in the service of causal inference](http://arxiv.org/abs/2501.12320v1)** | 2025-01-21 |
+| **13** | **[RADICE: Causal Graph Based Root Cause Analysis for System Performance Diagnostic](http://arxiv.org/abs/2501.11545v1)** | 2025-01-20 |
+| **14** | **[Sample size and power calculation for propensity score analysis of observational studies](http://arxiv.org/abs/2501.11181v2)** | 2025-01-19 |
+| **15** | **[Leveraging counterfactual concepts for debugging and improving CNN model performance](http://arxiv.org/abs/2501.11087v1)** | 2025-01-19 |
+| **16** | **[Linear scaling causal discovery from high-dimensional time series by dynamical community detection](http://arxiv.org/abs/2501.10886v1)** | 2025-01-18 |
 | **17** | **[Towards Counterfactual and Contrastive Explainability and Transparency of DCNN Image Classifiers](http://dx.doi.org/10.1016/j.knosys.2022.109901)** | 2025-01-12 |
 | **18** | **[A possible statistics loophole in Bell's theorem](http://arxiv.org/abs/2412.17857v3)** | 2024-12-20 |
-| **19** | **[On the Role of Surrogates in Conformal Inference of Individual Causal Effects](http://arxiv.org/abs/2412.12365v2)** | 2024-12-16 |
-| **20** | **[OccludeNet: A Causal Journey into Mixed-View Actor-Centric Video Action Recognition under Occlusions](http://arxiv.org/abs/2411.15729v1)** | 2024-11-24 |
-| **21** | **[Gumbel Counterfactual Generation From Language Models](http://arxiv.org/abs/2411.07180v3)** | 2024-11-11 |
-| **22** | **[Causal Action Influence Aware Counterfactual Data Augmentation](http://arxiv.org/abs/2405.18917v2)** | 2024-05-29 |
-| **23** | **[Estimating Heterogeneous Treatment Effects with Item-Level Outcome Data: Insights from Item Response Theory](http://arxiv.org/abs/2405.00161v4)** | 2024-04-30 |
-| **24** | **[Bayesian Networks for Causal Analysis in Socioecological Systems](http://arxiv.org/abs/2401.10101v2)** | 2024-01-18 |
-| **25** | **[The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective](http://dx.doi.org/10.2139/ssrn.4650172)** | 2023-12-24 |
-| **26** | **[Slamming the sham: A Bayesian model for adaptive adjustment with noisy control data](http://arxiv.org/abs/1905.09693v3)** | 2019-05-21 |
+| **19** | **[OccludeNet: A Causal Journey into Mixed-View Actor-Centric Video Action Recognition under Occlusions](http://arxiv.org/abs/2411.15729v1)** | 2024-11-24 |
+| **20** | **[Gumbel Counterfactual Generation From Language Models](http://arxiv.org/abs/2411.07180v3)** | 2024-11-11 |
+| **21** | **[Root Cause Attribution of Delivery Risks via Causal Discovery with Reinforcement Learning](http://arxiv.org/abs/2408.05860v2)** | 2024-08-11 |
+| **22** | **[Compositional Models for Estimating Causal Effects](http://arxiv.org/abs/2406.17714v2)** | 2024-06-25 |
+| **23** | **[Causal Action Influence Aware Counterfactual Data Augmentation](http://arxiv.org/abs/2405.18917v2)** | 2024-05-29 |
+| **24** | **[Algorithmic syntactic causal identification](http://arxiv.org/abs/2403.09580v2)** | 2024-03-14 |
+| **25** | **[Bayesian Networks for Causal Analysis in Socioecological Systems](http://arxiv.org/abs/2401.10101v2)** | 2024-01-18 |
+| **26** | **[Identifying causal effects with subjective ordinal outcomes](http://arxiv.org/abs/2212.14622v4)** | 2022-12-30 |
+| **27** | **[Time-Series K-means in Causal Inference and Mechanism Clustering for Financial Data](http://arxiv.org/abs/2202.03146v6)** | 2022-01-24 |
+| **28** | **[Conterfactual Generative Zero-Shot Semantic Segmentation](http://arxiv.org/abs/2106.06360v2)** | 2021-06-11 |
 ### 6. video super resolution
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
@@ -110,24 +119,56 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **8** | **[360-Degree Video Super Resolution and Quality Enhancement Challenge: Methods and Results](http://arxiv.org/abs/2411.06738v1)** | 2024-11-11 |
 | **9** | **[SeeClear: Semantic Distillation Enhances Pixel Condensation for Video Super-Resolution](http://arxiv.org/abs/2410.05799v4)** | 2024-10-08 |
 | **10** | **[Enhancing Space-time Video Super-resolution via Spatial-temporal Feature Interaction](http://arxiv.org/abs/2207.08960v4)** | 2022-07-18 |
-### 7. 2.5d fighting game/fighting game ai/game ai/fighting game reinforcement learning
+### 7. knowledge graph/knowledge distillation/knowledge representation/knowledge transfer/knowledge embedding
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[RL-LLM-DT: An Automatic Decision Tree Generation Method Based on RL Evaluation and LLM Enhancement](http://arxiv.org/abs/2412.11417v2)** | 2024-12-16 |
-| **2** | **[Training Interactive Agent in Large FPS Game Map with Rule-enhanced Reinforcement Learning](http://arxiv.org/abs/2410.04936v1)** | 2024-10-07 |
-| **3** | **[You Have Thirteen Hours in Which to Solve the Labyrinth: Enhancing AI Game Masters with Function Calling](http://arxiv.org/abs/2409.06949v1)** | 2024-09-11 |
-| **4** | **[Enhancing Dialogue Generation in Werewolf Game Through Situation Analysis and Persuasion Strategies](http://arxiv.org/abs/2408.16586v2)** | 2024-08-29 |
-| **5** | **[Personalized Dynamic Difficulty Adjustment -- Imitation Learning Meets Reinforcement Learning](http://arxiv.org/abs/2408.06818v1)** | 2024-08-13 |
-| **6** | **[Strategy Game-Playing with Size-Constrained State Abstraction](http://arxiv.org/abs/2408.06202v1)** | 2024-08-12 |
-| **7** | **[Learning With Generalised Card Representations for "Magic: The Gathering"](http://arxiv.org/abs/2407.05879v1)** | 2024-07-08 |
-| **8** | **[Injecting Combinatorial Optimization into MCTS: Application to the Board Game boop](http://arxiv.org/abs/2406.08766v1)** | 2024-06-13 |
-| **9** | **[ChatPCG: Large Language Model-Driven Reward Design for Procedural Content Generation](http://arxiv.org/abs/2406.11875v1)** | 2024-06-07 |
-| **10** | **[An Interactive Agent Foundation Model](http://arxiv.org/abs/2402.05929v2)** | 2024-02-08 |
-| **11** | **[Diversity-based Deep Reinforcement Learning Towards Multidimensional Difficulty for Fighting Game AI](http://arxiv.org/abs/2211.02759v1)** | 2022-11-04 |
-| **12** | **[Identification of Play Styles in Universal Fighting Engine](http://arxiv.org/abs/2108.03599v1)** | 2021-08-08 |
-| **13** | **[Introduction to Behavior Algorithms for Fighting Games](http://dx.doi.org/10.1109/CHILECON47746.2019.8988008)** | 2020-07-06 |
-| **14** | **[Enhanced Rolling Horizon Evolution Algorithm with Opponent Model Learning: Results for the Fighting Game AI Competition](http://arxiv.org/abs/2003.13949v1)** | 2020-03-31 |
-| **15** | **[Deep Reinforcement Learning for Playing 2.5D Fighting Games](http://arxiv.org/abs/1805.02070v1)** | 2018-05-05 |
+| **1** | **[LEKA:LLM-Enhanced Knowledge Augmentation](http://arxiv.org/abs/2501.17802v1)** | 2025-01-29 |
+| **2** | **[Tapor: 3D Hand Pose Reconstruction with Fully Passive Thermal Sensing for Around-device Interactions](http://arxiv.org/abs/2501.17585v1)** | 2025-01-29 |
+| **3** | **[Query-Aware Learnable Graph Pooling Tokens as Prompt for Large Language Models](http://arxiv.org/abs/2501.17549v1)** | 2025-01-29 |
+| **4** | **[A Contrastive Teacher-Student Framework for Novelty Detection under Style Shifts](http://arxiv.org/abs/2501.17289v1)** | 2025-01-28 |
+| **5** | **[Comprehensive Evaluation for a Large Scale Knowledge Graph Question Answering Service](http://arxiv.org/abs/2501.17270v1)** | 2025-01-28 |
+| **6** | **[FedEFM: Federated Endovascular Foundation Model with Unseen Data](http://arxiv.org/abs/2501.16992v1)** | 2025-01-28 |
+| **7** | **[Heterogeneity-aware Personalized Federated Learning via Adaptive Dual-Agent Reinforcement Learning](http://arxiv.org/abs/2501.16966v1)** | 2025-01-28 |
+| **8** | **[TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models](http://arxiv.org/abs/2501.16937v2)** | 2025-01-28 |
+| **9** | **[Adapting Network Information to Semantics for Generalizable and Plug-and-Play Multi-Scenario Network Diagnosis](http://arxiv.org/abs/2501.16842v1)** | 2025-01-28 |
+| **10** | **[Target-driven Self-Distillation for Partial Observed Trajectories Forecasting](http://arxiv.org/abs/2501.16767v1)** | 2025-01-28 |
+| **11** | **[Efficient Knowledge Distillation of SAM for Medical Image Segmentation](http://arxiv.org/abs/2501.16740v1)** | 2025-01-28 |
+| **12** | **[Chinese Stock Prediction Based on a Multi-Modal Transformer Framework: Macro-Micro Information Fusion](http://arxiv.org/abs/2501.16621v1)** | 2025-01-28 |
+| **13** | **[Return of the Encoder: Maximizing Parameter Efficiency for SLMs](http://arxiv.org/abs/2501.16273v1)** | 2025-01-27 |
+| **14** | **[Zero-Shot Decision Tree Construction via Large Language Models](http://arxiv.org/abs/2501.16247v1)** | 2025-01-27 |
+| **15** | **[Raiders of the Lost Dependency: Fixing Dependency Conflicts in Python using LLMs](http://arxiv.org/abs/2501.16191v1)** | 2025-01-27 |
+| **16** | **[Transfer of Knowledge through Reverse Annealing: A Preliminary Analysis of the Benefits and What to Share](http://arxiv.org/abs/2501.15865v1)** | 2025-01-27 |
+| **17** | **[MM-Retinal V2: Transfer an Elite Knowledge Spark into Fundus Vision-Language Pretraining](http://arxiv.org/abs/2501.15798v1)** | 2025-01-27 |
+| **18** | **[ARWKV: Pretrain is not what we need, an RNN-Attention-Based Language Model Born from Transformer](http://arxiv.org/abs/2501.15570v1)** | 2025-01-26 |
+| **19** | **[Variational Bayesian Adaptive Learning of Deep Latent Variables for Acoustic Knowledge Transfer](http://arxiv.org/abs/2501.15496v1)** | 2025-01-26 |
+| **20** | **[Pre-trained Model Guided Mixture Knowledge Distillation for Adversarial Federated Learning](http://arxiv.org/abs/2501.15257v1)** | 2025-01-25 |
+| **21** | **[Uni-Sign: Toward Unified Sign Language Understanding at Scale](http://arxiv.org/abs/2501.15187v2)** | 2025-01-25 |
+| **22** | **[Towards Robust Unsupervised Attention Prediction in Autonomous Driving](http://arxiv.org/abs/2501.15045v2)** | 2025-01-25 |
+| **23** | **[On Accelerating Edge AI: Optimizing Resource-Constrained Environments](http://arxiv.org/abs/2501.15014v2)** | 2025-01-25 |
+| **24** | **[Contrastive Representation Learning Helps Cross-institutional Knowledge Transfer: A Study in Pediatric Ventilation Management](http://arxiv.org/abs/2501.13587v2)** | 2025-01-23 |
+| **25** | **[Multi-aspect Knowledge Distillation with Large Language Model](http://arxiv.org/abs/2501.13341v3)** | 2025-01-23 |
+| **26** | **[Column-Oriented Datalog on the GPU](http://arxiv.org/abs/2501.13051v1)** | 2025-01-22 |
+| **27** | **[A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models](http://arxiv.org/abs/2501.13958v1)** | 2025-01-21 |
+| **28** | **[Explain-Query-Test: Self-Evaluating LLMs Via Explanation and Comprehension Discrepancy](http://arxiv.org/abs/2501.11721v1)** | 2025-01-20 |
+| **29** | **[A Comprehensive Survey on Integrating Large Language Models with Knowledge-Based Methods](http://arxiv.org/abs/2501.13947v1)** | 2025-01-19 |
+| **30** | **[Interoceptive Robots for Convergent Shared Control in Collaborative Construction Work](http://arxiv.org/abs/2501.09290v1)** | 2025-01-16 |
+| **31** | **[Joint Learning of Depth and Appearance for Portrait Image Animation](http://arxiv.org/abs/2501.08649v1)** | 2025-01-15 |
+| **32** | **[Dynamic Knowledge Integration for Enhanced Vision-Language Reasoning](http://arxiv.org/abs/2501.08597v1)** | 2025-01-15 |
+| **33** | **[Knowledge prompt chaining for semantic modeling](http://arxiv.org/abs/2501.08540v1)** | 2025-01-15 |
+| **34** | **[A Text-Based Knowledge-Embedded Soft Sensing Modeling Approach for General Industrial Process Tasks Based on Large Language Model](http://arxiv.org/abs/2501.05075v1)** | 2025-01-09 |
+| **35** | **[DynaGRAG | Exploring the Topology of Information for Advancing Language Understanding and Generation in Graph Retrieval-Augmented Generation](http://arxiv.org/abs/2412.18644v3)** | 2024-12-24 |
+| **36** | **[Graph-Sequential Alignment and Uniformity: Toward Enhanced Recommendation Systems](http://dx.doi.org/10.1145/3701716.3715498)** | 2024-12-05 |
+| **37** | **[Mitigating Knowledge Conflicts in Language Model-Driven Question Answering](http://arxiv.org/abs/2411.11344v3)** | 2024-11-18 |
+| **38** | **[Paths-over-Graph: Knowledge Graph Empowered Large Language Model Reasoning](http://arxiv.org/abs/2410.14211v3)** | 2024-10-18 |
+| **39** | **[MaPPER: Multimodal Prior-guided Parameter Efficient Tuning for Referring Expression Comprehension](http://arxiv.org/abs/2409.13609v3)** | 2024-09-20 |
+| **40** | **[DrLLM: Prompt-Enhanced Distributed Denial-of-Service Resistance Method with Large Language Models](http://arxiv.org/abs/2409.10561v3)** | 2024-09-11 |
+| **41** | **[medIKAL: Integrating Knowledge Graphs as Assistants of LLMs for Enhanced Clinical Diagnosis on EMRs](http://arxiv.org/abs/2406.14326v2)** | 2024-06-20 |
+| **42** | **[Unification in the description logic $\mathcal{FL}_\bot$](http://arxiv.org/abs/2405.00912v4)** | 2024-05-01 |
+| **43** | **[Empirical Studies of Parameter Efficient Methods for Large Language Models of Code and Knowledge Transfer to R](http://arxiv.org/abs/2405.01553v2)** | 2024-03-16 |
+| **44** | **[Fine-Grained Stateful Knowledge Exploration: A Novel Paradigm for Integrating Knowledge Graphs with Large Language Models](http://arxiv.org/abs/2401.13444v3)** | 2024-01-24 |
+| **45** | **[PastNet: Introducing Physical Inductive Biases for Spatio-temporal Video Prediction](http://arxiv.org/abs/2305.11421v3)** | 2023-05-19 |
+| **46** | **[Relational Reasoning Networks](http://dx.doi.org/10.1016/j.knosys.2024.112822)** | 2021-06-01 |
+| **47** | **[Method for the semantic indexing of concept hierarchies, uniform representation, use of relational database systems and generic and case-based reasoning](http://arxiv.org/abs/1910.01539v3)** | 2019-10-03 |
 ### 8. combinatorial game theory/xiangqi/chinese chess
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
@@ -159,46 +200,42 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 | **3** | **[Do Code LLMs Understand Design Patterns?](http://arxiv.org/abs/2501.04835v1)** | 2025-01-08 |
 | **4** | **[EpiCoder: Encompassing Diversity and Complexity in Code Generation](http://arxiv.org/abs/2501.04694v1)** | 2025-01-08 |
 | **5** | **[CGP-Tuning: Structure-Aware Soft Prompt Tuning for Code Vulnerability Detection](http://arxiv.org/abs/2501.04510v1)** | 2025-01-08 |
-| **6** | **[Enhancing Code LLMs with Reinforcement Learning in Code Generation: A Survey](http://arxiv.org/abs/2412.20367v2)** | 2024-12-29 |
-| **7** | **[How Well Do LLMs Generate Code for Different Application Domains? Benchmark and Evaluation](http://arxiv.org/abs/2412.18573v1)** | 2024-12-24 |
-| **8** | **[mHumanEval -- A Multilingual Benchmark to Evaluate Large Language Models for Code Generation](http://arxiv.org/abs/2410.15037v2)** | 2024-10-19 |
-| **9** | **[TPIA: Towards Target-specific Prompt Injection Attack against Code-oriented Large Language Models](http://arxiv.org/abs/2407.09164v4)** | 2024-07-12 |
-| **10** | **[DIRAS: Efficient LLM Annotation of Document Relevance in Retrieval Augmented Generation](http://arxiv.org/abs/2406.14162v4)** | 2024-06-20 |
+| **6** | **[Large Language Models and Code Security: A Systematic Literature Review](http://arxiv.org/abs/2412.15004v2)** | 2024-12-19 |
+| **7** | **[mHumanEval -- A Multilingual Benchmark to Evaluate Large Language Models for Code Generation](http://arxiv.org/abs/2410.15037v2)** | 2024-10-19 |
+| **8** | **[TPIA: Towards Target-specific Prompt Injection Attack against Code-oriented Large Language Models](http://arxiv.org/abs/2407.09164v4)** | 2024-07-12 |
+| **9** | **[DIRAS: Efficient LLM Annotation of Document Relevance in Retrieval Augmented Generation](http://arxiv.org/abs/2406.14162v4)** | 2024-06-20 |
+| **10** | **[HumanEvalComm: Benchmarking the Communication Competence of Code Generation for LLMs and LLM Agent](http://dx.doi.org/10.1145/3715109)** | 2024-05-31 |
 ### 10. speech recognition
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Optimized Self-supervised Training with BEST-RQ for Speech Recognition](http://arxiv.org/abs/2501.16131v1)** | 2025-01-27 |
-| **2** | **[Classification Error Bound for Low Bayes Error Conditions in Machine Learning](http://arxiv.org/abs/2501.15977v1)** | 2025-01-27 |
-| **3** | **[End-to-End Target Speaker Speech Recognition Using Context-Aware Attention Mechanisms for Challenging Enrollment Scenario](http://arxiv.org/abs/2501.15466v1)** | 2025-01-26 |
-| **4** | **[The Multicultural Medical Assistant: Can LLMs Improve Medical ASR Errors Across Borders?](http://arxiv.org/abs/2501.15310v1)** | 2025-01-25 |
-| **5** | **[Speech Translation Refinement using Large Language Models](http://arxiv.org/abs/2501.15090v1)** | 2025-01-25 |
-| **6** | **[Robust Cross-Etiology and Speaker-Independent Dysarthric Speech Recognition](http://arxiv.org/abs/2501.14994v1)** | 2025-01-25 |
-| **7** | **[FireRedASR: Open-Source Industrial-Grade Mandarin Speech Recognition Models from Encoder-Decoder to LLM Integration](http://arxiv.org/abs/2501.14350v1)** | 2025-01-24 |
-| **8** | **[LoCoML: A Framework for Real-World ML Inference Pipelines](http://arxiv.org/abs/2501.14165v1)** | 2025-01-24 |
-| **9** | **[Predicting Compact Phrasal Rewrites with Large Language Models for ASR Post Editing](http://arxiv.org/abs/2501.13831v1)** | 2025-01-23 |
-| **10** | **[Recording for Eyes, Not Echoing to Ears: Contextualized Spoken-to-Written Conversion of ASR Transcripts](http://arxiv.org/abs/2408.09688v4)** | 2024-08-19 |
+| **1** | **[Cross-lingual Embedding Clustering for Hierarchical Softmax in Low-Resource Multilingual Speech Recognition](http://arxiv.org/abs/2501.17615v1)** | 2025-01-29 |
+| **2** | **[RDMM: Fine-Tuned LLM Models for On-Device Robotic Decision Making with Enhanced Contextual Awareness in Specific Domains](http://arxiv.org/abs/2501.16899v1)** | 2025-01-28 |
+| **3** | **[AVE Speech Dataset: A Comprehensive Benchmark for Multi-Modal Speech Recognition Integrating Audio, Visual, and Electromyographic Signals](http://arxiv.org/abs/2501.16780v1)** | 2025-01-28 |
+| **4** | **[SCDiar: a streaming diarization system based on speaker change detection and speech recognition](http://arxiv.org/abs/2501.16641v1)** | 2025-01-28 |
+| **5** | **[Continuously Learning New Words in Automatic Speech Recognition](http://arxiv.org/abs/2401.04482v4)** | 2024-01-09 |
+| **6** | **[Fast Word Error Rate Estimation Using Self-Supervised Representations for Speech and Text](http://arxiv.org/abs/2310.08225v2)** | 2023-10-12 |
 ### 11. zero shot tracking/few shot tracking/pose tracking/pose estimation
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Toward Efficient Generalization in 3D Human Pose Estimation via a Canonical Domain Approach](http://arxiv.org/abs/2501.16146v1)** | 2025-01-27 |
-| **2** | **[NanoHTNet: Nano Human Topology Network for Efficient 3D Human Pose Estimation](http://arxiv.org/abs/2501.15763v1)** | 2025-01-27 |
-| **3** | **[Towards Better Robustness: Progressively Joint Pose-3DGS Learning for Arbitrarily Long Videos](http://arxiv.org/abs/2501.15096v1)** | 2025-01-25 |
-| **4** | **[SpatioTemporal Learning for Human Pose Estimation in Sparsely-Labeled Videos](http://arxiv.org/abs/2501.15073v1)** | 2025-01-25 |
-| **5** | **[3D/2D Registration of Angiograms using Silhouette-based Differentiable Rendering](http://arxiv.org/abs/2501.14918v1)** | 2025-01-24 |
-| **6** | **[Light3R-SfM: Towards Feed-forward Structure-from-Motion](http://arxiv.org/abs/2501.14914v1)** | 2025-01-24 |
-| **7** | **[Glissando-Net: Deep sinGLe vIew category level poSe eStimation ANd 3D recOnstruction](http://dx.doi.org/10.1109/TPAMI.2024.3519674)** | 2025-01-24 |
-| **8** | **[Optimizing Grasping Precision for Industrial Pick-and-Place Tasks Through a Novel Visual Servoing Approach](http://arxiv.org/abs/2501.14557v1)** | 2025-01-24 |
-| **9** | **[LiDAR-Based Vehicle Detection and Tracking for Autonomous Racing](http://arxiv.org/abs/2501.14502v1)** | 2025-01-24 |
-| **10** | **[Optimizing Human Pose Estimation Through Focused Human and Joint Regions](http://arxiv.org/abs/2501.14439v1)** | 2025-01-24 |
-| **11** | **[OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints](http://arxiv.org/abs/2501.03841v1)** | 2025-01-07 |
-| **12** | **[NormalFlow: Fast, Robust, and Accurate Contact-based Object 6DoF Pose Tracking with Vision-based Tactile Sensors](http://dx.doi.org/10.1109/LRA.2024.3505815)** | 2024-12-12 |
-| **13** | **[Learning Whole-Body Loco-Manipulation for Omni-Directional Task Space Pose Tracking with a Wheeled-Quadrupedal-Manipulator](http://arxiv.org/abs/2412.03012v1)** | 2024-12-04 |
-| **14** | **[GSGTrack: Gaussian Splatting-Guided Object Pose Tracking from RGB Videos](http://arxiv.org/abs/2412.02267v1)** | 2024-12-03 |
-| **15** | **[6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting](http://arxiv.org/abs/2412.01543v1)** | 2024-12-02 |
-| **16** | **[ESVO2: Direct Visual-Inertial Odometry with Stereo Event Cameras](http://arxiv.org/abs/2410.09374v2)** | 2024-10-12 |
-| **17** | **[A Certifiable Algorithm for Simultaneous Shape Estimation and Object Tracking](http://dx.doi.org/10.1109/LRA.2024.3501684)** | 2024-06-24 |
-| **18** | **[HO-Cap: A Capture System and Dataset for 3D Reconstruction and Pose Tracking of Hand-Object Interaction](http://arxiv.org/abs/2406.06843v3)** | 2024-06-10 |
-| **19** | **[Matching Anything by Segmenting Anything](http://arxiv.org/abs/2406.04221v1)** | 2024-06-06 |
+| **1** | **[DebugAgent: Efficient and Interpretable Error Slice Discovery for Comprehensive Model Debugging](http://arxiv.org/abs/2501.16751v1)** | 2025-01-28 |
+| **2** | **[Toward Efficient Generalization in 3D Human Pose Estimation via a Canonical Domain Approach](http://arxiv.org/abs/2501.16146v1)** | 2025-01-27 |
+| **3** | **[NanoHTNet: Nano Human Topology Network for Efficient 3D Human Pose Estimation](http://arxiv.org/abs/2501.15763v1)** | 2025-01-27 |
+| **4** | **[Towards Better Robustness: Progressively Joint Pose-3DGS Learning for Arbitrarily Long Videos](http://arxiv.org/abs/2501.15096v1)** | 2025-01-25 |
+| **5** | **[SpatioTemporal Learning for Human Pose Estimation in Sparsely-Labeled Videos](http://arxiv.org/abs/2501.15073v1)** | 2025-01-25 |
+| **6** | **[3D/2D Registration of Angiograms using Silhouette-based Differentiable Rendering](http://arxiv.org/abs/2501.14918v1)** | 2025-01-24 |
+| **7** | **[Light3R-SfM: Towards Feed-forward Structure-from-Motion](http://arxiv.org/abs/2501.14914v1)** | 2025-01-24 |
+| **8** | **[Glissando-Net: Deep sinGLe vIew category level poSe eStimation ANd 3D recOnstruction](http://dx.doi.org/10.1109/TPAMI.2024.3519674)** | 2025-01-24 |
+| **9** | **[Optimizing Grasping Precision for Industrial Pick-and-Place Tasks Through a Novel Visual Servoing Approach](http://arxiv.org/abs/2501.14557v1)** | 2025-01-24 |
+| **10** | **[OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints](http://arxiv.org/abs/2501.03841v1)** | 2025-01-07 |
+| **11** | **[NormalFlow: Fast, Robust, and Accurate Contact-based Object 6DoF Pose Tracking with Vision-based Tactile Sensors](http://dx.doi.org/10.1109/LRA.2024.3505815)** | 2024-12-12 |
+| **12** | **[Learning Whole-Body Loco-Manipulation for Omni-Directional Task Space Pose Tracking with a Wheeled-Quadrupedal-Manipulator](http://arxiv.org/abs/2412.03012v1)** | 2024-12-04 |
+| **13** | **[GSGTrack: Gaussian Splatting-Guided Object Pose Tracking from RGB Videos](http://arxiv.org/abs/2412.02267v1)** | 2024-12-03 |
+| **14** | **[6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting](http://arxiv.org/abs/2412.01543v1)** | 2024-12-02 |
+| **15** | **[ESVO2: Direct Visual-Inertial Odometry with Stereo Event Cameras](http://arxiv.org/abs/2410.09374v2)** | 2024-10-12 |
+| **16** | **[A Certifiable Algorithm for Simultaneous Shape Estimation and Object Tracking](http://dx.doi.org/10.1109/LRA.2024.3501684)** | 2024-06-24 |
+| **17** | **[HO-Cap: A Capture System and Dataset for 3D Reconstruction and Pose Tracking of Hand-Object Interaction](http://arxiv.org/abs/2406.06843v3)** | 2024-06-10 |
+| **18** | **[Matching Anything by Segmenting Anything](http://arxiv.org/abs/2406.04221v1)** | 2024-06-06 |
+| **19** | **[iMatching: Imperative Correspondence Learning](http://dx.doi.org/10.1007/978-3-031-72933-1_11)** | 2023-12-04 |
 | **20** | **[Robust Lifelong Indoor LiDAR Localization using the Area Graph](http://dx.doi.org/10.1109/LRA.2023.3334158)** | 2023-08-10 |
 | **21** | **[Multi-Scale Memory Comparison for Zero-/Few-Shot Anomaly Detection](http://arxiv.org/abs/2308.04789v2)** | 2023-08-09 |
 | **22** | **[Zero-Shot Anomaly Detection with Pre-trained Segmentation Models](http://arxiv.org/abs/2306.09269v1)** | 2023-06-15 |
@@ -239,33 +276,33 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ### 13. automated theorem proving/interactive theorem proving/formal verification
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[What is Formal Verification without Specifications? A Survey on mining LTL Specifications](http://arxiv.org/abs/2501.16274v1)** | 2025-01-27 |
-| **2** | **[From Informal to Formal -- Incorporating and Evaluating LLMs on Natural Language Requirements to Verifiable Formal Proofs](http://arxiv.org/abs/2501.16207v1)** | 2025-01-27 |
-| **3** | **[LemmaHead: RAG Assisted Proof Generation Using Large Language Models](http://arxiv.org/abs/2501.15797v1)** | 2025-01-27 |
-| **4** | **[Formal Verification of Markov Processes with Learned Parameters](http://arxiv.org/abs/2501.15767v1)** | 2025-01-27 |
-| **5** | **[Skolemization In Intermediate Logics](http://arxiv.org/abs/2501.15507v1)** | 2025-01-26 |
-| **6** | **[Scalable and Explainable Verification of Image-based Neural Network Controllers for Autonomous Vehicles](http://arxiv.org/abs/2501.14009v1)** | 2025-01-23 |
-| **7** | **[Temporal Logic Guided Safe Navigation for Autonomous Vehicles](http://arxiv.org/abs/2501.13817v1)** | 2025-01-23 |
-| **8** | **[Quantifying the Importance of Data Alignment in Downstream Model Performance](http://arxiv.org/abs/2501.08496v2)** | 2025-01-14 |
-| **9** | **[HUNYUANPROVER: A Scalable Data Synthesis Framework and Guided Tree Search for Automated Theorem Proving](http://arxiv.org/abs/2412.20735v2)** | 2024-12-30 |
-| **10** | **[Rango: Adaptive Retrieval-Augmented Proving for Automated Software Verification](http://arxiv.org/abs/2412.14063v2)** | 2024-12-18 |
-| **11** | **[WithdrarXiv: A Large-Scale Dataset for Retraction Study](http://arxiv.org/abs/2412.03775v1)** | 2024-12-04 |
-| **12** | **[Learning Rules Explaining Interactive Theorem Proving Tactic Prediction](http://arxiv.org/abs/2411.01188v1)** | 2024-11-02 |
-| **13** | **[InternLM2.5-StepProver: Advancing Automated Theorem Proving via Expert Iteration on Large-Scale LEAN Problems](http://arxiv.org/abs/2410.15700v1)** | 2024-10-21 |
-| **14** | **[Tableaux for Automated Reasoning in Dependently-Typed Higher-Order Logic (Extended Version)](http://dx.doi.org/10.1007/978-3-031-63498-7_6)** | 2024-10-18 |
-| **15** | **[Towards Formal Verification of Federated Learning Orchestration Protocols on Satellites](http://dx.doi.org/10.1109/TELFOR63250.2024.10819039)** | 2024-10-17 |
+| **1** | **[Formally Verifying a Transformation from MLTL Formulas to Regular Expressions](http://arxiv.org/abs/2501.17444v1)** | 2025-01-29 |
+| **2** | **[A Stochastic Dynamical Theory of LLM Self-Adversariality: Modeling Severity Drift as a Critical Process](http://arxiv.org/abs/2501.16783v1)** | 2025-01-28 |
+| **3** | **[What is Formal Verification without Specifications? A Survey on mining LTL Specifications](http://arxiv.org/abs/2501.16274v1)** | 2025-01-27 |
+| **4** | **[From Informal to Formal -- Incorporating and Evaluating LLMs on Natural Language Requirements to Verifiable Formal Proofs](http://arxiv.org/abs/2501.16207v1)** | 2025-01-27 |
+| **5** | **[LemmaHead: RAG Assisted Proof Generation Using Large Language Models](http://arxiv.org/abs/2501.15797v1)** | 2025-01-27 |
+| **6** | **[Formal Verification of Markov Processes with Learned Parameters](http://arxiv.org/abs/2501.15767v1)** | 2025-01-27 |
+| **7** | **[Skolemization In Intermediate Logics](http://arxiv.org/abs/2501.15507v1)** | 2025-01-26 |
+| **8** | **[Scalable and Explainable Verification of Image-based Neural Network Controllers for Autonomous Vehicles](http://arxiv.org/abs/2501.14009v1)** | 2025-01-23 |
+| **9** | **[Temporal Logic Guided Safe Navigation for Autonomous Vehicles](http://arxiv.org/abs/2501.13817v1)** | 2025-01-23 |
+| **10** | **[HUNYUANPROVER: A Scalable Data Synthesis Framework and Guided Tree Search for Automated Theorem Proving](http://arxiv.org/abs/2412.20735v2)** | 2024-12-30 |
+| **11** | **[Rango: Adaptive Retrieval-Augmented Proving for Automated Software Verification](http://arxiv.org/abs/2412.14063v3)** | 2024-12-18 |
+| **12** | **[WithdrarXiv: A Large-Scale Dataset for Retraction Study](http://arxiv.org/abs/2412.03775v1)** | 2024-12-04 |
+| **13** | **[Learning Rules Explaining Interactive Theorem Proving Tactic Prediction](http://arxiv.org/abs/2411.01188v1)** | 2024-11-02 |
+| **14** | **[InternLM2.5-StepProver: Advancing Automated Theorem Proving via Expert Iteration on Large-Scale LEAN Problems](http://arxiv.org/abs/2410.15700v1)** | 2024-10-21 |
+| **15** | **[Tableaux for Automated Reasoning in Dependently-Typed Higher-Order Logic (Extended Version)](http://dx.doi.org/10.1007/978-3-031-63498-7_6)** | 2024-10-18 |
 | **16** | **[Revealed Invariant Preference](http://arxiv.org/abs/2408.04573v1)** | 2024-08-08 |
 | **17** | **[Artifical intelligence and inherent mathematical difficulty](http://arxiv.org/abs/2408.03345v1)** | 2024-08-01 |
 | **18** | **[miniCodeProps: a Minimal Benchmark for Proving Code Properties](http://arxiv.org/abs/2406.11915v2)** | 2024-06-16 |
-| **19** | **[NLP Verification: Towards a General Methodology for Certifying Robustness](http://arxiv.org/abs/2403.10144v3)** | 2024-03-15 |
-| **20** | **[BAIT: Benchmarking (Embedding) Architectures for Interactive Theorem-Proving](http://arxiv.org/abs/2403.03401v1)** | 2024-03-06 |
-| **21** | **[Trocq: Proof Transfer for Free, With or Without Univalence](http://arxiv.org/abs/2310.14022v2)** | 2023-10-21 |
-| **22** | **[Lyra: Orchestrating Dual Correction in Automated Theorem Proving](http://arxiv.org/abs/2309.15806v4)** | 2023-09-27 |
-| **23** | **[Translating SUMO-K to Higher-Order Set Theory](http://arxiv.org/abs/2305.07903v1)** | 2023-05-13 |
-| **24** | **[Verifying Quantum Phase Estimation (QPE) using Prove-It](http://dx.doi.org/10.1103/PhysRevA.108.052609)** | 2023-04-05 |
-| **25** | **[Magnushammer: A Transformer-Based Approach to Premise Selection](http://arxiv.org/abs/2303.04488v3)** | 2023-03-08 |
-| **26** | **[Towards Mechanised Proofs in Double-Pushout Graph Transformation](http://dx.doi.org/10.4204/EPTCS.374.6)** | 2022-12-22 |
-| **27** | **[A Linter for Isabelle: Implementation and Evaluation](http://arxiv.org/abs/2207.10424v1)** | 2022-07-21 |
-| **28** | **[From Width-Based Model Checking to Width-Based Automated Theorem Proving](http://arxiv.org/abs/2205.10995v3)** | 2022-05-23 |
-| **29** | **[The Supervisionary proof-checking kernel (or: a work-in-progress towards proof generating code)](http://arxiv.org/abs/2205.03332v1)** | 2022-05-06 |
-| **30** | **[A beginner guide to Iris, Coq and separation logic](http://arxiv.org/abs/2105.12077v2)** | 2021-05-25 |
+| **19** | **[Large Language Models Can Solve Real-World Planning Rigorously with Formal Verification Tools](http://arxiv.org/abs/2404.11891v3)** | 2024-04-18 |
+| **20** | **[NLP Verification: Towards a General Methodology for Certifying Robustness](http://arxiv.org/abs/2403.10144v3)** | 2024-03-15 |
+| **21** | **[BAIT: Benchmarking (Embedding) Architectures for Interactive Theorem-Proving](http://arxiv.org/abs/2403.03401v1)** | 2024-03-06 |
+| **22** | **[Trocq: Proof Transfer for Free, With or Without Univalence](http://arxiv.org/abs/2310.14022v2)** | 2023-10-21 |
+| **23** | **[Lyra: Orchestrating Dual Correction in Automated Theorem Proving](http://arxiv.org/abs/2309.15806v4)** | 2023-09-27 |
+| **24** | **[Translating SUMO-K to Higher-Order Set Theory](http://arxiv.org/abs/2305.07903v1)** | 2023-05-13 |
+| **25** | **[Verifying Quantum Phase Estimation (QPE) using Prove-It](http://dx.doi.org/10.1103/PhysRevA.108.052609)** | 2023-04-05 |
+| **26** | **[Magnushammer: A Transformer-Based Approach to Premise Selection](http://arxiv.org/abs/2303.04488v3)** | 2023-03-08 |
+| **27** | **[Towards Mechanised Proofs in Double-Pushout Graph Transformation](http://dx.doi.org/10.4204/EPTCS.374.6)** | 2022-12-22 |
+| **28** | **[A Linter for Isabelle: Implementation and Evaluation](http://arxiv.org/abs/2207.10424v1)** | 2022-07-21 |
+| **29** | **[From Width-Based Model Checking to Width-Based Automated Theorem Proving](http://arxiv.org/abs/2205.10995v3)** | 2022-05-23 |
+| **30** | **[The Supervisionary proof-checking kernel (or: a work-in-progress towards proof generating code)](http://arxiv.org/abs/2205.03332v1)** | 2022-05-06 |
