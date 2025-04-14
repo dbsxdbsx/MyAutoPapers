@@ -1,11 +1,11 @@
 ---
-title: 每月论文更新 - 2025年04月15日
+title: 最新论文 - 2025年04月15日
 labels: documentation
 ---
-## 最后更新：2025-04-15 06:26
+## 最后更新：2025-04-15 06:31
 **本次更新执行命令**
 ```
-target\debug\my_auto_papers.exe --keywords=
+D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
              efficient RL,
              partial observable markov decision process/pomdp,sparse reward reinforcement learning,
              casual RL/counterfactual RL/casual reinforcement learning,
@@ -31,7 +31,7 @@ target\debug\my_auto_papers.exe --keywords=
 
 ## 论文汇总（200篇）
 
-**更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyAutoPapers)。**
+**更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyDailyPaper)。**
 
 
 ### 1. efficient RL

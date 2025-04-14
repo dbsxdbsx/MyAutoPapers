@@ -1,12 +1,12 @@
-# 自动论文推送（每月更新）
-本项目每月自动从 arXiv 获取最新的论文，基于关键词进行筛选。
+# 自动论文推送
+本项目自动从 arXiv 获取最新的论文，基于关键词进行筛选。
 
-点击 'Watch' 按钮可以接收每月自动推送的邮件通知。
+点击 'Watch' 按钮可以接收自动推送的邮件通知。
 
-## 最后更新：2025-04-15 06:26
+## 最后更新：2025-04-15 06:31
 **本次更新执行命令**
 ```
-target\debug\my_auto_papers.exe --keywords=
+D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
              efficient RL,
              partial observable markov decision process/pomdp,sparse reward reinforcement learning,
              casual RL/counterfactual RL/casual reinforcement learning,
