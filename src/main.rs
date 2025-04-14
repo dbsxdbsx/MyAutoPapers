@@ -148,10 +148,10 @@ async fn main() -> Result<()> {
     // 先写入 issue 模板的头部信息
     writeln!(
         issue_template,
-        "---\ntitle: 最新论文 - {date}\nlabels: documentation\n---\n\
+        "---\ntitle: 每月论文更新 - {date}\nlabels: documentation\n---\n\
         {params}\n\n\
         ## 论文汇总（{papers_num}篇）\n\n\
-        **更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyDailyPaper)。**\n\n",
+        **更好的阅读体验请访问 [Github页面](https://github.com/dbsxdbsx/MyAutoPapers)。**\n\n",
         date = get_daily_date(),
         params = format_this_time_update_config_output(&config),
         papers_num = 0 // 初始为0，稍后更新
@@ -160,9 +160,9 @@ async fn main() -> Result<()> {
     // 先写入 README 的头部信息
     writeln!(
         readme,
-        "# 自动论文推送\n\
-        本项目自动从 arXiv 获取最新的论文，基于关键词进行筛选。\n\n\
-        点击 'Watch' 按钮可以接收自动推送的邮件通知。\n\n\
+        "# 自动论文推送（每月更新）\n\
+        本项目每月自动从 arXiv 获取最新的论文，基于关键词进行筛选。\n\n\
+        点击 'Watch' 按钮可以接收每月自动推送的邮件通知。\n\n\
         {update_info}\n\n",
         update_info = format_this_time_update_config_output(&config)
     )?;
@@ -237,8 +237,8 @@ async fn main() -> Result<()> {
     let issue_content = std::fs::read_to_string(".github/ISSUE_TEMPLATE.md")?;
     let updated_issue_content = issue_content
         .replace(
-            "最新论文0篇",
-            &format!("最新论文{final_recorded_papers_num}篇"),
+            "每月论文更新0篇",
+            &format!("每月论文更新{final_recorded_papers_num}篇"),
         )
         .replace(
             "论文汇总（0篇）",

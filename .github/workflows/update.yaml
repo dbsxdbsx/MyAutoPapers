@@ -1,8 +1,8 @@
-name: 更新每日论文workFlow
+name: 更新每月论文workFlow
 
 on:
   schedule:
-    - cron: '0 16 * * 0'  # 每周日 UTC 16:00 (+8即为北京时间 00:00)
+    - cron: '0 16 1 * *'  # 每月1日 UTC 16:00 (+8即为北京时间 00:00)
   workflow_dispatch:    # 允许手动触发
   push:                # 在推送时触发
     branches:
@@ -16,7 +16,7 @@ env:
   BIN_PATH: target/release/my_auto_papers.exe
 
 jobs:
-  update_daily_papers:
+  update_monthly_papers:
     runs-on: windows-latest
     steps:
     - name: 检出代码
@@ -73,7 +73,7 @@ jobs:
       if: steps.cargo-cache.outputs.cache-hit != 'true' || steps.check-bin.outputs.exists_bin != 'true'
       run: cargo build --release
 
-    - name: 运行每日更新
+    - name: 运行每月更新
       run: just run "${{ env.BIN_PATH }}"
 
     - name: 提交更改

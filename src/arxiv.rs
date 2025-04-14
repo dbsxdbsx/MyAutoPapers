@@ -15,7 +15,7 @@ pub async fn request_paper_with_arxiv_api(
         "http://export.arxiv.org/api/query?search_query=ti:{keyword}+{link}+abs:{keyword}&max_results={per_keyword_max_results}&sortBy=lastUpdatedDate"
     );
 
-    println!("正在从 arXiv 获取论文数据...,url:{}", url);
+    println!("正在从 arXiv 获取论文数据...,url:{url}");
 
     let url = Url::parse(&url)?;
     println!("正在从 arXiv 获取论文数据...");

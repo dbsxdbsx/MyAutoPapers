@@ -10,6 +10,7 @@ pub fn remove_duplicated_spaces(text: &str) -> String {
     re.replace_all(text.trim(), " ").to_string()
 }
 
+// 获取当前日期，用于每月更新的标题
 pub fn get_daily_date() -> String {
     Utc::now()
         .with_timezone(&Shanghai)
