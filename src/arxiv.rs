@@ -1,26 +1,62 @@
 use crate::types::Paper;
 use crate::utils::remove_duplicated_spaces;
-use anyhow::Result;
+use anyhow::{anyhow, bail, Context, Result};
 use chrono::{DateTime, Utc};
 use feed_rs::parser;
 use url::Url;
+
+const ARXIV_API_BASE_URL: &str = "https://export.arxiv.org/api/query";
+const ARXIV_USER_AGENT: &str = "MyAutoPapers/0.1 (https://github.com/dbsxdbsx/MyAutoPapers)";
+pub const ARXIV_REQUEST_INTERVAL_SECS: u64 = 5;
 
 pub async fn request_paper_with_arxiv_api(
     keyword: &str,
     per_keyword_max_results: usize,
     link: &str,
 ) -> Result<Vec<Paper>> {
-    let keyword = format!("\"{keyword}\"");
-    let url = format!(
-        "http://export.arxiv.org/api/query?search_query=ti:{keyword}+{link}+abs:{keyword}&max_results={per_keyword_max_results}&sortBy=lastUpdatedDate"
-    );
+    let search_query = format!("ti:\"{keyword}\" {link} abs:\"{keyword}\"");
+    let mut url = Url::parse(ARXIV_API_BASE_URL)?;
+    url.query_pairs_mut()
+        .append_pair("search_query", &search_query)
+        .append_pair("max_results", &per_keyword_max_results.to_string())
+        .append_pair("sortBy", "lastUpdatedDate");
 
     println!("正在从 arXiv 获取论文数据...,url:{url}");
 
-    let url = Url::parse(&url)?;
+    let client = reqwest::Client::builder()
+        .user_agent(ARXIV_USER_AGENT)
+        .build()
+        .context("创建 arXiv HTTP client 失败")?;
+
     println!("正在从 arXiv 获取论文数据...");
-    let response = reqwest::get(url).await?.text().await?;
-    let feed = parser::parse(response.as_bytes())?;
+    let response = client
+        .get(url.clone())
+        .send()
+        .await
+        .with_context(|| format!("请求 arXiv API 失败: {url}"))?;
+    let status = response.status();
+    let response_text = response
+        .text()
+        .await
+        .with_context(|| format!("读取 arXiv API 响应失败: {url}"))?;
+
+    if !status.is_success() {
+        let preview = response_text.chars().take(200).collect::<String>();
+        bail!("arXiv API 返回非成功状态 {status}，响应前缀: {preview:?}");
+    }
+
+    if response_text.trim().is_empty() {
+        bail!("arXiv API 返回空响应");
+    }
+
+    if !response_text.trim_start().starts_with("<?xml")
+        && !response_text.trim_start().starts_with("<feed")
+    {
+        let preview = response_text.chars().take(200).collect::<String>();
+        bail!("arXiv API 返回内容不是 Atom/XML feed，响应前缀: {preview:?}");
+    }
+
+    let feed = parser::parse(response_text.as_bytes()).context("解析 arXiv Atom feed 失败")?;
 
     let papers: Vec<Paper> = feed
         .entries
@@ -68,33 +104,66 @@ pub async fn request_paper_with_arxiv_api(
     Ok(papers)
 }
 
-pub async fn get_daily_papers_by_keyword_with_retries(
+pub async fn get_filtered_papers_by_keyword_with_retries(
     keyword: &str,
     retry_times: usize,
     per_keyword_max_result: usize,
     link: &str,
+    exclude_keywords: &[String],
 ) -> Result<Vec<Paper>> {
+    let retry_times = retry_times.max(3);
     let mut last_error = None;
+    let mut saw_successful_empty_result = false;
+
     for i in 0..retry_times {
         match get_daily_papers_by_keyword(keyword, per_keyword_max_result, link).await {
-            Ok(papers) if !papers.is_empty() => return Ok(papers),
-            Ok(_) => {
-                return Ok(vec![]);
+            Ok(papers) if papers.is_empty() => {
+                saw_successful_empty_result = true;
+                println!(
+                    "第 {} 次尝试最终结果为 0 篇，{} 次以内会继续重试...",
+                    i + 1,
+                    retry_times
+                );
+            }
+            Ok(papers) => {
+                let filtered = filter_papers(papers, exclude_keywords);
+                if filtered.is_empty() {
+                    saw_successful_empty_result = true;
+                    println!(
+                        "第 {} 次尝试过滤后结果为 0 篇，{} 次以内会继续重试...",
+                        i + 1,
+                        retry_times
+                    );
+                } else {
+                    return Ok(filtered);
+                }
             }
             Err(e) => {
                 println!("第 {} 次尝试失败: {}，重试中...", i + 1, e);
                 last_error = Some(e);
-                tokio::time::sleep(tokio::time::Duration::from_secs(2)).await;
             }
         }
+
+        if i + 1 < retry_times {
+            tokio::time::sleep(tokio::time::Duration::from_secs(
+                ARXIV_REQUEST_INTERVAL_SECS,
+            ))
+            .await;
+        }
     }
-    Err(anyhow::anyhow!(
-        "尝试 {} 次后仍未获取到论文{}",
-        retry_times,
-        last_error
-            .map(|e| format!(", 最后一次错误: {e}"))
-            .unwrap_or_default()
-    ))
+
+    if saw_successful_empty_result {
+        return Ok(Vec::new());
+    }
+
+    if let Some(error) = last_error {
+        Err(anyhow!(
+            "尝试 {} 次后仍未成功获取非空结果，最后一次错误: {error}",
+            retry_times
+        ))
+    } else {
+        Ok(Vec::new())
+    }
 }
 
 pub async fn get_daily_papers_by_keyword(
@@ -108,11 +177,42 @@ pub async fn get_daily_papers_by_keyword(
     let sub_keywords: Vec<&str> = keyword.split('/').collect();
     let mut all_papers = Vec::new();
 
-    for sub_key in sub_keywords {
+    let mut failed_sub_keywords = Vec::new();
+    let mut succeeded_sub_keyword_count = 0;
+
+    for (index, sub_key) in sub_keywords.iter().enumerate() {
         println!("-> 处理子关键词: {sub_key}");
-        let mut papers =
-            request_paper_with_arxiv_api(sub_key, per_keyword_max_result, link).await?;
-        all_papers.append(&mut papers);
+        match request_paper_with_arxiv_api(sub_key, per_keyword_max_result, link).await {
+            Ok(mut papers) => {
+                succeeded_sub_keyword_count += 1;
+                all_papers.append(&mut papers);
+            }
+            Err(error) => {
+                println!("子关键词 '{sub_key}' 拉取失败: {error}");
+                failed_sub_keywords.push(format!("{sub_key}: {error}"));
+            }
+        }
+
+        if index + 1 < sub_keywords.len() {
+            tokio::time::sleep(tokio::time::Duration::from_secs(
+                ARXIV_REQUEST_INTERVAL_SECS,
+            ))
+            .await;
+        }
+    }
+
+    if succeeded_sub_keyword_count == 0 && !failed_sub_keywords.is_empty() {
+        bail!(
+            "所有子关键词请求都失败: {}",
+            failed_sub_keywords.join(" | ")
+        );
+    }
+
+    if !failed_sub_keywords.is_empty() {
+        println!(
+            "部分子关键词失败，保留已成功结果: {}",
+            failed_sub_keywords.join(" | ")
+        );
     }
 
     // 去重处理（根据论文链接）

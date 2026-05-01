@@ -2,7 +2,7 @@ mod arxiv;
 mod types;
 mod utils;
 
-use anyhow::Result;
+use anyhow::{bail, Result};
 use chrono::Utc;
 use std::env;
 use std::fs::File;
@@ -144,6 +144,7 @@ async fn main() -> Result<()> {
     println!("准备搜索并写入文件...");
     let mut readme = File::create("README.md")?;
     let mut issue_template = File::create(".github/ISSUE_TEMPLATE.md")?;
+    let mut failed_keyword_count = 0;
 
     // 先写入 issue 模板的头部信息
     writeln!(
@@ -167,7 +168,6 @@ async fn main() -> Result<()> {
         update_info = format_this_time_update_config_output(&config)
     )?;
 
-    let mut all_display_papers = Vec::new();
     let keywords_len = config.keywords.len();
     let mut paper_contents = String::new();
 
@@ -181,16 +181,16 @@ async fn main() -> Result<()> {
             "OR"
         };
 
-        match arxiv::get_daily_papers_by_keyword_with_retries(
+        match arxiv::get_filtered_papers_by_keyword_with_retries(
             keyword,
             config.retry_times_for_each_keyword,
             config.per_keyword_max_result,
             link,
+            &config.exclude_keywords,
         )
         .await
         {
-            Ok(papers) if !papers.is_empty() => {
-                let mut filtered = arxiv::filter_papers(papers, &config.exclude_keywords);
+            Ok(mut filtered) if !filtered.is_empty() => {
                 filtered.sort_by(|a, b| {
                     b.date_time()
                         .unwrap_or(Utc::now())
@@ -199,8 +199,6 @@ async fn main() -> Result<()> {
 
                 let readme_table = generate_table(&filtered, "readme", keyword);
                 let posted_issue_table = generate_table(&filtered, "issue", keyword);
-
-                all_display_papers.extend(filtered.clone());
 
                 paper_contents.push_str(&format!("{readme_table}\n"));
                 writeln!(
@@ -215,17 +213,22 @@ async fn main() -> Result<()> {
                 println!("过滤后：成功写入 {} 篇论文", filtered.len());
             }
             Ok(_) => {
-                println!("未获取到论文，跳过处理");
-                continue;
+                let message = "*连续重试后仍未获取到与该关键词相关的新论文。*";
+                println!("连续重试后仍未获取到论文，记录空结果");
+                paper_contents.push_str(&format!("{message}\n"));
+                writeln!(issue_template, "### {}. {}\n{}", i + 1, keyword, message)?;
             }
             Err(e) => {
+                failed_keyword_count += 1;
+                let message = format!("*拉取失败：{e}*");
                 eprintln!("处理关键词 '{keyword}' 时出错: {e}");
-                continue;
+                paper_contents.push_str(&format!("{message}\n"));
+                writeln!(issue_template, "### {}. {}\n{}", i + 1, keyword, message)?;
             }
         }
 
         if i < keywords_len - 1 {
-            let time_to_sleep = 1;
+            let time_to_sleep = arxiv::ARXIV_REQUEST_INTERVAL_SECS;
             println!(
                 "等待 {time_to_sleep} 秒以避免 API 限制...\n----------------------------------"
             );
@@ -260,6 +263,12 @@ async fn main() -> Result<()> {
 
     println!("清理备份文件...");
     remove_backups()?;
+
+    if final_recorded_papers_num == 0 && failed_keyword_count > 0 {
+        bail!(
+            "本次没有写入任何论文，且 {failed_keyword_count} 个关键词发生拉取异常；停止 workflow，避免提交异常空结果"
+        );
+    }
 
     println!("程序执行完成！");
     Ok(())
