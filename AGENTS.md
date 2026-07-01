@@ -2,7 +2,7 @@
 
 > 项目级 AI agent onboarding 入口。
 > 本文件只记录项目内可共享的事实、约定和入口；个人环境中的规则、Skills 与本机路径不在此列。
-> 最近更新：2026-05-02。
+> 最近更新：2026-07-01。
 
 ## 1. Project Identity
 
@@ -26,6 +26,7 @@ MyAutoPapers/
 │   ├── workflows/update.yaml  # 每月 1 日 UTC 16:00 自动跑（北京时间次日 00:00）
 │   └── ISSUE_TEMPLATE.md      # 程序生成（不要手改）
 ├── README.md                  # 程序生成（不要手改，每月被覆盖）
+├── .issue/                     # 未闭环问题 / 观察项日志（当前 1 条 suspended）
 ├── Cargo.toml / Cargo.lock    # Rust 依赖
 └── target/                    # 构建产物（已 .gitignore）
 ```
@@ -78,11 +79,14 @@ MyAutoPapers/
 - `per_keyword_max_result` 是**每个 group** 的上限（不是每个子关键词），合理范围 5–15
 - 加新方向时优先复用现有 5 个 section 的归类
 
-**当前 5 个 section / 16 个 group**（与 `justfile` 同步）：
+**当前 5 个 section / 19 个 group**（与 `justfile` 同步）：
 
 1. **强化学习效率**（3 组）：efficient RL / model-based / offline
 2. **图像处理效率**（3 组）：efficient ViT / efficient classification·detection·segmentation / efficient diffusion
-3. **ML 库 / CPU 效率**（4 组）：efficient cpu inference / quantization / pruning·KD / tensor compilation·graph opt·operator fusion
+3. **ML 库 / CPU 效率**（7 组，对应 only_torch，分三层）：
+   - 模型侧：efficient cpu inference / quantization / pruning·KD / tensor compilation·graph opt·operator fusion
+   - 硬件内核侧：SIMD·AVX-512·vectorized inference / fast·sparse matrix multiplication·cache-efficient
+   - 算法数学侧：linear attention·low-rank compression·Winograd convolution
 4. **其他前沿**（4 组）：image SR / video SR / quant trading·RL trading / stock prediction·portfolio
 5. **神经演化 / NAS**（2 组）：neuroevolution·NEAT / NAS·multi-objective NAS
 
@@ -102,10 +106,11 @@ MyAutoPapers/
 
 ## 5. Active Context
 
-- **进行中**：关键词体系全面对齐使用者 4 个核心关注点 + 1 个隐性关注（neuroevolution / NAS），从原 13 组旧关键词（含 typo `casual`、与需求脱节的 chinese chess / code llm / speech / theorem proving 等）重构为 5 section / 16 group
-- **最近变更**：`6a20239 ✨增强 arXiv API 请求处理，添加错误处理和过滤功能`（错误处理 + 过滤 pipeline）
-- **阻塞**：无（无 `.issue/` 目录）
-- **下一步**：观察 2026-05 第一轮新关键词的 arxiv 命中情况；若某 group 连续两月零命中，考虑泛化或合并
+- **进行中**：关键词体系全面对齐使用者 4 个核心关注点 + 1 个隐性关注（neuroevolution / NAS），从原 13 组旧关键词（含 typo `casual`、与需求脱节的 chinese chess / code llm / speech / theorem proving 等）重构为 5 section / 19 group
+- **最近变更**：Section 3（对应 only_torch）从 4 组扩到 7 组，补齐 CPU 底层加速缺口——硬件内核侧（SIMD / AVX-512 / GEMM·cache）+ 算法数学侧（linear attention / low-rank compression / Winograd）。本地 `just default` 实测：11、12 组高相关，13 组初版锚点 `low-rank approximation` 被科学计算 DLRA 噪声占满，已改为 ML 味更足的 `linear attention`(≈474) + `low-rank compression`(≈71)
+- **阻塞**：无
+- **观察项**（suspended）：[`.issue/items/2026-07-01_arxiv_low_volume_keywords.md`](.issue/items/2026-07-01_arxiv_low_volume_keywords.md)——新增三组中 Winograd(≈28) / vectorized inference(≈10) 等低体量词的月度命中，约 2026-09 回看
+- **下一步**：观察 13 组换锚点后的相关性；Winograd(≈28) 单短语体量偏低，若整组连续两月零命中再考虑替换为更高体量的同义词
 
 ## 6. Knowledge Index
 

@@ -15,10 +15,11 @@ run bin_path:
         --exclude-keywords="{{exclude}}" \
         --per-keyword-max-result={{per_keyword}}
 
-# 关键词分 5 个 section，共 16 组（修改时请同步更新 AGENTS.md 的 Project-specific Norms）
+# 关键词分 5 个 section，共 19 组（修改时请同步更新 AGENTS.md 的 Project-specific Norms）
 # Section 1: 强化学习效率（RL Efficiency）
 # Section 2: 图像处理效率（Image Processing Efficiency）
-# Section 3: ML 库 / CPU 效率（ML Library / CPU Efficiency，对应 only_torch 项目）
+# Section 3: ML 库 / CPU 效率（ML Library / CPU Efficiency，对应 only_torch 项目），含三层：
+#            模型侧（推理/压缩/图优化）+ 硬件内核侧（SIMD/GEMM/cache）+ 算法数学侧（低秩/Winograd）
 # Section 4: 其他前沿（超分 + 量化投资）
 # Section 5: 神经演化 / NAS（Neuroevolution / NAS）
 keywords := "
@@ -32,6 +33,9 @@ keywords := "
              model quantization/low-bit quantization/binary neural network,
              network pruning/sparse neural network/knowledge distillation,
              tensor compilation/computation graph optimization/operator fusion,
+             SIMD/AVX-512/vectorized inference,
+             fast matrix multiplication/sparse matrix multiplication/cache-efficient,
+             linear attention/low-rank compression/Winograd convolution,
              image super resolution/efficient super resolution,
              video super resolution,
              quantitative trading/algorithmic trading/reinforcement learning for trading,
