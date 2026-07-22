@@ -50,7 +50,7 @@ MyAutoPapers/
 
 | 任务 | 命令 | 备注 |
 |---|---|---|
-| 试跑（dev，本地验证关键词命中） | `just default` | 等价于 `cargo run --` 加 justfile 里的关键词参数；约 6–7 分钟（42 次 arxiv 请求 × 5 秒间隔） |
+| 试跑（dev，本地验证关键词命中） | `just default` | 等价于 `cargo run --` 加 justfile 里的关键词参数；约 8–9 分钟（64 次 arxiv 请求 × 5 秒间隔） |
 | 用现成 release 二进制跑 | `just run target/release/my_auto_papers.exe` | CI 中使用；要先 `cargo build --release` |
 | Release 构建 | `cargo build --release` | LTO + codegen-units=1，约 1–3 分钟 |
 | Lint | `cargo clippy` | 无项目级自定义配置 |
@@ -79,20 +79,22 @@ MyAutoPapers/
 - `per_keyword_max_result` 是**每个 group** 的上限（不是每个子关键词），合理范围 5–15
 - 加新方向时优先复用现有 6 个 section 的归类
 
-**当前 6 个 section / 22 个 group**（与 `justfile` 同步）：
+**当前 6 个 section / 26 个 group**（与 `justfile` 同步）：
 
-1. **强化学习效率**（3 组）：efficient RL / model-based / offline
+1. **强化学习效率 + 世界模型**（4 组）：efficient RL / model-based / offline / **object-centric world model·structured world model**
 2. **图像处理效率**（3 组）：efficient ViT / efficient classification·detection·segmentation / efficient diffusion
 3. **ML 库 / CPU 效率**（7 组，对应 only_torch，分三层）：
    - 模型侧：efficient cpu inference / quantization / pruning·KD / tensor compilation·graph opt·operator fusion
    - 硬件内核侧：SIMD·AVX-512·vectorized inference / fast·sparse matrix multiplication·cache-efficient
    - 算法数学侧：linear attention·low-rank compression·Winograd convolution
 4. **其他前沿**（4 组）：image SR / video SR / quant trading·RL trading / stock prediction·portfolio
-5. **神经演化 / NAS**（2 组）：neuroevolution·NEAT / NAS·multi-objective NAS
-6. **AGI / 自主学习 / Neuro-Symbolic**（3 组）：
+5. **神经演化 / NAS / 开放式学习**（3 组）：neuroevolution·NEAT / NAS·multi-objective NAS / **open-ended learning·quality-diversity**
+6. **AGI / 自主学习 / Neuro-Symbolic / 自我学习机制**（5 组）：
    - neuro-symbolic·neural symbolic reasoning
    - meta-learning·continual learning·lifelong learning
-   - curriculum learning·active learning
+   - **intrinsic motivation·curiosity-driven exploration**（替换原 curriculum learning·active learning）
+   - **learned optimizer·meta-gradient**
+   - **active inference·predictive coding**
 
 新增/调整关键词时同步检查：
 - 新增 section 是否在上面 6 类的覆盖之内（不在则评估是否要扩张）
@@ -110,11 +112,16 @@ MyAutoPapers/
 
 ## 5. Active Context
 
-- **进行中**：关键词体系从 5 section / 19 group 扩展为 6 section / 22 group，新增 Section 6（AGI / 自主学习 / Neuro-Symbolic）覆盖使用者对自学习机制、定向学习机制、neuro-symbolic 方向的关注
-- **最近变更**：新增 Section 6 的 3 组关键词——neuro-symbolic·neural symbolic reasoning / meta-learning·continual learning·lifelong learning / curriculum learning·active learning。此前 Section 3 从 4 组扩到 7 组补齐 CPU 底层加速缺口的变更已稳定
+- **进行中**：关键词体系从 22 group 扩展为 26 group（6 section 不变），本轮变更由 GEB 读书 + 千脑智能理论调研驱动的全盘审视
+- **最近变更**（2026-07-22）：
+  - Section 1 新增 1 组：`object-centric world model / structured world model`——填补 MyZero world model 从单体式向物体级结构化演进的论文追踪缺口
+  - Section 5 新增 1 组：`open-ended learning / quality-diversity`——对接 only_torch NEAT 演化的多样性维持方向
+  - Section 6 替换 1 组：`curriculum learning / active learning` → `intrinsic motivation / curiosity-driven exploration`——前者过于传统，后者更切中"自我学习"的核心机制（agent 在无外部奖励时如何自己创造学习目标）
+  - Section 6 新增 2 组：`learned optimizer / meta-gradient`（学习如何优化自己，GEB "怪圈/自指"在 ML 中的直接映射）+ `active inference / predictive coding`（Karl Friston 自由能原理，统一 world model + intrinsic motivation + meta-learning 的理论框架）
+  - 此前 Section 3（7 组 CPU 效率）和 Section 6 原 3 组的变更已稳定
 - **阻塞**：无
-- **观察项**（suspended）：[`.issue/items/2026-07-01_arxiv_low_volume_keywords.md`](.issue/items/2026-07-01_arxiv_low_volume_keywords.md)——Section 3 新增三组中 Winograd(≈28) / vectorized inference(≈10) 等低体量词的月度命中，约 2026-09 回看
-- **下一步**：Section 6 的 3 组关键词首月命中情况观察（预计 meta-learning·continual learning 体量充足，neuro-symbolic 体量中等，均不应零命中）；Section 3 第 13 组换锚点后的相关性持续观察
+- **观察项**（suspended）：[`.issue/items/2026-07-01_arxiv_low_volume_keywords.md`](.issue/items/2026-07-01_arxiv_low_volume_keywords.md)——Section 3 低体量词月度命中，约 2026-09 回看
+- **下一步**：本轮新增 5 组关键词首月命中观察（预计 object-centric world model、intrinsic motivation 体量充足；active inference 在 cs 分类下体量可能偏少——若零命中需评估是否扩展 `target_fields` 至 q-bio.NC）；Section 5 open-ended learning 体量待观察
 
 ## 6. Knowledge Index
 
