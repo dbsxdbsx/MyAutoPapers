@@ -15,13 +15,14 @@ run bin_path:
         --exclude-keywords="{{exclude}}" \
         --per-keyword-max-result={{per_keyword}}
 
-# 关键词分 5 个 section，共 19 组（修改时请同步更新 AGENTS.md 的 Project-specific Norms）
+# 关键词分 6 个 section，共 22 组（修改时请同步更新 AGENTS.md 的 Project-specific Norms）
 # Section 1: 强化学习效率（RL Efficiency）
 # Section 2: 图像处理效率（Image Processing Efficiency）
 # Section 3: ML 库 / CPU 效率（ML Library / CPU Efficiency，对应 only_torch 项目），含三层：
 #            模型侧（推理/压缩/图优化）+ 硬件内核侧（SIMD/GEMM/cache）+ 算法数学侧（低秩/Winograd）
 # Section 4: 其他前沿（超分 + 量化投资）
 # Section 5: 神经演化 / NAS（Neuroevolution / NAS）
+# Section 6: AGI / 自主学习 / Neuro-Symbolic
 keywords := "
              efficient reinforcement learning/sample efficient reinforcement learning,
              model-based reinforcement learning/world model,
@@ -41,7 +42,10 @@ keywords := "
              quantitative trading/algorithmic trading/reinforcement learning for trading,
              stock prediction/portfolio optimization/financial time series forecasting,
              neuroevolution/NEAT/evolutionary neural network,
-             neural architecture search/multi-objective neural architecture search
+             neural architecture search/multi-objective neural architecture search,
+             neuro-symbolic/neural symbolic reasoning,
+             meta-learning/continual learning/lifelong learning,
+             curriculum learning/active learning
              "
 exclude := "multi-agent,multiagent"
 per_keyword := "8"

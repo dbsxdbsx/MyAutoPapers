@@ -2,7 +2,7 @@
 
 > 项目级 AI agent onboarding 入口。
 > 本文件只记录项目内可共享的事实、约定和入口；个人环境中的规则、Skills 与本机路径不在此列。
-> 最近更新：2026-07-01。
+> 最近更新：2026-07-22。
 
 ## 1. Project Identity
 
@@ -50,7 +50,7 @@ MyAutoPapers/
 
 | 任务 | 命令 | 备注 |
 |---|---|---|
-| 试跑（dev，本地验证关键词命中） | `just default` | 等价于 `cargo run --` 加 justfile 里的关键词参数；约 5–6 分钟（35 次 arxiv 请求 × 5 秒间隔） |
+| 试跑（dev，本地验证关键词命中） | `just default` | 等价于 `cargo run --` 加 justfile 里的关键词参数；约 6–7 分钟（42 次 arxiv 请求 × 5 秒间隔） |
 | 用现成 release 二进制跑 | `just run target/release/my_auto_papers.exe` | CI 中使用；要先 `cargo build --release` |
 | Release 构建 | `cargo build --release` | LTO + codegen-units=1，约 1–3 分钟 |
 | Lint | `cargo clippy` | 无项目级自定义配置 |
@@ -77,9 +77,9 @@ MyAutoPapers/
 - 每个子关键词控制在 **2–4 个英文词**，太长几乎零命中（精确短语匹配）
 - 单 group 内子关键词数 **≤ 4**，超过会拖慢请求且稀释命中（每多一个就多 5 秒 + 8 篇配额浪费）
 - `per_keyword_max_result` 是**每个 group** 的上限（不是每个子关键词），合理范围 5–15
-- 加新方向时优先复用现有 5 个 section 的归类
+- 加新方向时优先复用现有 6 个 section 的归类
 
-**当前 5 个 section / 19 个 group**（与 `justfile` 同步）：
+**当前 6 个 section / 22 个 group**（与 `justfile` 同步）：
 
 1. **强化学习效率**（3 组）：efficient RL / model-based / offline
 2. **图像处理效率**（3 组）：efficient ViT / efficient classification·detection·segmentation / efficient diffusion
@@ -89,9 +89,13 @@ MyAutoPapers/
    - 算法数学侧：linear attention·low-rank compression·Winograd convolution
 4. **其他前沿**（4 组）：image SR / video SR / quant trading·RL trading / stock prediction·portfolio
 5. **神经演化 / NAS**（2 组）：neuroevolution·NEAT / NAS·multi-objective NAS
+6. **AGI / 自主学习 / Neuro-Symbolic**（3 组）：
+   - neuro-symbolic·neural symbolic reasoning
+   - meta-learning·continual learning·lifelong learning
+   - curriculum learning·active learning
 
 新增/调整关键词时同步检查：
-- 新增 section 是否在上面 5 类的覆盖之内（不在则评估是否要扩张）
+- 新增 section 是否在上面 6 类的覆盖之内（不在则评估是否要扩张）
 - 全局 `exclude_keywords=multi-agent,multiagent` 是子串匹配（见 `src/arxiv.rs:227-249`），会同时影响所有 group；改这个值会影响包括量化交易方向在内的全部论文
 
 ### 4.2 错误处理约定
@@ -106,11 +110,11 @@ MyAutoPapers/
 
 ## 5. Active Context
 
-- **进行中**：关键词体系全面对齐使用者 4 个核心关注点 + 1 个隐性关注（neuroevolution / NAS），从原 13 组旧关键词（含 typo `casual`、与需求脱节的 chinese chess / code llm / speech / theorem proving 等）重构为 5 section / 19 group
-- **最近变更**：Section 3（对应 only_torch）从 4 组扩到 7 组，补齐 CPU 底层加速缺口——硬件内核侧（SIMD / AVX-512 / GEMM·cache）+ 算法数学侧（linear attention / low-rank compression / Winograd）。本地 `just default` 实测：11、12 组高相关，13 组初版锚点 `low-rank approximation` 被科学计算 DLRA 噪声占满，已改为 ML 味更足的 `linear attention`(≈474) + `low-rank compression`(≈71)
+- **进行中**：关键词体系从 5 section / 19 group 扩展为 6 section / 22 group，新增 Section 6（AGI / 自主学习 / Neuro-Symbolic）覆盖使用者对自学习机制、定向学习机制、neuro-symbolic 方向的关注
+- **最近变更**：新增 Section 6 的 3 组关键词——neuro-symbolic·neural symbolic reasoning / meta-learning·continual learning·lifelong learning / curriculum learning·active learning。此前 Section 3 从 4 组扩到 7 组补齐 CPU 底层加速缺口的变更已稳定
 - **阻塞**：无
-- **观察项**（suspended）：[`.issue/items/2026-07-01_arxiv_low_volume_keywords.md`](.issue/items/2026-07-01_arxiv_low_volume_keywords.md)——新增三组中 Winograd(≈28) / vectorized inference(≈10) 等低体量词的月度命中，约 2026-09 回看
-- **下一步**：观察 13 组换锚点后的相关性；Winograd(≈28) 单短语体量偏低，若整组连续两月零命中再考虑替换为更高体量的同义词
+- **观察项**（suspended）：[`.issue/items/2026-07-01_arxiv_low_volume_keywords.md`](.issue/items/2026-07-01_arxiv_low_volume_keywords.md)——Section 3 新增三组中 Winograd(≈28) / vectorized inference(≈10) 等低体量词的月度命中，约 2026-09 回看
+- **下一步**：Section 6 的 3 组关键词首月命中情况观察（预计 meta-learning·continual learning 体量充足，neuro-symbolic 体量中等，均不应零命中）；Section 3 第 13 组换锚点后的相关性持续观察
 
 ## 6. Knowledge Index
 
