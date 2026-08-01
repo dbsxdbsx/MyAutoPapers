@@ -52,5 +52,5 @@ keywords := "
              active inference/predictive coding
              "
 exclude := "multi-agent,multiagent"
-per_keyword := "8"
+per_keyword := "5"
 target_fields := "cs,stat"

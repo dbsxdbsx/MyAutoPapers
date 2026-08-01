@@ -11,7 +11,6 @@ pub struct Paper {
 }
 
 impl Paper {
-    // 新增方法：生成 README 表格行
     pub fn to_readme_markdown(&self, index: usize) -> String {
         let title_link = format!("**[{}]({})**", self.title, self.link);
         let date = self.date.split('T').next().unwrap_or("").to_string();
@@ -28,14 +27,12 @@ impl Paper {
         )
     }
 
-    // 新增方法：生成 Issue 的详细表格行
     pub fn to_issue_markdown(&self, index: usize) -> String {
         let title_link = format!("**[{}]({})**", self.title, self.link);
         let date = self.date.split('T').next().unwrap_or("").to_string();
         format!("| **{}** | {} | {} |", index + 1, title_link, date)
     }
 
-    // 新增方法：生成表格头（可复用）
     pub fn markdown_header(context: &str) -> String {
         match context {
             "readme" => "| **序号** | **标题** | **日期** | **摘要** |\n| --- | --- | --- | --- |"

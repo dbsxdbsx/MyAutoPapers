@@ -20,19 +20,15 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: 检出代码
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0
 
     - name: 设置 Rust 环境
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-        profile: minimal
-        override: true
+      uses: dtolnay/rust-toolchain@stable
 
     - name: 缓存 Cargo 依赖
-      uses: actions/cache@v3
+      uses: actions/cache@v5
       id: cargo-cache
       with:
         path: |
@@ -45,7 +41,7 @@ jobs:
         key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
     - name: 安装并缓存 Just
-      uses: actions/cache@v3
+      uses: actions/cache@v5
       id: just-cache
       with:
         path: |
@@ -77,15 +73,61 @@ jobs:
       run: just run "${{ env.BIN_PATH }}"
 
     - name: 提交更改
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: '✏️自动更新论文'
         file_pattern: 'README.md .github/ISSUE_TEMPLATE.md'
         push_options: '--force'
 
+    # JasonEtco/create-an-issue 仍停在 Node 20 且不再维护；改用 gh 解析 front matter 创建/更新 Issue
     - name: 创建 Issue 通知
-      uses: JasonEtco/create-an-issue@v2
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        update_existing: true
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      shell: bash
+      run: |
+        set -euo pipefail
+        python - <<'PY'
+        from pathlib import Path
+
+        text = Path(".github/ISSUE_TEMPLATE.md").read_text(encoding="utf-8")
+        if not text.startswith("---"):
+            raise SystemExit("ISSUE_TEMPLATE.md missing front matter")
+
+        _, front, body = text.split("---", 2)
+        title = ""
+        labels = []
+        for line in front.splitlines():
+            line = line.strip()
+            if line.startswith("title:"):
+                title = line[len("title:"):].strip()
+            elif line.startswith("labels:"):
+                labels = [x.strip() for x in line[len("labels:"):].split(",") if x.strip()]
+
+        if not title:
+            raise SystemExit("ISSUE_TEMPLATE.md missing title")
+
+        Path(".github/_issue_body.md").write_text(body.lstrip("\n"), encoding="utf-8")
+        Path(".github/_issue_meta.txt").write_text(
+            title + "\n" + "\n".join(labels), encoding="utf-8"
+        )
+        PY
+
+        TITLE=$(sed -n '1p' .github/_issue_meta.txt)
+        mapfile -t LABELS < <(tail -n +2 .github/_issue_meta.txt)
+
+        EXISTING=$(gh issue list --state open --limit 50 --json number,title \
+          --jq ".[] | select(.title == \"$TITLE\") | .number" | head -n 1)
+
+        if [ -n "$EXISTING" ]; then
+          echo "Updating existing issue #$EXISTING"
+          gh issue edit "$EXISTING" --body-file .github/_issue_body.md
+        else
+          echo "Creating new issue: $TITLE"
+          LABEL_ARGS=()
+          for label in "${LABELS[@]}"; do
+            [ -n "$label" ] && LABEL_ARGS+=(--label "$label")
+          done
+          gh issue create --title "$TITLE" --body-file .github/_issue_body.md "${LABEL_ARGS[@]}"
+        fi
+
+        rm -f .github/_issue_body.md .github/_issue_meta.txt

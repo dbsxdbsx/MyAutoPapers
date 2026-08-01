@@ -196,6 +196,10 @@ async fn main() -> Result<()> {
                         .unwrap_or(Utc::now())
                         .cmp(&a.date_time().unwrap_or(Utc::now()))
                 });
+                // 子关键词合并后可能超过上限；按日期取最新的 N 篇，保证每组不超过 per_keyword_max_result
+                if filtered.len() > config.per_keyword_max_result {
+                    filtered.truncate(config.per_keyword_max_result);
+                }
 
                 let readme_table = generate_table(&filtered, "readme", keyword);
                 let posted_issue_table = generate_table(&filtered, "issue", keyword);

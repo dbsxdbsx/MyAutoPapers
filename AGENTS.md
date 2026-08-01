@@ -2,7 +2,7 @@
 
 > 项目级 AI agent onboarding 入口。
 > 本文件只记录项目内可共享的事实、约定和入口；个人环境中的规则、Skills 与本机路径不在此列。
-> 最近更新：2026-07-22。
+> 最近更新：2026-08-02。
 
 ## 1. Project Identity
 
@@ -42,6 +42,7 @@ MyAutoPapers/
 - 改**关键词**（拉哪些论文）→ 看 `justfile` 的 `keywords` 变量
 - 改**抓取逻辑 / 重试 / 过滤**→ 看 `src/arxiv.rs`
 - 改**输出格式**（README/ISSUE 表格）→ 看 `src/types.rs` 的 `to_readme_markdown` / `to_issue_markdown`
+- 改**每组篇数上限**→ `justfile` 的 `per_keyword`；合并子关键词后会按日期截断到该上限（见 `src/main.rs`）
 - 改**整体流程**（备份 / 写文件 / 错误退出）→ 看 `src/main.rs`
 - 改**CI 时机 / 提交策略**→ 看 `.github/workflows/update.yaml`
 - **不要**手改 `README.md` 或 `.github/ISSUE_TEMPLATE.md`，它们每次都被程序覆盖
@@ -75,8 +76,8 @@ MyAutoPapers/
 
 **关键词撰写规则**：
 - 每个子关键词控制在 **2–4 个英文词**，太长几乎零命中（精确短语匹配）
-- 单 group 内子关键词数 **≤ 4**，超过会拖慢请求且稀释命中（每多一个就多 5 秒 + 8 篇配额浪费）
-- `per_keyword_max_result` 是**每个 group** 的上限（不是每个子关键词），合理范围 5–15
+- 单 group 内子关键词数 **≤ 4**，超过会拖慢请求且稀释命中（每多一个就多 5 秒 + `per_keyword` 篇配额浪费）
+- `per_keyword_max_result` 是**每个 group** 的最终写入上限（子关键词各自拉取后合并去重，再按日期截断）；合理范围 5–15；当前 `justfile` 为 `5`（也用于压低 Issue body，避免超过 GitHub 65536 字符上限）
 - 加新方向时优先复用现有 6 个 section 的归类
 
 **当前 6 个 section / 26 个 group**（与 `justfile` 同步）：
@@ -112,16 +113,15 @@ MyAutoPapers/
 
 ## 5. Active Context
 
-- **进行中**：关键词体系从 22 group 扩展为 26 group（6 section 不变），本轮变更由 GEB 读书 + 千脑智能理论调研驱动的全盘审视
-- **最近变更**（2026-07-22）：
-  - Section 1 新增 1 组：`object-centric world model / structured world model`——填补 MyZero world model 从单体式向物体级结构化演进的论文追踪缺口
-  - Section 5 新增 1 组：`open-ended learning / quality-diversity`——对接 only_torch NEAT 演化的多样性维持方向
-  - Section 6 替换 1 组：`curriculum learning / active learning` → `intrinsic motivation / curiosity-driven exploration`——前者过于传统，后者更切中"自我学习"的核心机制（agent 在无外部奖励时如何自己创造学习目标）
-  - Section 6 新增 2 组：`learned optimizer / meta-gradient`（学习如何优化自己，GEB "怪圈/自指"在 ML 中的直接映射）+ `active inference / predictive coding`（Karl Friston 自由能原理，统一 world model + intrinsic motivation + meta-learning 的理论框架）
-  - 此前 Section 3（7 组 CPU 效率）和 Section 6 原 3 组的变更已稳定
+- **进行中**：无（关键词 26 group 已落地；本轮修 CI Issue body 超限）
+- **最近变更**（2026-08-02）：
+  - `per_keyword` 从 8 调为 5；合并子关键词后按日期截断，真正保证每组不超过上限
+  - 根因：GitHub Issue body 上限 65536，满配额时 `.github/ISSUE_TEMPLATE.md` 超限导致 `create-an-issue` 失败（run #64）
+  - CI：升级 checkout/cache/rust-toolchain/git-auto-commit；`JasonEtco/create-an-issue` 改为 `gh` 创建/更新 Issue
+  - 此前（2026-07-22）：Section 1/5/6 关键词扩展至 26 group（详见 git log）
 - **阻塞**：无
 - **观察项**（suspended）：[`.issue/items/2026-07-01_arxiv_low_volume_keywords.md`](.issue/items/2026-07-01_arxiv_low_volume_keywords.md)——Section 3 低体量词月度命中，约 2026-09 回看
-- **下一步**：本轮新增 5 组关键词首月命中观察（预计 object-centric world model、intrinsic motivation 体量充足；active inference 在 cs 分类下体量可能偏少——若零命中需评估是否扩展 `target_fields` 至 q-bio.NC）；Section 5 open-ended learning 体量待观察
+- **下一步**：push 后可用 `workflow_dispatch` 补跑本月 Issue；继续观察新增关键词首月命中
 
 ## 6. Knowledge Index
 
