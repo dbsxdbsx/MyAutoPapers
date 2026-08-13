@@ -2,7 +2,7 @@
 
 > 项目级 AI agent onboarding 入口。
 > 本文件只记录项目内可共享的事实、约定和入口；个人环境中的规则、Skills 与本机路径不在此列。
-> 最近更新：2026-08-02。
+> 最近更新：2026-08-13。
 
 ## 1. Project Identity
 
@@ -51,7 +51,7 @@ MyAutoPapers/
 
 | 任务 | 命令 | 备注 |
 |---|---|---|
-| 试跑（dev，本地验证关键词命中） | `just default` | 等价于 `cargo run --` 加 justfile 里的关键词参数；约 8–9 分钟（64 次 arxiv 请求 × 5 秒间隔） |
+| 试跑（dev，本地验证关键词命中） | `just default` | 等价于 `cargo run --` 加 justfile 里的关键词参数；约 8–9 分钟（65 次 arxiv 请求 × 5 秒间隔） |
 | 用现成 release 二进制跑 | `just run target/release/my_auto_papers.exe` | CI 中使用；要先 `cargo build --release` |
 | Release 构建 | `cargo build --release` | LTO + codegen-units=1，约 1–3 分钟 |
 | Lint | `cargo clippy` | 无项目级自定义配置 |
@@ -80,9 +80,9 @@ MyAutoPapers/
 - `per_keyword_max_result` 是**每个 group** 的最终写入上限（子关键词各自拉取后合并去重，再按日期截断）；合理范围 5–15；当前 `justfile` 为 `5`（也用于压低 Issue body，避免超过 GitHub 65536 字符上限）
 - 加新方向时优先复用现有 6 个 section 的归类
 
-**当前 6 个 section / 26 个 group**（与 `justfile` 同步）：
+**当前 6 个 section / 27 个 group**（与 `justfile` 同步）：
 
-1. **强化学习效率 + 世界模型**（4 组）：efficient RL / model-based / offline / **object-centric world model·structured world model**
+1. **强化学习效率 + 世界模型**（5 组）：efficient RL / model-based / offline / **safe policy improvement** / object-centric world model·structured world model
 2. **图像处理效率**（3 组）：efficient ViT / efficient classification·detection·segmentation / efficient diffusion
 3. **ML 库 / CPU 效率**（7 组，对应 only_torch，分三层）：
    - 模型侧：efficient cpu inference / quantization / pruning·KD / tensor compilation·graph opt·operator fusion
@@ -113,15 +113,13 @@ MyAutoPapers/
 
 ## 5. Active Context
 
-- **进行中**：无（关键词 26 group 已落地；本轮修 CI Issue body 超限）
-- **最近变更**（2026-08-02）：
-  - `per_keyword` 从 8 调为 5；合并子关键词后按日期截断，真正保证每组不超过上限
-  - 根因：GitHub Issue body 上限 65536，满配额时 `.github/ISSUE_TEMPLATE.md` 超限导致 `create-an-issue` 失败（run #64）
-  - CI：升级 checkout/cache/rust-toolchain/git-auto-commit；`JasonEtco/create-an-issue` 改为 `gh` 创建/更新 Issue
-  - 此前（2026-07-22）：Section 1/5/6 关键词扩展至 26 group（详见 git log）
+- **进行中**：无（Section 1 已加 `safe policy improvement` 组，待 CI 出本月结果）
+- **最近变更**（2026-08-13）：
+  - Section 1 在 offline RL 后新增一组 `safe policy improvement`（27 group）；不配 `safe reinforcement learning`，避免被 CMDP/CPO 淹没
+  - 此前（2026-08-02）：`per_keyword` 从 8 调为 5，修复 Issue body 超限；CI 升级 checkout/cache/rust-toolchain/git-auto-commit，Issue 改用 `gh` 创建/更新
 - **阻塞**：无
 - **观察项**（suspended）：[`.issue/items/2026-07-01_arxiv_low_volume_keywords.md`](.issue/items/2026-07-01_arxiv_low_volume_keywords.md)——Section 3 低体量词月度命中，约 2026-09 回看
-- **下一步**：push 后可用 `workflow_dispatch` 补跑本月 Issue；继续观察新增关键词首月命中
+- **下一步**：push 后由 `main` 工作流重跑抓取；SPI 组体量低，可能填入 2024–2026 旧文，观察首月标题相关性
 
 ## 6. Knowledge Index
 

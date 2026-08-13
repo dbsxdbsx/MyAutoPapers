@@ -15,7 +15,7 @@ run bin_path:
         --exclude-keywords="{{exclude}}" \
         --per-keyword-max-result={{per_keyword}}
 
-# 关键词分 6 个 section，共 26 组（修改时请同步更新 AGENTS.md 的 Project-specific Norms）
+# 关键词分 6 个 section，共 27 组（修改时请同步更新 AGENTS.md 的 Project-specific Norms）
 # Section 1: 强化学习效率（RL Efficiency）+ 世界模型
 # Section 2: 图像处理效率（Image Processing Efficiency）
 # Section 3: ML 库 / CPU 效率（ML Library / CPU Efficiency，对应 only_torch 项目），含三层：
@@ -27,6 +27,7 @@ keywords := "
              efficient reinforcement learning/sample efficient reinforcement learning,
              model-based reinforcement learning/world model,
              offline reinforcement learning,
+             safe policy improvement,
              object-centric world model/structured world model,
              efficient vision transformer/mobile vit/lightweight vit,
              efficient image classification/efficient object detection/efficient semantic segmentation,
