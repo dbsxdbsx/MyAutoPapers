@@ -112,3 +112,11 @@ updated: YYYY-MM-DD
 3. 将条目从 `items/` 移到 `_archive/items/`。
 4. 若存在附件，将 `assets/<item-file-stem>/` 移到 `_archive/assets/<item-file-stem>/`，并同步修正条目内相对链接。
 5. 从当前入口文档、问题索引或外部 tracker 中移除或更新该条目引用;若产生长期知识，再提炼到 `.doc/` 或 `README.md`。
+
+## Status 枚举（强制）
+
+`status` **只认**：`suspended`｜`blocked`｜`resolved`｜`superseded`。
+
+- **禁止** `closed`（以及历史别名 `open` / `active` 等）：已解决用 `resolved`，被替代用 `superseded`。
+- `resolved` / `superseded` **必须**归档到 `.issue/_archive/items/`（附件同步 `_archive/assets/`）；留在 `items/` 不算收完。
+- `items/` 只保留仍需关注的 `suspended` / `blocked`。
