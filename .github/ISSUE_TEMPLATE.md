@@ -1,8 +1,8 @@
 ---
-title: 每月论文更新 - 2026年10月13日
+title: 每月论文更新 - 2026年10月31日
 labels: documentation
 ---
-## 最后更新：2026-10-13 12:02
+## 最后更新：2026-10-31 09:19
 **本次更新执行命令**
 ```
 D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
@@ -52,27 +52,27 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ### 1. efficient reinforcement learning/sample efficient reinforcement learning
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Sample-Efficiency of Kolmogorov-Arnold Networks](https://arxiv.org/abs/2610.10627v1)** | 2026-10-07 |
-| **2** | **[Task-Space Imitation Guidance for Efficient Reinforcement Learning](https://arxiv.org/abs/2610.07527v1)** | 2026-10-05 |
-| **3** | **[T-Router: Learning Thalamic Routing for Reasoning with Parameter-Efficient Reinforcement Learning](https://arxiv.org/abs/2609.39109v1)** | 2026-09-30 |
-| **4** | **[Dreamer-SAC: Off-Policy Learning in Latent World Models for Sample-Efficient Autonomous Driving](https://arxiv.org/abs/2608.10386v1)** | 2026-08-11 |
-| **5** | **[Gated Q-learning: Add Off-Policy Bias to Taste](https://arxiv.org/abs/2607.28916v1)** | 2026-07-31 |
+| **1** | **[Adaptive Decoding Methods for Token-Efficient Reinforcement Learning](https://arxiv.org/abs/2610.25860v1)** | 2026-10-19 |
+| **2** | **[Sample-Efficient Reinforcement Learning with General Utilities via Neural Dual Critics](https://arxiv.org/abs/2610.24880v2)** | 2026-10-17 |
+| **3** | **[Training-Free Prompt Selection for Efficient Reinforcement Learning With Partial Rollouts](https://arxiv.org/abs/2610.24229v1)** | 2026-10-16 |
+| **4** | **[Sample-Efficient Reinforcement Learning for Policy Improvement via Flow-Reversed Action Anchors](https://arxiv.org/abs/2610.22852v1)** | 2026-10-16 |
+| **5** | **[Sample-Efficiency of Kolmogorov-Arnold Networks](https://arxiv.org/abs/2610.10627v1)** | 2026-10-07 |
 ### 2. model-based reinforcement learning/world model
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[RSI-Anything: Unlocking Recursive Self-Improvement with World Models](https://arxiv.org/abs/2610.13912v1)** | 2026-10-09 |
-| **2** | **[Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing](https://arxiv.org/abs/2610.13823v1)** | 2026-10-09 |
-| **3** | **[Dream to Remember: Continual Steering of Generalist Robot Policies with World Models](https://arxiv.org/abs/2610.13816v1)** | 2026-10-09 |
-| **4** | **[GLIMPSE: Global-Local Indexing with Multi-Precision Spectral Encoding for Explorable Video World Models](https://arxiv.org/abs/2610.13706v1)** | 2026-10-09 |
-| **5** | **[Safe Learning of Adaptive Control Policies for Remote Patient Monitoring](https://arxiv.org/abs/2610.10720v1)** | 2026-10-07 |
+| **1** | **[world2vec: Mechanistic world models through latent dynamics learning](https://arxiv.org/abs/2610.40637v1)** | 2026-10-29 |
+| **2** | **[L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory](https://arxiv.org/abs/2610.40614v1)** | 2026-10-29 |
+| **3** | **[Fight World Model: Customizable Combat through Visual Interaction Proxies](https://arxiv.org/abs/2610.40607v1)** | 2026-10-29 |
+| **4** | **[Algebraic World Model: From Exploration to Proofs](https://arxiv.org/abs/2610.40503v1)** | 2026-10-29 |
+| **5** | **[GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling](https://arxiv.org/abs/2610.37257v2)** | 2026-10-27 |
 ### 3. offline reinforcement learning
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Beyond Policy Support: Interaction Constrained Offline Reinforcement Learning for Autonomous Driving](https://arxiv.org/abs/2610.09763v1)** | 2026-10-07 |
-| **2** | **[LASER: Latent Space Adjoint Matching for Support-Constrained Entropy-Regularized Offline RL](https://arxiv.org/abs/2610.08989v1)** | 2026-10-06 |
-| **3** | **[Variance-Averse $n$-Step Offline Reinforcement Learning for Sparse Long-Horizon Environments](https://arxiv.org/abs/2610.07899v1)** | 2026-10-06 |
-| **4** | **[Beyond State-Wise Mirror Descent: Offline Policy Optimization with Parametric Policies](https://arxiv.org/abs/2602.23811v5)** | 2026-02-27 |
-| **5** | **[Infinitesimal Operator World Models: Finite-Sample Guarantees for Offline Reinforcement Learning](https://arxiv.org/abs/2511.10383v2)** | 2025-11-13 |
+| **1** | **[Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps](https://arxiv.org/abs/2610.39264v1)** | 2026-10-29 |
+| **2** | **[Transportable Offline Reinforcement Learning in Presence of Unmeasured Confounding](https://arxiv.org/abs/2610.38253v1)** | 2026-10-28 |
+| **3** | **[Value-Rectified Distillation for Flow-based Offline Reinforcement Learning](https://arxiv.org/abs/2610.29075v2)** | 2026-10-21 |
+| **4** | **[Learning Multimodal One-step Flow Policy via Value-weighted Optimal Transport](https://arxiv.org/abs/2609.15883v2)** | 2026-09-14 |
+| **5** | **[Latent Policy Steering through One-Step Flow Policies](https://arxiv.org/abs/2603.05296v3)** | 2026-03-05 |
 ### 4. safe policy improvement
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
@@ -83,184 +83,184 @@ D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
 ### 5. object-centric world model/structured world model
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[World-as-Graph: Relational World Modeling Through Latent Space Graphs](https://arxiv.org/abs/2609.38927v1)** | 2026-09-30 |
-| **2** | **[From Pixel to Poses: Object-centric Tool Manipulation Learning from Human Demonstrations](https://arxiv.org/abs/2609.35375v1)** | 2026-09-28 |
-| **3** | **[CST-WM: A Causally Structured World Model for Embodied Visual Tracking](https://arxiv.org/abs/2609.06302v2)** | 2026-09-05 |
-| **4** | **[MOSH-WM: Mask-Grounded Soft-Hamiltonian Dynamics for Object-Centric World Models](https://arxiv.org/abs/2608.22750v1)** | 2026-08-24 |
-| **5** | **[Graph-Operator World Models for Morphology-Parameter Generalization in Continuous Control](https://arxiv.org/abs/2608.20936v1)** | 2026-08-21 |
+| **1** | **[LLM-Based Exogenous World Modeling for Dynamic Scheduling](https://arxiv.org/abs/2610.29308v1)** | 2026-10-21 |
+| **2** | **[OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling](https://arxiv.org/abs/2610.22355v1)** | 2026-10-15 |
+| **3** | **[World-as-Graph: Relational World Modeling Through Latent Space Graphs](https://arxiv.org/abs/2609.38927v1)** | 2026-09-30 |
+| **4** | **[From Pixel to Poses: Object-centric Tool Manipulation Learning from Human Demonstrations](https://arxiv.org/abs/2609.35375v1)** | 2026-09-28 |
+| **5** | **[CST-WM: A Causally Structured World Model for Embodied Visual Tracking](https://arxiv.org/abs/2609.06302v2)** | 2026-09-05 |
 ### 6. efficient vision transformer/mobile vit/lightweight vit
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[MoE-based Feature Adapter for Prompt-free Binary Coronary Artery Segmentation in X-ray Angiography](https://arxiv.org/abs/2608.24783v1)** | 2026-08-25 |
-| **2** | **[HSMLA: Hierarchical Softmax Multi-scale Linear Attention for Efficient Vision Transformers](https://arxiv.org/abs/2608.07616v2)** | 2026-08-07 |
-| **3** | **[Foveation-Guided Dynamic Token Selection for Robust and Efficient Vision Transformers](https://arxiv.org/abs/2607.09480v1)** | 2026-07-10 |
-| **4** | **[ASSCG: Just-Right Gating over Chattering for Fast-Slow LLM Planning in Autonomous Driving](https://arxiv.org/abs/2606.25509v1)** | 2026-06-24 |
-| **5** | **[RePlan-Bot: Multi-Level Replanning for Embodied Instruction Following](https://arxiv.org/abs/2605.25851v1)** | 2026-05-25 |
+| **1** | **[ConvRoute-ViT: Convolutional Token Routing for Efficient Vision Transformers](https://arxiv.org/abs/2610.38284v1)** | 2026-10-28 |
+| **2** | **[UT-HMR: Uncertainty-Guided Temporal Modeling for Robust 3D Human Mesh Recovery](https://arxiv.org/abs/2610.36203v1)** | 2026-10-26 |
+| **3** | **[Promise and Limits of Cross-Architecture Knowledge Distillation for Lightweight Medical Vision Transformers (LiteMed-ViT)](https://arxiv.org/abs/2610.33520v1)** | 2026-10-24 |
+| **4** | **[MoE-based Feature Adapter for Prompt-free Binary Coronary Artery Segmentation in X-ray Angiography](https://arxiv.org/abs/2608.24783v1)** | 2026-08-25 |
+| **5** | **[HSMLA: Hierarchical Softmax Multi-scale Linear Attention for Efficient Vision Transformers](https://arxiv.org/abs/2608.07616v2)** | 2026-08-07 |
 ### 7. efficient image classification/efficient object detection/efficient semantic segmentation
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Event-Frame Fusion for Inter-Frame Segmentation via Event-Guided Motion](https://arxiv.org/abs/2609.22500v1)** | 2026-09-18 |
-| **2** | **[SCDM: Spatial-Contextual Disentanglement Mamba via Differential Inference for Efficient Image Classification](https://arxiv.org/abs/2609.12825v2)** | 2026-09-11 |
-| **3** | **[ROI-Gated SAHI: Content-Adaptive Slicing-Based Inference for Efficient Object Detection](https://arxiv.org/abs/2608.23923v1)** | 2026-08-25 |
-| **4** | **[Spiking Neural Networks for Energy-Efficient Object Detection in Forward-Looking Sonar Imagery](https://arxiv.org/abs/2608.22072v1)** | 2026-08-22 |
-| **5** | **[Sterilizable Scene Graph Generation for Operating Rooms](https://arxiv.org/abs/2608.16469v1)** | 2026-08-17 |
+| **1** | **[BiHashFormer: Hash-Driven Dual-Branch Transformer for Efficient Object Detection in HRW Shots](https://arxiv.org/abs/2610.39937v1)** | 2026-10-29 |
+| **2** | **[YOLOF-MLD: A Multi-Level Distillation Framework for Efficient Object Detection](https://arxiv.org/abs/2610.39408v1)** | 2026-10-29 |
+| **3** | **[SCMerge: Spatial-Consistency-Aware Token Pair Merging for Efficient Semantic Segmentation](https://arxiv.org/abs/2610.21642v1)** | 2026-10-15 |
+| **4** | **[SpaceCache: Intermediate Feature Reuse for Efficient Semantic Segmentation on Point Cloud Streams](https://arxiv.org/abs/2610.21207v1)** | 2026-10-15 |
+| **5** | **[Event-Frame Fusion for Inter-Frame Segmentation via Event-Guided Motion](https://arxiv.org/abs/2609.22500v1)** | 2026-09-18 |
 ### 8. efficient diffusion model/one-step diffusion/distillation diffusion
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[High-Throughput Generative Video Super-Resolution on a Single Consumer GPU](https://arxiv.org/abs/2610.13179v1)** | 2026-10-09 |
-| **2** | **[Salvation Lies Within: Eliciting Inherent Style Transfer in Step-Distilled Diffusion Models](https://arxiv.org/abs/2610.05066v1)** | 2026-10-04 |
-| **3** | **[Distilling Diffusion Score Discrepancy for Efficient Training Data Attribution](https://arxiv.org/abs/2609.38776v2)** | 2026-09-30 |
-| **4** | **[FastVR: Efficient Streaming Video Restoration with One-Step Diffusion](https://arxiv.org/abs/2609.36757v1)** | 2026-09-29 |
-| **5** | **[LensBridge: Frequency-Guided Compound Degradation Adaptation for Lens Aberration Correction and Veiling Glare Removal](https://arxiv.org/abs/2610.00318v1)** | 2026-09-29 |
+| **1** | **[Multi-Draft On-Policy Distillation for Diffusion Drafters](https://arxiv.org/abs/2610.37778v1)** | 2026-10-27 |
+| **2** | **[Cumulative Marginal Matching for One-Step Diffusion](https://arxiv.org/abs/2610.34575v1)** | 2026-10-25 |
+| **3** | **[Rethinking Underwater Image Enhancement: Learning through Text-Guided Degradation Curriculum](https://arxiv.org/abs/2610.29569v2)** | 2026-10-21 |
+| **4** | **[DualHeads: Reward-tilted few-step diffusion made simple](https://arxiv.org/abs/2610.28858v1)** | 2026-10-20 |
+| **5** | **[DiPLO: Self-distilled Diffusion Planning for Loco-manipulation](https://arxiv.org/abs/2610.24847v1)** | 2026-10-17 |
 ### 9. efficient cpu inference/on-device inference/edge inference
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Low-Cost Sensor Calibration for Indoor Air Quality Monitoring: A Dataset, Evaluation Scenarios, and a Lightweight Model](https://arxiv.org/abs/2610.11236v1)** | 2026-10-08 |
-| **2** | **[A Framework for Accelerating Transformer Inference on RISC-V for Edge AI](https://arxiv.org/abs/2610.08688v1)** | 2026-10-06 |
-| **3** | **[HintKD: Hint Knowledge Distillation for Bandwidth-Constrained Cloud-Edge Inference](https://arxiv.org/abs/2610.08412v1)** | 2026-10-06 |
-| **4** | **[Stepped MoE: Segment-Level Routing with Configurable Inference Complexity](https://arxiv.org/abs/2610.07348v1)** | 2026-10-05 |
-| **5** | **[Lightweight and Resource-Efficient Perception for Robotic Guide Dogs](https://arxiv.org/abs/2610.03187v2)** | 2026-10-02 |
+| **1** | **[MulClip: A table-free activation function with monotonic and folding regimes for reservoir computing on microcontrollers](https://arxiv.org/abs/2610.39343v1)** | 2026-10-29 |
+| **2** | **[Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware](https://arxiv.org/abs/2610.37056v1)** | 2026-10-27 |
+| **3** | **[StreamSE: Neural Audio Codec-based Streaming Speech Enhancement for On-device Inference](https://arxiv.org/abs/2610.37024v1)** | 2026-10-27 |
+| **4** | **[SPARTA: A Sparse Ternary LLM Accelerator with Adaptive Attention and Unified Datapath for Long-Context Edge Inference](https://arxiv.org/abs/2610.34824v1)** | 2026-10-26 |
+| **5** | **[Navigating human-robot interaction challenges in private and residential aged care homes](https://arxiv.org/abs/2610.31149v1)** | 2026-10-22 |
 ### 10. model quantization/low-bit quantization/binary neural network
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[When Lower Reconstruction Loss Hurts: Distributionally Robust Refinement for Low-Bit LLM Quantization](https://arxiv.org/abs/2610.11226v1)** | 2026-10-08 |
-| **2** | **[Bringing BNNs to Fast Event Processing](https://arxiv.org/abs/2610.09873v1)** | 2026-10-07 |
-| **3** | **[Dual-QK: Sharp Queries and Flat Keys for Prunable 2-bit KV Caches](https://arxiv.org/abs/2610.09827v1)** | 2026-10-07 |
-| **4** | **[Loopy: Low-Bit Quantization Framework for Looped Language Models](https://arxiv.org/abs/2610.05265v1)** | 2026-10-04 |
-| **5** | **[RPFQ-ViT: Rotated Phase-Frame Quantization for Extremely Low-Bit Weights in Vision Transformers](https://arxiv.org/abs/2610.04457v1)** | 2026-10-03 |
+| **1** | **[A Unified Hessian-Guided Framework for Post-Training Quantization](https://arxiv.org/abs/2610.40345v1)** | 2026-10-29 |
+| **2** | **[Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models](https://arxiv.org/abs/2610.38681v1)** | 2026-10-28 |
+| **3** | **[Revisiting Privacy Risks in Quantized Deep Neural Networks](https://arxiv.org/abs/2610.37488v1)** | 2026-10-27 |
+| **4** | **[Let the Gate Decide: Per-Lookup Precision for Quantized Conditional Memory in LLMs](https://arxiv.org/abs/2610.35985v1)** | 2026-10-26 |
+| **5** | **[ResCom: Activation Residual Compensation for Large Language Model Quantization](https://arxiv.org/abs/2610.35955v1)** | 2026-10-25 |
 ### 11. network pruning/sparse neural network/knowledge distillation
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[COFFEQA: Counterfactual-Guided Few-Shot Distillation for LLM Question Answering](https://arxiv.org/abs/2610.12837v1)** | 2026-10-09 |
-| **2** | **[SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference](https://arxiv.org/abs/2610.12327v1)** | 2026-10-08 |
-| **3** | **[Universal Textual Teaching for LLMs](https://arxiv.org/abs/2610.12114v1)** | 2026-10-08 |
-| **4** | **[Dynamics as Code: On Model Compression via Dynamic System](https://arxiv.org/abs/2610.11115v2)** | 2026-10-08 |
-| **5** | **[Towards Efficient Robotic Manipulation Models with Self-Recursive Pruning](https://arxiv.org/abs/2610.08555v1)** | 2026-10-06 |
+| **1** | **[Soil Moisture Estimation in Precision Agriculture: A Knowledge Distillation Approach](https://arxiv.org/abs/2610.40432v1)** | 2026-10-29 |
+| **2** | **[BEACON: Distilled Begin/End-Aware Structured Decoding for Continuous Sign Language Segmentation](https://arxiv.org/abs/2610.39553v1)** | 2026-10-29 |
+| **3** | **[Distilling Large-Scale Machine Learning Interatomic Potentials to Predict Long-Timescale Electrolyte Transport Properties](https://arxiv.org/abs/2610.39513v1)** | 2026-10-29 |
+| **4** | **[SelectPFN: Amortized Bayesian Variable Selection for Sparse Nonlinear Regression with Prior-Data Fitted Networks](https://arxiv.org/abs/2610.21950v1)** | 2026-10-15 |
+| **5** | **[SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference](https://arxiv.org/abs/2610.12327v1)** | 2026-10-08 |
 ### 12. tensor compilation/computation graph optimization/operator fusion
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[RLX: A Unified Multi-Backend Tensor Compiler and Distributed Runtime in Rust](https://arxiv.org/abs/2609.37916v1)** | 2026-09-29 |
-| **2** | **[Unifying In-Memory Data Analytics through Sparse Compilation](https://arxiv.org/abs/2609.30497v1)** | 2026-09-24 |
-| **3** | **[RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision Models](https://arxiv.org/abs/2609.28262v1)** | 2026-09-23 |
-| **4** | **[TokaGLINT: A Scalable GPU-Tailored Implicit Solver for Full 3D Tokamak Electromagnetic Simulations](https://arxiv.org/abs/2609.21366v1)** | 2026-09-18 |
-| **5** | **[Accelerating Floating-Point Satisfiability Solving via Gradient Normalization](https://arxiv.org/abs/2610.08808v1)** | 2026-09-14 |
+| **1** | **[TrainBridge: Agentic NPU Training Optimization Guided by GPU Compilation Evidence](https://arxiv.org/abs/2610.29171v1)** | 2026-10-21 |
+| **2** | **[Parallel Sparse Outputs for Tensor Compilers](https://arxiv.org/abs/2610.19308v2)** | 2026-10-13 |
+| **3** | **[Grounding Deep Learning Framework Testing in Data Flow](https://arxiv.org/abs/2610.15808v1)** | 2026-10-11 |
+| **4** | **[RLX: A Unified Multi-Backend Tensor Compiler and Distributed Runtime in Rust](https://arxiv.org/abs/2609.37916v1)** | 2026-09-29 |
+| **5** | **[Unifying In-Memory Data Analytics through Sparse Compilation](https://arxiv.org/abs/2609.30497v1)** | 2026-09-24 |
 ### 13. SIMD/AVX-512/vectorized inference
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Oído: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator](https://arxiv.org/abs/2610.13447v1)** | 2026-10-09 |
-| **2** | **[CacheFlex: Direct Software-Managed Access to Higher-Level Cache for Scalable Vector Support](https://arxiv.org/abs/2610.12940v1)** | 2026-10-09 |
-| **3** | **[Compact and Efficient Indexes for Learned Sparse Retrieval](https://arxiv.org/abs/2610.12300v1)** | 2026-10-08 |
-| **4** | **[Accelerating HQC for Post-Quantum TLS 1.3 on x86 IoT Gateways](https://arxiv.org/abs/2610.11107v1)** | 2026-10-08 |
-| **5** | **[Performance Portable $\mathrm{SU}(N)$ Lattice Gauge Theory Simulation with Kokkos](https://arxiv.org/abs/2610.09766v1)** | 2026-10-07 |
+| **1** | **[Streaming Speech Recognition on a Microcontroller: a 65.7M-Parameter Transducer in 2 and 4 Bits on the ESP32-P4](https://arxiv.org/abs/2610.38739v1)** | 2026-10-28 |
+| **2** | **[SPARSEBLEED: Bypassing Attribute-Inference Defenses via Sparsity Optimizations](https://arxiv.org/abs/2610.38110v1)** | 2026-10-28 |
+| **3** | **[Lossless Compression of Proximity Graph Indexes for Efficient Approximate Nearest Neighbors Search](https://arxiv.org/abs/2610.37176v1)** | 2026-10-27 |
+| **4** | **[Fast Forgiving Base64 Decoding with SIMD Instructions](https://arxiv.org/abs/2610.17406v2)** | 2026-10-12 |
+| **5** | **[Accelerating HQC for Post-Quantum TLS 1.3 on x86 IoT Gateways](https://arxiv.org/abs/2610.11107v2)** | 2026-10-08 |
 ### 14. fast matrix multiplication/sparse matrix multiplication/cache-efficient
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Faster Planar Graph Algorithms for Connectivity Problems via Meanders](https://arxiv.org/abs/2610.11944v1)** | 2026-10-08 |
-| **2** | **[Faster high-accuracy multicommodity flow in dense graphs](https://arxiv.org/abs/2610.06665v1)** | 2026-10-05 |
-| **3** | **[A Shortest Augmenting Path Algorithm for Linear Matroid Parity](https://arxiv.org/abs/2610.03030v1)** | 2026-10-02 |
-| **4** | **[Scalable GNN-based Knowledge Graph Representation Learning with Efficient Message Passing](https://arxiv.org/abs/2609.34499v1)** | 2026-09-28 |
-| **5** | **[Fast matrix multiplication via recursive $\langle$ 4x4x4:48 $\rangle$ algorithms into practice](https://arxiv.org/abs/2609.12027v2)** | 2026-09-10 |
+| **1** | **[Taming Multi-Dimensional Skew in Sparse Matrix Multiplication with Contention-Aware Scheduling [Technical Report]](https://arxiv.org/abs/2610.36822v1)** | 2026-10-27 |
+| **2** | **[Bicriteria Approximate Navigable Graphs in General Metrics](https://arxiv.org/abs/2610.34302v1)** | 2026-10-25 |
+| **3** | **[Nemo: Efficient Caching with Index Pushdown for Disaggregated OLTP Databases](https://arxiv.org/abs/2610.33306v1)** | 2026-10-23 |
+| **4** | **[Simultaneous Matrix Multiplication by Tensor Contraction Aggregation](https://arxiv.org/abs/2610.26563v2)** | 2026-10-19 |
+| **5** | **[Computing faster with a full memory: Catalytic algorithms break time-space lower bounds](https://arxiv.org/abs/2610.24377v1)** | 2026-10-17 |
 ### 15. linear attention/low-rank compression/Winograd convolution
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Softmax Attention on Gaussian Mixtures: Linear When It Can, Selective When It Must](https://arxiv.org/abs/2610.11798v1)** | 2026-10-08 |
-| **2** | **[LRCC: Generalizing Low-Rank Compression with Conditional Computation](https://arxiv.org/abs/2610.08858v1)** | 2026-10-05 |
-| **3** | **[The Functional Structure of Post-Compression Recovery in Low-Rank LLMs](https://arxiv.org/abs/2610.05504v1)** | 2026-10-04 |
-| **4** | **[AttSVD:Prompt-Adaptive Low-Rank KV Cache Compression via Attention-Guided SVD](https://arxiv.org/abs/2610.06927v1)** | 2026-10-03 |
-| **5** | **[MS-GLA: Multi-Scale Gated Linear Attention for Addressing Representational Bottlenecks via Multi-Temporal Resolution](https://arxiv.org/abs/2609.35664v2)** | 2026-09-28 |
+| **1** | **[How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs](https://arxiv.org/abs/2610.40039v1)** | 2026-10-29 |
+| **2** | **[Low-Bit GDN Recurrent-State Quantization: Global Gradient-aware Allocation and Pure-Write Sliding Windows](https://arxiv.org/abs/2610.39931v1)** | 2026-10-29 |
+| **3** | **[Dual DeltaNet: Value-Side Memory Reorganization for Linear Attention](https://arxiv.org/abs/2610.38578v1)** | 2026-10-28 |
+| **4** | **[Compression of turbulent flow data through an extended space-time correlation: certification against the modal energy budget](https://arxiv.org/abs/2610.32427v1)** | 2026-10-23 |
+| **5** | **[DiffVortex: A quantum-inspired fast solver for incompressible flows](https://arxiv.org/abs/2610.30012v1)** | 2026-10-21 |
 ### 16. image super resolution/efficient super resolution
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution](https://arxiv.org/abs/2610.13547v1)** | 2026-10-09 |
-| **2** | **[DISRQAD: Diffusion Image Super-Resolution Quality Assessment Dataset and Benchmark](https://arxiv.org/abs/2610.09077v1)** | 2026-10-06 |
-| **3** | **[TIRMamba: A Thermal-Prior-Modulated State-Space Network for Sub-Million-Parameter Infrared Image Super-Resolution](https://arxiv.org/abs/2610.05182v1)** | 2026-10-04 |
-| **4** | **[DriftSR: One-Step Real-World Image Super-Resolution via Distribution Drifting](https://arxiv.org/abs/2610.04819v1)** | 2026-10-03 |
-| **5** | **[Consecutive Posterior Fusion for Diffusive Recovery of Unobservable Image Structures](https://arxiv.org/abs/2610.03261v1)** | 2026-10-02 |
+| **1** | **[HiFiPix: Bringing High-Fidelity Real-World Super-Resolution Back to Pixel Space](https://arxiv.org/abs/2610.35515v1)** | 2026-10-26 |
+| **2** | **[WorldSR: Harnessing World Knowledge Search for Grounded Image Super-Resolution](https://arxiv.org/abs/2610.28423v1)** | 2026-10-20 |
+| **3** | **[FreeTransformSR: Efficient Lightweight Image Super-Resolution via Free Low-Rank Learnable Transform](https://arxiv.org/abs/2609.05912v4)** | 2026-09-05 |
+| **4** | **[P-K-GCN: Physics-augmented Koopman-enhanced Graph Convolutional Network for Deep Spatiotemporal Super-resolution](https://arxiv.org/abs/2606.19303v1)** | 2026-06-17 |
+| **5** | **[Noise-Started One-Step Real-World Super-Resolution via LR-Conditioned SplitMeanFlow and GAN Refinement](https://arxiv.org/abs/2605.09328v2)** | 2026-05-10 |
 ### 17. video super resolution
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[High-Throughput Generative Video Super-Resolution on a Single Consumer GPU](https://arxiv.org/abs/2610.13179v1)** | 2026-10-09 |
-| **2** | **[Streaming-Aware Diffusion for Real-Time Video Super-Resolution via Cross-Step Attention](https://arxiv.org/abs/2610.11746v1)** | 2026-10-08 |
-| **3** | **[FANVIDv2: Evaluating Video Super-Resolution by Face and Licence-Plate Recognition Under Compound Degradation](https://arxiv.org/abs/2609.39649v1)** | 2026-09-30 |
-| **4** | **[RelayVSR: Large-Small Model Collaboration for Efficient Real-World Video Super-Resolution](https://arxiv.org/abs/2609.37850v1)** | 2026-09-29 |
-| **5** | **[ReCaVSR: One-Step Streaming Diffusion Video Super-Resolution with Recycled Latents and Learned Cache Routing](https://arxiv.org/abs/2609.37831v1)** | 2026-09-29 |
+| **1** | **[AlbumVSR: Identity-Preserving Face Video Super-Resolution from a Personal Photo Album](https://arxiv.org/abs/2610.39001v1)** | 2026-10-28 |
+| **2** | **[Residual Motion Splatting for Continuous Space-Time Video Super-Resolution](https://arxiv.org/abs/2610.38499v1)** | 2026-10-28 |
+| **3** | **[NanoVSR: Towards Real-Time Video Super-Resolution on Edge Devices](https://arxiv.org/abs/2607.10495v2)** | 2026-07-11 |
+| **4** | **[LSGQuant: Layer-Sensitivity Guided Quantization for One-Step Diffusion Real-World Video Super-Resolution](https://arxiv.org/abs/2602.03182v2)** | 2026-02-03 |
+| **5** | **[Time-Correlated Video Bridge Matching](https://arxiv.org/abs/2510.12453v4)** | 2025-10-14 |
 ### 18. quantitative trading/algorithmic trading/reinforcement learning for trading
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[OOM-RL II: Reality Is an Oracle, Not a Debugger Provenance-Constrained Diagnosis in Continually Evolving Agent-Engineered Systems](https://arxiv.org/abs/2610.10256v1)** | 2026-10-07 |
-| **2** | **[EntroPrefill: Renyi-Guided Context Pruning with Conditional Stability Guarantees for Retrieval-Augmented Generation](https://arxiv.org/abs/2610.09757v1)** | 2026-10-07 |
-| **3** | **[Trading Strategy Optimization via Textual Gradient](https://arxiv.org/abs/2610.03128v2)** | 2026-10-02 |
-| **4** | **[PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading](https://arxiv.org/abs/2610.01325v1)** | 2026-10-01 |
-| **5** | **[QuantCode Model: Specializing Language Models for Executable Algorithmic Trading Code](https://arxiv.org/abs/2609.39420v1)** | 2026-09-30 |
+| **1** | **[FinLLM-KG: Knowledge Graph-Enhanced LLMs for Financial Sentiment Analysis in Algorithmic Trading](https://arxiv.org/abs/2610.36083v1)** | 2026-10-26 |
+| **2** | **[Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading](https://arxiv.org/abs/2610.32237v1)** | 2026-10-23 |
+| **3** | **[Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research](https://arxiv.org/abs/2610.30113v1)** | 2026-10-21 |
+| **4** | **[BALLAST: Physics-Aware Moving Target Defense for Industrial Control Systems Using a Digital Twin Safety Oracle](https://arxiv.org/abs/2610.18311v1)** | 2026-10-13 |
+| **5** | **[OOM-RL II: Reality Is an Oracle, Not a Debugger Provenance-Constrained Diagnosis in Continually Evolving Agent-Engineered Systems](https://arxiv.org/abs/2610.10256v1)** | 2026-10-07 |
 ### 19. stock prediction/portfolio optimization/financial time series forecasting
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Utility-Based Recovery Risk Measures: Redundancy and Approximation for Portfolio Optimization](https://arxiv.org/abs/2610.13454v1)** | 2026-10-09 |
-| **2** | **[Large-Scale Benchmarking of Quantum Neural Network Configurations for Financial Time Series Forecasting](https://arxiv.org/abs/2610.12148v1)** | 2026-10-08 |
-| **3** | **[Multi-period Mean-Expectile Portfolio Optimization under Wasserstein Ambiguity: Reformulation, Degeneracy and the Role of the Ground Metric](https://arxiv.org/abs/2610.11917v1)** | 2026-10-08 |
-| **4** | **[Incentive Alignment in Online Experimentation](https://arxiv.org/abs/2610.05922v2)** | 2026-10-05 |
+| **1** | **[Distributionally robust chance-constrained standard quadratic optimization with Wasserstein ambiguity](https://arxiv.org/abs/2610.39823v1)** | 2026-10-29 |
+| **2** | **[Market Regime-Based Multi-Asset Portfolio Optimization Using Nested Clustered Optimization for Tactical Asset Allocation](https://arxiv.org/abs/2610.27751v4)** | 2026-10-20 |
+| **3** | **[DPAL: A Test-Time Adaptation Loss for Financial Time Series Forecasting](https://arxiv.org/abs/2610.14376v1)** | 2026-10-09 |
+| **4** | **[Large-Scale Benchmarking of Quantum Neural Network Configurations for Financial Time Series Forecasting](https://arxiv.org/abs/2610.12148v1)** | 2026-10-08 |
 | **5** | **[Opening-Price Shortcut in Stock Prediction: A Conditional Opening Prior-and-Evidence Framework](https://arxiv.org/abs/2610.06948v1)** | 2026-10-03 |
 ### 20. neuroevolution/NEAT/evolutionary neural network
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Optimal normal approximation for symmetric statistics](https://arxiv.org/abs/2610.02724v1)** | 2026-10-02 |
-| **2** | **[Continual Reinforcement Learning with Neuroevolution](https://arxiv.org/abs/2610.01583v2)** | 2026-10-01 |
-| **3** | **[Environmental requirements for the use of social information by artificial life agents using evolved plastic artificial neural networks](https://arxiv.org/abs/2609.35018v1)** | 2026-09-28 |
-| **4** | **[A roadmap for polymer informatics super-intelligence](https://arxiv.org/abs/2609.34051v1)** | 2026-09-28 |
-| **5** | **[Tails and Trails: Comets and NEOs Survive Co-addition in Rubin Early Data Preview 2](https://arxiv.org/abs/2609.30361v1)** | 2026-09-24 |
+| **1** | **[TRON: Transferring Naturally Evolved Network Architectures into Neuroevolution](https://arxiv.org/abs/2610.35647v1)** | 2026-10-26 |
+| **2** | **[From Human Intent to In-Orbit Action: A Self-Learning Large Language Model Agent for 6G Satellite Networks](https://arxiv.org/abs/2610.34387v1)** | 2026-10-25 |
+| **3** | **[A homological approach to Dax invariants](https://arxiv.org/abs/2610.30837v1)** | 2026-10-22 |
+| **4** | **[Hecke Orbits on Globally Drinfeld-Uniformized Shimura Varieties Are $p$-adically Nowhere Dense](https://arxiv.org/abs/2610.28869v1)** | 2026-10-20 |
+| **5** | **[Polymer-Mediated Hotspot Evolution in Shock-Induced Pore Collapse in 1,3,5,7-Tetranitro-1,3,5,7-tetrazocane (HMX)-based Explosives](https://arxiv.org/abs/2610.28812v1)** | 2026-10-20 |
 ### 21. neural architecture search/multi-objective neural architecture search
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Efficient Audio-Visual Speech Enhancement via Reinforcement Learning-Based Neural Architecture Search](https://arxiv.org/abs/2610.12796v1)** | 2026-10-08 |
-| **2** | **[Node-level Graph Neural Architecture Search Framework](https://arxiv.org/abs/2610.09297v1)** | 2026-10-07 |
-| **3** | **[Bayesian Optimization in Sequence-to-Architecture Latent Space for Zero-Shot NAS](https://arxiv.org/abs/2610.06167v1)** | 2026-10-05 |
-| **4** | **[Rethinking Expressibility-Trainability Trade-off in Hybrid Quantum Neural Networks](https://arxiv.org/abs/2605.25768v1)** | 2026-05-25 |
-| **5** | **[Joint Architecture-Token-Bitwidth Multi-Axis Optimization of Vision Transformers for Semiconductor IC Packaging](https://arxiv.org/abs/2605.01742v3)** | 2026-05-03 |
+| **1** | **[Edge intelligence for distributed acoustic sensing with ultracompact neural networks](https://arxiv.org/abs/2610.39892v1)** | 2026-10-29 |
+| **2** | **[Hyperparameter and Neural Architecture Search via Evolutionary Optimization for Reinforcement Learning: HPNAS-RL](https://arxiv.org/abs/2610.36882v1)** | 2026-10-27 |
+| **3** | **[TRON: Transferring Naturally Evolved Network Architectures into Neuroevolution](https://arxiv.org/abs/2610.35647v1)** | 2026-10-26 |
+| **4** | **[QuaNAS: Uncertainty-Aware Reuse of Earlier Searches for Query-Efficient Neural Architecture Search](https://arxiv.org/abs/2610.31251v2)** | 2026-10-22 |
+| **5** | **[MOSAIC: Multi-Objective Search for Allocating Inference Cache Across LLM Decoder Layers](https://arxiv.org/abs/2610.25431v1)** | 2026-10-18 |
 ### 22. open-ended learning/quality-diversity
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Kernel Autoresearch for Open-Ended Model Discovery](https://arxiv.org/abs/2610.10394v1)** | 2026-10-07 |
-| **2** | **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969v1)** | 2026-10-06 |
-| **3** | **[Towards Robust Prehensile Manipulation in Open-Ended Environments](https://arxiv.org/abs/2610.06376v1)** | 2026-10-05 |
-| **4** | **[CACFG: Curvature-Aware Classifier-Free Guidance and Optimal Control](https://arxiv.org/abs/2610.05845v1)** | 2026-10-05 |
-| **5** | **[Understanding How Educators Configure GenAI Support for Open-Ended Learning -- An Exploratory Study of K-12 Career Exploration](https://arxiv.org/abs/2609.21019v1)** | 2026-09-17 |
+| **1** | **[Neighborhood Elites: Quality-Diversity Search for Uncertainty Quantification in Question Answering](https://arxiv.org/abs/2610.40278v1)** | 2026-10-29 |
+| **2** | **[Repulsive Population Policy Gradients for Behaviorally Diverse Reinforcement Learning](https://arxiv.org/abs/2610.36425v1)** | 2026-10-27 |
+| **3** | **[From Language to Drives: A Multimodal Framework for Aligning Autonomous Robots with Human Purposes](https://arxiv.org/abs/2610.35629v1)** | 2026-10-26 |
+| **4** | **[Model-Aware Generation of Safety-Critical Scenes for Robust End-to-End Driving via Distilled Planner Surrogates](https://arxiv.org/abs/2610.35448v1)** | 2026-10-26 |
+| **5** | **[PRISM: Promoting Sampling Diversity of Large Language Models with Implicit Stochastic Modulation](https://arxiv.org/abs/2610.32101v1)** | 2026-10-23 |
 ### 23. neuro-symbolic/neural symbolic reasoning
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[A Survey on LLM-Integrated Hardware Design Verification](https://arxiv.org/abs/2610.10580v1)** | 2026-10-06 |
-| **2** | **[Do We Still Need Gazetteers in the Era of LLMs? Chaining Retrieval with a Spatial Neuro-Symbolic Index](https://arxiv.org/abs/2610.05028v2)** | 2026-10-04 |
-| **3** | **[A generative-informed neuro-symbolic framework for syntactic ambiguity resolution: Evidence from Arabic DPs](https://arxiv.org/abs/2610.02529v2)** | 2026-10-01 |
-| **4** | **[Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning](https://arxiv.org/abs/2605.16385v3)** | 2026-05-11 |
-| **5** | **[Finding Memory Leaks in C/C++ Programs via Neuro-Symbolic Augmented Static Analysis](https://arxiv.org/abs/2603.27224v5)** | 2026-03-28 |
+| **1** | **[SymAnt: Grounding Long-Horizon Action Anticipation with Adaptable Symbolic Priors](https://arxiv.org/abs/2610.40632v1)** | 2026-10-29 |
+| **2** | **[Hybrid AI Patterns: Thirteen Ways to Couple Language Models with Rules, and How to Choose Among Them](https://arxiv.org/abs/2610.40036v1)** | 2026-10-29 |
+| **3** | **[Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance](https://arxiv.org/abs/2610.39547v1)** | 2026-10-29 |
+| **4** | **[Decompose, Don't Expand: Capability-Independent AI Systems by Construction](https://arxiv.org/abs/2610.38144v1)** | 2026-10-28 |
+| **5** | **[Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning](https://arxiv.org/abs/2605.16385v3)** | 2026-05-11 |
 ### 24. meta-learning/continual learning/lifelong learning
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Does Financial Speech Need Continual Learning Regularization? A Study of EWC and mini-KFAC on Earnings Call ASR](https://arxiv.org/abs/2610.13432v1)** | 2026-10-09 |
-| **2** | **[In-Context Learning for System Identification: Probabilistic Formulation, Long-Sequence Handling, and Benchmark Validation](https://arxiv.org/abs/2610.13411v1)** | 2026-10-09 |
-| **3** | **[Monarch-MoE: Structured Experts for Multimodal Continual Instruction Tuning](https://arxiv.org/abs/2610.13215v1)** | 2026-10-09 |
-| **4** | **[Continually Post-training Small Models via Synthetic Self-distillation](https://arxiv.org/abs/2610.13113v1)** | 2026-10-09 |
-| **5** | **[EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents](https://arxiv.org/abs/2610.13021v1)** | 2026-10-09 |
+| **1** | **[Training Foundation Models with a Single Algorithm](https://arxiv.org/abs/2610.40564v1)** | 2026-10-29 |
+| **2** | **[Surprise Alone Learns Lies: Evidence-Gated Continual Learning for LLMs from Streaming Claims](https://arxiv.org/abs/2610.39840v1)** | 2026-10-29 |
+| **3** | **[Open-World Object Motion Anticipation via Meta-Learned Semantic Adaptation](https://arxiv.org/abs/2610.38993v1)** | 2026-10-28 |
+| **4** | **[CHORD: Cross-Model Hallucination Detection via Relational Graph Discrimination](https://arxiv.org/abs/2610.38314v1)** | 2026-10-28 |
+| **5** | **[A Separation Principle for Adversarial Attacks and Defense of Graph Neural Networks](https://arxiv.org/abs/2610.38127v1)** | 2026-10-28 |
 ### 25. intrinsic motivation/curiosity-driven exploration
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[A Unified Framework for Empowerment and Predictive Control](https://arxiv.org/abs/2610.03563v1)** | 2026-10-02 |
-| **2** | **[Bellman Meets Lyapunov: Unsupervised Reinforcement Learning via Mastering Chaos](https://arxiv.org/abs/2610.02012v1)** | 2026-10-01 |
-| **3** | **[Tactile Curiosity Drives Robot Interaction](https://arxiv.org/abs/2609.40134v2)** | 2026-09-30 |
-| **4** | **[Belief-Based Maximum Occupancy Principle and Active Inference](https://arxiv.org/abs/2609.39342v1)** | 2026-09-30 |
-| **5** | **[Going Beyond State-Reaching: Learning Abstractions for Intrinsically Motivated Option Discovery](https://arxiv.org/abs/2609.36473v1)** | 2026-09-29 |
+| **1** | **[What is Work For? Labor, Politics, and Meaning in the Age of AI](https://arxiv.org/abs/2610.39375v1)** | 2026-10-29 |
+| **2** | **[Multi-Horizon Future Discovery for Physics-Informed Exploration](https://arxiv.org/abs/2610.35468v1)** | 2026-10-26 |
+| **3** | **[Intrinsic Goals for Autonomous Agents: Hierarchical Exploration Captures Future Volitional Action in Drosophila](https://arxiv.org/abs/2610.34638v1)** | 2026-10-25 |
+| **4** | **[Productive State-Space Exploration for Multi-turn RL in LLM Agents](https://arxiv.org/abs/2610.25957v1)** | 2026-10-19 |
+| **5** | **[Two's a Crowd: Human and AI-Based Copresence for Developers with ADHD](https://arxiv.org/abs/2609.21254v3)** | 2026-09-18 |
 ### 26. learned optimizer/meta-gradient
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Secrets in Preamble: Practical and Robust PHY Information Hiding for Wi-Fi](https://arxiv.org/abs/2610.13367v1)** | 2026-10-09 |
-| **2** | **[Towards Easier-to-Tune Training Algorithms: New Results from AlgoPerf](https://arxiv.org/abs/2610.13036v1)** | 2026-10-09 |
-| **3** | **[ROAM: Reinforcement Learning Optimized Adaptive Moving Target Defense for Smart Grid](https://arxiv.org/abs/2610.12730v1)** | 2026-10-08 |
-| **4** | **[Beyond QAOA: A Review of AI and Quantum Computing for Adaptive Combinatorial Optimization](https://arxiv.org/abs/2610.11759v2)** | 2026-10-08 |
-| **5** | **[Machine Learning Optimization for Enhanced OS Fingerprinting](https://arxiv.org/abs/2610.11133v1)** | 2026-10-08 |
+| **1** | **[Axiomatic Learning and Probabilistic Structures with first applications to variants of Arithmetic Machine Learning and beyond](https://arxiv.org/abs/2610.36601v1)** | 2026-10-27 |
+| **2** | **[DRILL: Training World Models to Improve Policies, Not Predict Pixels](https://arxiv.org/abs/2610.30814v1)** | 2026-10-22 |
+| **3** | **[Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training](https://arxiv.org/abs/2610.19479v1)** | 2026-10-14 |
+| **4** | **[RogueMerge: Robust and Unified Attacks against LLM Model Merging](https://arxiv.org/abs/2606.03344v2)** | 2026-06-02 |
+| **5** | **[Learning to Model Optimization Problems from Solver Outcomes](https://arxiv.org/abs/2604.00442v2)** | 2026-04-01 |
 ### 27. active inference/predictive coding
 | **序号** | **标题** | **日期** |
 | --- | --- | --- |
-| **1** | **[Quantization-Tolerant Gradient Auditing for Active Inference-Attack Detection in Federated Learning](https://arxiv.org/abs/2610.13311v1)** | 2026-10-09 |
-| **2** | **[Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm](https://arxiv.org/abs/2610.10275v1)** | 2026-10-07 |
-| **3** | **[Reconstruction of Geometric and Structural Aspects of Undeciphered Messages by Information-theoretic Methods](https://arxiv.org/abs/2610.08861v1)** | 2026-10-05 |
-| **4** | **[MoCAR: Motion-code Coordinate-aware AutoRegression for Continuous Trajectory Forecasting](https://arxiv.org/abs/2610.06210v1)** | 2026-10-05 |
-| **5** | **[MOLT: A Fine-Grained GPU Memory Sharing System for LLM Serving with Opportunistic Fine-Tuning](https://arxiv.org/abs/2610.05748v1)** | 2026-10-05 |
+| **1** | **[Coordinated and Uncoordinated Channel Tracking for High-Rate IoT in Distributed Massive MIMO With Low-Resolution ADCs](https://arxiv.org/abs/2610.37508v1)** | 2026-10-27 |
+| **2** | **[Local learning is all you need: brain-aligned predictive coding networks](https://arxiv.org/abs/2610.37327v1)** | 2026-10-27 |
+| **3** | **[Atom as an Agent: Emergent Order by Collective Predictive Coding](https://arxiv.org/abs/2610.36673v1)** | 2026-10-27 |
+| **4** | **[Persistence, Exposure, and Credit Routing in Linear Temporal Predictive Coding](https://arxiv.org/abs/2610.36412v1)** | 2026-10-26 |
+| **5** | **[SpatialPC: Deep Computation with Sublinear Local Credit Propagation](https://arxiv.org/abs/2610.36139v1)** | 2026-10-26 |
