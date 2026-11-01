@@ -3,7 +3,7 @@
 
 点击 'Watch' 按钮可以接收每月自动推送的邮件通知。
 
-## 最后更新：2026-10-31 09:19
+## 最后更新：2026-11-02 04:05
 **本次更新执行命令**
 ```
 D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=

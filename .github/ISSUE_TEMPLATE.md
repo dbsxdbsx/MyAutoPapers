@@ -1,8 +1,8 @@
 ---
-title: 每月论文更新 - 2026年10月31日
+title: 每月论文更新 - 2026年11月02日
 labels: documentation
 ---
-## 最后更新：2026-10-31 09:19
+## 最后更新：2026-11-02 04:05
 **本次更新执行命令**
 ```
 D:\a\MyAutoPapers\MyAutoPapers\target\release\my_auto_papers.exe --keywords=
